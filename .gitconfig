@@ -1,0 +1,19 @@
+[user]
+	name = Mathew Attlee
+	email = hello@codeinabox.com
+[push]
+	default = current
+[branch]
+	autosetuprebase = always
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore_global
+	autocrlf = input
+	ignorecase = false
+[credential]
+	helper = osxkeychain
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[mergetool]
+	keepBackup = true
