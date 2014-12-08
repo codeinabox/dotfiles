@@ -1,0 +1,11 @@
+[ui]
+# name and email, e.g.
+username = Mathew Attlee <hello@codeinabox.com>
+
+[extensions]
+# uncomment these lines to enable some popular extensions
+# (see "hg help extensions" for more info)
+#
+# pager =
+# progress =
+# color =
