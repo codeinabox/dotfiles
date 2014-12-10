@@ -1,0 +1,5 @@
+" Highlight search matches
+set hlsearch
+
+" Ignore case in search
+set smartcase

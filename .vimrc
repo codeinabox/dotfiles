@@ -12,5 +12,10 @@ set number
 " Allow backspace to delete end of line, indent and start of line characters
 set backspace=indent,eol,start
 
+" Highlight search matches
+set hlsearch
+" Ignore case in search
+set smartcase
+
 " Bundles
 Bundle 'editorconfig/editorconfig-vim'
