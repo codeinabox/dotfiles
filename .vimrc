@@ -8,3 +8,6 @@ syntax on
 
 " Turn on line numbers
 set number
+
+" Bundles
+Bundle 'editorconfig/editorconfig-vim'
