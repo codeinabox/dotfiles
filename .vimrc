@@ -7,6 +7,7 @@ call vundle#begin()
 
 Plugin 'gmarik/vundle'        " let Vundle manage Vundle, required
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'altercation/vim-colors-solarized'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -25,3 +26,6 @@ set hlsearch
 " Ignore case in search
 set smartcase
 
+" Theme
+set background=dark
+colorscheme solarized
