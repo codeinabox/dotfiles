@@ -1,7 +1,15 @@
-" Vundle 
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
 set rtp+=$HOME/.vim/bundle/vundle
-call vundle#rc()
-Bundle 'gmarik/vundle'
+call vundle#begin()
+
+Plugin 'gmarik/vundle'        " let Vundle manage Vundle, required
+Plugin 'editorconfig/editorconfig-vim'
+
+" All of your Plugins must be added before the following line
+call vundle#end()
 
 " Switch syntax highlighting on, when the terminal has colours
 syntax on
@@ -17,5 +25,3 @@ set hlsearch
 " Ignore case in search
 set smartcase
 
-" Bundles
-Bundle 'editorconfig/editorconfig-vim'
