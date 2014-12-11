@@ -32,6 +32,7 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
+  'history-substring-search' \
   'prompt' \
   'git'
 
@@ -62,6 +63,8 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 #
 # History Substring Search
 #
+
+zstyle ':prezto:module:history-substring-search' color 'yes'
 
 # Set the query found color.
 # zstyle ':prezto:module:history-substring-search:color' found ''
