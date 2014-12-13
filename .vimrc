@@ -26,6 +26,13 @@ set hlsearch
 " Ignore case in search
 set smartcase
 
+" No backup files
+set nobackup
+" No write backup
+set nowritebackup
+" No swap file
+set noswapfile
+
 " Theme
 set background=dark
 colorscheme solarized
