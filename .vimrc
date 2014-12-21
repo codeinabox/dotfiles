@@ -43,6 +43,9 @@ colorscheme solarized
 map <C-n> :NERDTreeToggle<CR>   " Set ctrl-n shortcut
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\.git$','\.hg$','\.svn$','\.DS_Store$','\.idea$','\.project$']
+" Automatically start if no files were specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " CtrlP
 let g:ctrlp_show_hidden=1
