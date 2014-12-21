@@ -41,6 +41,8 @@ colorscheme solarized
 
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>   " Set ctrl-n shortcut
+let NERDTreeShowHidden=1
+let NERDTreeIgnore=['\.git$','\.hg$','\.svn$','\.DS_Store$','\.idea$','\.project$']
 
 " CtrlP
 let g:ctrlp_show_hidden=1
