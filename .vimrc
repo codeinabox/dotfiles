@@ -9,6 +9,7 @@ Plugin 'gmarik/vundle'        " let Vundle manage Vundle, required
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -37,6 +38,9 @@ set noswapfile
 " Theme
 set background=dark
 colorscheme solarized
+
+" NERDTree
+map <C-n> :NERDTreeToggle<CR>   " Set ctrl-n shortcut
 
 " CtrlP
 let g:ctrlp_show_hidden=1
