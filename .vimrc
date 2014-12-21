@@ -21,6 +21,9 @@ syntax on
 " Turn on line numbers
 set number
 
+" Enable language-dependent indenting
+filetype plugin indent on
+
 " Allow backspace to delete end of line, indent and start of line characters
 set backspace=indent,eol,start
 
