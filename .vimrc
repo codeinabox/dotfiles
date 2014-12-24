@@ -15,6 +15,7 @@ Plugin 'xolox/vim-misc'       " needed by easytags
 Plugin 'xolox/vim-easytags'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'ap/vim-css-color'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
