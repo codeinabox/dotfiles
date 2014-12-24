@@ -44,6 +44,7 @@ set nowritebackup
 set noswapfile
 
 " Theme
+set t_Co=256	" Enable 256 colours
 set background=dark
 colorscheme solarized
 
