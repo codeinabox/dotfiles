@@ -27,6 +27,9 @@ syntax on
 " Turn on line numbers
 set number
 
+" Show tabs and trailing spaces
+set list listchars=tab:>-,trail:~
+
 " Enable language-dependent indenting
 filetype plugin indent on
 
