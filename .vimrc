@@ -30,8 +30,10 @@ set number
 " Show tabs and trailing spaces
 set list listchars=tab:>-,trail:~
 
-" Enable language-dependent indenting
-filetype plugin indent on
+" Indenting
+filetype plugin indent on " Enable language-dependent indenting
+set tabstop=4     " The width of a tab
+set shiftwidth=4  " Indent size
 
 " Allow backspace to delete end of line, indent and start of line characters
 set backspace=indent,eol,start
