@@ -7,6 +7,7 @@ export HISTSIZE=10000
 export SAVEHIST=10000
 
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
+export EDITOR="vim"
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
