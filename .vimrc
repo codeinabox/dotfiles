@@ -53,7 +53,11 @@ set noswapfile
 " Theme
 set t_Co=256	" Enable 256 colours
 set background=dark
-colorscheme solarized
+try
+    colorscheme solarized
+catch
+    colorscheme default
+endtry
 
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>   " Set ctrl-n shortcut
