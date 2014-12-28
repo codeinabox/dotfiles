@@ -5,7 +5,7 @@ filetype off                  " required
 set rtp+=$HOME/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/vundle'        " let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'        " let Vundle manage Vundle, required
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
