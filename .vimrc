@@ -32,6 +32,9 @@ set number
 " Status bar
 set laststatus=2     " always show
 
+" Bufferline
+let g:bufferline_echo = 0    " don't echo to command bar
+
 " Show tabs and trailing spaces
 set list listchars=tab:>-,trail:~
 
