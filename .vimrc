@@ -28,6 +28,9 @@ syntax on
 " Turn on line numbers
 set number
 
+" Status bar
+set laststatus=2     " always show
+
 " Show tabs and trailing spaces
 set list listchars=tab:>-,trail:~
 
