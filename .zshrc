@@ -1,13 +1,8 @@
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-
-export HISTFILE=~/.histfile
-# number of lines kept in history
-export HISTSIZE=10000
-# number of lines saved in the history after logout
-export SAVEHIST=10000
-
-export VAGRANT_DEFAULT_PROVIDER=virtualbox
-export EDITOR="vim"
+# Load exports and aliases
+for file in $HOME/.{exports,aliases}; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
