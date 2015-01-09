@@ -1,4 +1,6 @@
 set nocompatible              " be iMproved, required
+
+" Plugins {{{
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -22,7 +24,9 @@ Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
+" }}}
 
+" General settings {{{
 " Switch syntax highlighting on, when the terminal has colours
 syntax on
 
@@ -57,8 +61,9 @@ set nobackup
 set nowritebackup
 " No swap file
 set noswapfile
+" }}}
 
-" Theme
+" Theme {{{
 set t_Co=256	" Enable 256 colours
 set background=dark
 try
@@ -66,17 +71,20 @@ try
 catch
     colorscheme default
 endtry
+" }}}
 
-" NERDTree
+" NERDTree {{{
 map <C-n> :NERDTreeToggle<CR>   " Set ctrl-n shortcut
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\.git$','\.hg$','\.svn$','\.DS_Store$','\.idea$','\.project$']
+" }}}
 
-" CtrlP
+" CtrlP {{{
 let g:ctrlp_show_hidden=1
 let g:ctrlp_max_height=10
+" }}}
 
-" Omni completion
+" Omni completion {{{
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
@@ -84,3 +92,4 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
+" }}}
