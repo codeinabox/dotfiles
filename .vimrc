@@ -55,6 +55,9 @@ set hlsearch
 " Ignore case in search
 set smartcase
 
+" Folding
+setlocal foldmethod=marker
+
 " No backup files
 set nobackup
 " No write backup
