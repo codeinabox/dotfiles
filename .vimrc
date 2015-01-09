@@ -58,6 +58,9 @@ set smartcase
 " Folding
 setlocal foldmethod=marker
 
+" Autoread
+set autoread
+
 " No backup files
 set nobackup
 " No write backup
