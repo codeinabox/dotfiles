@@ -53,6 +53,7 @@ set backspace=indent,eol,start
 " Highlight search matches
 set hlsearch
 " Ignore case in search
+set ignorecase
 set smartcase
 
 " Folding
