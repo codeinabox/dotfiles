@@ -63,6 +63,9 @@ setlocal foldmethod=marker
 " Autoread
 set autoread
 
+" Enable mouse support
+set mouse=a
+
 " No backup files
 set nobackup
 " No write backup
