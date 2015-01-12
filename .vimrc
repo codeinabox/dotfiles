@@ -66,6 +66,9 @@ set autoread
 " Enable mouse support
 set mouse=a
 
+" Use system clipboard
+set clipboard+=unnamed
+
 " No backup files
 set nobackup
 " No write backup
