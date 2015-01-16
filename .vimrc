@@ -31,6 +31,9 @@ call vundle#end()
 " Switch syntax highlighting on, when the terminal has colours
 syntax on
 
+" Enable spell check
+setlocal spell spelllang=en_gb
+
 " Turn on line numbers
 set number
 
