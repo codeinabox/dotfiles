@@ -8,3 +8,5 @@ export SAVEHIST=10000
 
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
 export EDITOR="vim"
+
+export DOKKU_PATH="$HOME/.dokku"
