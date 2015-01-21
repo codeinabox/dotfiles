@@ -1,5 +1,6 @@
 # Aliases
 alias reload=". $HOME/.zshrc && echo 'ZSH config reloaded from $HOME/.zshrc'"
+alias ssh-pbcopy="cat $HOME/.ssh/id_rsa.pub | pbcopy; echo 'SSH key copied to clipboard'"
 alias vi="vim"
 alias vless="/usr/local/share/vim/vim74/macros/less.sh"
 alias dokku-vagrant="cd $DOKKU_PATH; vagrant"
