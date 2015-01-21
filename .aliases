@@ -1,3 +1,4 @@
 # Aliases
 alias reload=". $HOME/.zshrc && echo 'ZSH config reloaded from $HOME/.zshrc'"
+alias vi="vim"
 alias vless="/usr/local/share/vim/vim74/macros/less.sh"
