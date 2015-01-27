@@ -26,6 +26,7 @@ Plugin 'Z1MM32M4N/vim-superman'
 Plugin 'rkitover/vimpager'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'majutsushi/tagbar'
+Plugin 'tpope/vim-surround'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
