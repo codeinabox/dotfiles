@@ -10,6 +10,6 @@ export VAGRANT_DEFAULT_PROVIDER=virtualbox
 export EDITOR="vim"
 export VISUAL=$EDITOR
 
-export PAGER="less"
+export PAGER="vimpager"
 
 export DOKKU_PATH="$HOME/.dokku"
