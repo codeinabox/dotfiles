@@ -23,6 +23,7 @@ Plugin 'bling/vim-bufferline'
 Plugin 'bling/vim-airline'
 Plugin 'tmux-plugins/vim-tmux'
 Plugin 'Z1MM32M4N/vim-superman'
+Plugin 'rkitover/vimpager'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
