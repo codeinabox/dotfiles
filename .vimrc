@@ -72,8 +72,10 @@ setlocal foldmethod=marker
 " Autoread
 set autoread
 
-" Enable mouse support
+" Enable mouse support, except in vimpager
+if !exists("vimpager")
 set mouse=a
+endif
 
 " Use system clipboard
 set clipboard+=unnamed
