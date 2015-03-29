@@ -29,6 +29,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-surround'
 Plugin 'chase/vim-ansible-yaml'
 Plugin 'tpope/vim-obsession'
+Plugin 'elzr/vim-json'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
