@@ -70,6 +70,7 @@ set smartcase
 
 " Folding
 setlocal foldmethod=marker
+set foldlevelstart=1
 
 " Autoread
 set autoread
