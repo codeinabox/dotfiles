@@ -36,9 +36,6 @@ call vundle#end()
 " }}}
 
 " General settings {{{
-" Switch syntax highlighting on, when the terminal has colours
-syntax on
-
 " Enable spell check
 setlocal spell spelllang=en_gb
 
@@ -58,6 +55,9 @@ set list listchars=tab:>-,trail:~
 filetype plugin indent on " Enable language-dependent indenting
 set tabstop=4     " The width of a tab
 set shiftwidth=4  " Indent size
+
+" Switch syntax highlighting on, when the terminal has colours
+syntax on
 
 " Allow backspace to delete end of line, indent and start of line characters
 set backspace=indent,eol,start
