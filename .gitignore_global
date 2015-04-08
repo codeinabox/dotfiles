@@ -1,6 +1,7 @@
 *.DS_Store
 .svn
 .vagrant
+npm-debug.log
 
 # IDEs
 nbproject
