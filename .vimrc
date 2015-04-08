@@ -112,6 +112,10 @@ let g:ctrlp_show_hidden=1
 let g:ctrlp_max_height=10
 " }}}
 
+" File extensions {{{
+au BufNewFile,BufRead .bowerrc set filetype=json
+" }}}
+
 " Omni completion {{{
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
