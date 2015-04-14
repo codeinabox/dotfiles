@@ -2,6 +2,7 @@
 .svn
 .vagrant
 npm-debug.log
+.envrc
 
 # IDEs
 nbproject
