@@ -15,9 +15,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'xolox/vim-misc'       " needed by easytags
 Plugin 'xolox/vim-easytags'
-Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'ap/vim-css-color'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-bufferline'
 Plugin 'bling/vim-airline'
@@ -30,6 +28,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'chase/vim-ansible-yaml'
 Plugin 'tpope/vim-obsession'
 Plugin 'elzr/vim-json'
+Plugin 'sheerun/vim-polyglot'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
