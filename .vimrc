@@ -113,6 +113,7 @@ let g:ctrlp_max_height=10
 
 " File extensions {{{
 au BufNewFile,BufRead .bowerrc set filetype=json
+au BufNewFile,BufRead .jshintrc set filetype=json
 " }}}
 
 " Omni completion {{{
