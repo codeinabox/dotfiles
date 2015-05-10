@@ -116,6 +116,10 @@ au BufNewFile,BufRead .bowerrc set filetype=json
 au BufNewFile,BufRead .jshintrc set filetype=json
 " }}}
 
+" Templates {{{
+autocmd BufNewFile .editorconfig 0r $HOME/.vim/templates/editorconfig
+" }}}
+
 " Omni completion {{{
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
