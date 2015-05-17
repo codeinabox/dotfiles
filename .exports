@@ -13,3 +13,5 @@ export VISUAL=$EDITOR
 export PAGER="vimpager"
 
 export DOKKU_PATH="$HOME/.dokku"
+
+export GOPATH=$HOME/workspace/go
