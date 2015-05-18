@@ -48,7 +48,7 @@ set laststatus=2     " always show
 let g:bufferline_echo = 0    " don't echo to command bar
 
 " Show tabs and trailing spaces
-set list listchars=tab:>-,trail:~
+set list listchars=tab:\ \ ,trail:~
 
 " Indenting
 filetype plugin indent on " Enable language-dependent indenting
