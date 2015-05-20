@@ -111,6 +111,10 @@ let g:ctrlp_show_hidden=1
 let g:ctrlp_max_height=10
 " }}}
 
+" Syntastic {{{
+let g:syntastic_php_phpcs_args = "--standard=PSR2"
+" }}}
+
 " File extensions {{{
 au BufNewFile,BufRead .bowerrc set filetype=json
 au BufNewFile,BufRead .jshintrc set filetype=json
