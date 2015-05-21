@@ -29,6 +29,7 @@ Plugin 'chase/vim-ansible-yaml'
 Plugin 'tpope/vim-obsession'
 Plugin 'elzr/vim-json'
 Plugin 'sheerun/vim-polyglot'
+Plugin 'ervandew/supertab'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
