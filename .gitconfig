@@ -10,6 +10,8 @@
 	excludesfile = ~/.gitignore_global
 	autocrlf = input
 	ignorecase = false
+[alias]
+    unstage = reset HEAD --
 [credential]
 	helper = osxkeychain
 [filter "media"]
