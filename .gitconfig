@@ -11,6 +11,9 @@
 	autocrlf = input
 	ignorecase = false
 [alias]
+	rb = rebase
+	rc = rebase --continue
+	rs = rebase --skip
 	ri = rebase --interactive
 	unstage = reset HEAD --
 [credential]
