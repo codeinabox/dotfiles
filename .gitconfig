@@ -16,6 +16,7 @@
 	rs = rebase --skip
 	ri = rebase --interactive
 	unstage = reset HEAD --
+	undo = reset --soft HEAD~1
 [credential]
 	helper = osxkeychain
 [filter "media"]
