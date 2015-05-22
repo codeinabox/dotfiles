@@ -12,7 +12,7 @@
 	ignorecase = false
 [alias]
 	ri = rebase --interactive
-    unstage = reset HEAD --
+	unstage = reset HEAD --
 [credential]
 	helper = osxkeychain
 [filter "media"]
