@@ -89,6 +89,9 @@ set nobackup
 set nowritebackup
 " No swap file
 set noswapfile
+
+" Ignore these directories
+set wildignore+=*/.git,*/.hg,*/.svn.,*/.tmp,*/.DS_Store,*/.idea,*/.project
 " }}}
 
 " Theme {{{
@@ -104,7 +107,7 @@ endtry
 " NERDTree {{{
 map <C-n> :NERDTreeToggle<CR>   " Set ctrl-n shortcut
 let NERDTreeShowHidden=1
-let NERDTreeIgnore=['\.git$','\.hg$','\.svn$','\.DS_Store$','\.idea$','\.project$']
+let NERDTreeRespectWildIgnore=1
 " }}}
 
 " CtrlP {{{
