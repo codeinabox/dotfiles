@@ -113,6 +113,7 @@ let NERDTreeRespectWildIgnore=1
 " CtrlP {{{
 let g:ctrlp_show_hidden=1
 let g:ctrlp_max_height=10
+let g:ctrlp_custom_ignore = '\v[\/](bower_components|dist|node_modules|vendor)$'
 " }}}
 
 " Syntastic {{{
