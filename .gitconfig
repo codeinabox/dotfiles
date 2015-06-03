@@ -11,6 +11,7 @@
 	autocrlf = input
 	ignorecase = false
 [alias]
+	ca = commit -a
 	rb = rebase
 	rc = rebase --continue
 	rs = rebase --skip
