@@ -16,6 +16,7 @@
 	rc = rebase --continue
 	rs = rebase --skip
 	ri = rebase --interactive
+	s = status -s
 	unstage = reset HEAD --
 	undo = reset --soft HEAD~1
 [credential]
