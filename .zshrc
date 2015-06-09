@@ -9,6 +9,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# Symfony2 console completion script
+source ~/.sfconsole/console_completion.sh
+
 # Customize to your needs...
 compdef vman="man"   # autocomplete for vman
 

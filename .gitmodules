@@ -1,3 +1,6 @@
 [submodule ".tmux-themes/tmux-colors-solarized"]
 	path = .tmux-themes/tmux-colors-solarized
 	url = https://github.com/seebi/tmux-colors-solarized
+[submodule ".sfconsole"]
+	path = .sfconsole
+	url = https://github.com/jaytaph/SFConsole
