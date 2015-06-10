@@ -32,6 +32,7 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'ervandew/supertab'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'jiangmiao/auto-pairs'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
