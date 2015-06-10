@@ -12,6 +12,7 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'scrooloose/syntastic'
 Plugin 'xolox/vim-misc'       " needed by easytags
 Plugin 'xolox/vim-easytags'
