@@ -43,8 +43,10 @@ call vundle#end()
 " }}}
 
 " General settings {{{
-" Enable spell check
-setlocal spell spelllang=en_gb
+" Spell check
+setlocal nospell spelllang=en_gb
+autocmd FileType gitcommit,markdown,text setlocal spell
+map <F5> :setlocal spell!<CR>
 
 " Turn on line numbers
 set number
