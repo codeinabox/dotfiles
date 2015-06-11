@@ -15,6 +15,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'low-ghost/nerdtree-fugitive'
 Plugin 'scrooloose/syntastic'
+Plugin 'luochen1990/rainbow'
+	let g:rainbow_active = 1
 Plugin 'xolox/vim-misc'       " needed by easytags
 Plugin 'xolox/vim-easytags'
 Plugin 'airblade/vim-gitgutter'
