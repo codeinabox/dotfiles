@@ -10,6 +10,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'        " let Vundle manage Vundle, required
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'noahfrederick/vim-hemisu'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
@@ -112,9 +113,9 @@ set wildignore+=*/.git,*/.hg,*/.svn.,*/.tmp,*/.DS_Store,*/.idea,*/.project,*/.ta
 
 " Theme {{{
 set t_Co=256	" Enable 256 colours
-set background=dark
+set background=light
 try
-    colorscheme solarized
+    colorscheme hemisu
 catch
     colorscheme default
 endtry
