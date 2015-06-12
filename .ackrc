@@ -5,3 +5,5 @@
 --ignore-dir=.project
 --ignore-dir=.settings
 --ignore-dir=.idea
+
+--ignore-file=match:/^\.tags$/

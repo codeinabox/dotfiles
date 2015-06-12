@@ -3,6 +3,7 @@
 .vagrant
 npm-debug.log
 .envrc
+.tags
 
 # IDEs
 nbproject

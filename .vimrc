@@ -101,7 +101,7 @@ set nowritebackup
 set noswapfile
 
 " Ignore these directories
-set wildignore+=*/.git,*/.hg,*/.svn.,*/.tmp,*/.DS_Store,*/.idea,*/.project
+set wildignore+=*/.git,*/.hg,*/.svn.,*/.tmp,*/.DS_Store,*/.idea,*/.project,*/.tags
 " }}}
 
 " Theme {{{
@@ -138,6 +138,11 @@ au BufNewFile,BufRead .jshintrc set filetype=json
 
 " Templates {{{
 autocmd BufNewFile .editorconfig 0r $HOME/.vim/templates/editorconfig
+" }}}
+
+" Tags {{{
+set tags=./.tags;,~/.vimtags
+let g:easytags_dynamic_files = 2
 " }}}
 
 " Omni completion {{{
