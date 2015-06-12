@@ -38,6 +38,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'mileszs/ack.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
