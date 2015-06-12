@@ -1,0 +1,7 @@
+# IDEs
+--ignore-dir=nbproject
+--ignore-dir=.buildpath
+--ignore-dir=.metadata
+--ignore-dir=.project
+--ignore-dir=.settings
+--ignore-dir=.idea
