@@ -130,6 +130,8 @@ let g:ctrlp_custom_ignore = '\v[\/](bower_components|dist|node_modules|vendor)$'
 " Syntastic {{{
 let g:syntastic_php_phpcs_args = "--standard=PSR2"
 let g:syntastic_php_phpmd_post_args = "cleancode,codesize,design,unusedcode"
+" For CakePHP templates only use PHP checker
+autocmd BufRead,BufNewFile *.ctp let b:syntastic_checkers = ["php"]
 " }}}
 
 " File extensions {{{
