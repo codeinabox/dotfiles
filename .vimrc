@@ -147,6 +147,7 @@ autocmd BufNewFile .editorconfig 0r $HOME/.vim/templates/editorconfig
 " Tags {{{
 set tags=./.tags;,~/.vimtags
 let g:easytags_dynamic_files = 2
+let g:easytags_async = 1
 " }}}
 
 " Omni completion {{{
