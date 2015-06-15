@@ -21,7 +21,6 @@ Plugin 'xolox/vim-misc'       " needed by easytags
 Plugin 'xolox/vim-easytags'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
-Plugin 'bling/vim-bufferline'
 Plugin 'bling/vim-airline'
 Plugin 'tmux-plugins/vim-tmux'
 Plugin 'Z1MM32M4N/vim-superman'
