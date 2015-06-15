@@ -13,6 +13,7 @@
 	pager = less
 [alias]
 	ca = commit -a
+	pr = !git pull && git submodule update --init --recursive
 	rb = rebase
 	rc = rebase --continue
 	rs = rebase --skip
