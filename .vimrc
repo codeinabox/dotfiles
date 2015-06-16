@@ -39,6 +39,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'mileszs/ack.vim'
 	nnoremap <Leader>a :Ack 
+Plugin 'gregsexton/gitv'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
