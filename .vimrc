@@ -38,7 +38,7 @@ Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'mileszs/ack.vim'
-	nnoremap <Leader>a :Ack 
+	nnoremap <Leader>a :Ack! 
 Plugin 'gregsexton/gitv'
 Plugin 'voronkovich/ctrlp-symfony2.vim'
 
