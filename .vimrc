@@ -103,6 +103,9 @@ set nowritebackup
 " No swap file
 set noswapfile
 
+" Shortcut to reload .vimrc
+nnoremap <Leader>r :source ~/.vimrc<CR>
+
 " Ignore these directories
 set wildignore+=*/.git,*/.hg,*/.svn.,*/.tmp,*/.DS_Store,*/.idea,*/.project,*/.tags
 " }}}
