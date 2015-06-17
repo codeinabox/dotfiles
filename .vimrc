@@ -138,6 +138,8 @@ nnoremap <Leader>y :CtrlPBuffer<cr>
 " }}}
 
 " Syntastic {{{
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 let g:syntastic_php_phpcs_args = "--standard=PSR2"
 let g:syntastic_php_phpmd_post_args = "cleancode,codesize,design,unusedcode"
 " For CakePHP templates only use PHP checker
