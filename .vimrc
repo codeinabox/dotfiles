@@ -42,6 +42,7 @@ Plugin 'mileszs/ack.vim'
 	nnoremap <Leader>a :Ack! 
 Plugin 'gregsexton/gitv'
 Plugin 'voronkovich/ctrlp-symfony2.vim'
+Plugin 'BufOnly.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
