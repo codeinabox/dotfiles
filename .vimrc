@@ -108,6 +108,9 @@ set noswapfile
 " Shortcut to reload .vimrc
 nnoremap <Leader>r :source ~/.vimrc<CR>
 
+" Alias Wq to wq for all those times I accidentally type it
+command! Wq wq
+
 " Ignore these directories
 set wildignore+=*/.git,*/.hg,*/.svn.,*/.tmp,*/.DS_Store,*/.idea,*/.project,*/.tags
 " }}}
