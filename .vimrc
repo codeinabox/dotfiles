@@ -138,6 +138,7 @@ let g:ctrlp_show_hidden=1
 let g:ctrlp_max_height=10
 let g:ctrlp_custom_ignore = '\v[\/](bower_components|dist|node_modules|vendor)$'
 let g:ctrlp_extensions = ['tag', 'buffertag']
+let g:ctrlp_mruf_relative = 1
 nnoremap <Leader>t :CtrlPTag<cr>
 nnoremap <Leader>y :CtrlPBuffer<cr>
 " }}}
