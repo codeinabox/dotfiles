@@ -45,6 +45,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'gregsexton/gitv'
 Plugin 'voronkovich/ctrlp-symfony2.vim'
 Plugin 'BufOnly.vim'
+Plugin 'fatih/vim-go'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
