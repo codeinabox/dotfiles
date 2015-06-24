@@ -55,10 +55,11 @@ call vundle#end()
 " }}}
 
 " General settings {{{
-" Spell check
+" {{{ Spell check
 setlocal nospell spelllang=en_gb
-autocmd FileType gitcommit,markdown,text setlocal spell
+autocmd FileType behat,cucumber,gitcommit,markdown,text setlocal spell
 map <F5> :setlocal spell!<CR>
+" }}}
 
 " Turn on line numbers
 set number
