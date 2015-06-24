@@ -87,7 +87,7 @@ set ignorecase
 set smartcase
 
 " Folding
-setlocal foldmethod=marker
+setlocal foldmethod=syntax
 set foldlevelstart=1
 
 " Autoread
