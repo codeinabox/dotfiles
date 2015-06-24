@@ -39,9 +39,11 @@ Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'mileszs/ack.vim'
+	" Ack {{{
 	nnoremap <Leader>a :Ack! 
 	let g:ackhighlight = 1
 	let g:ack_autofold_results = 1
+	" }}}
 Plugin 'gregsexton/gitv'
 Plugin 'voronkovich/ctrlp-symfony2.vim'
 Plugin 'BufOnly.vim'
