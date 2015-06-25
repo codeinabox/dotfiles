@@ -12,10 +12,32 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'noahfrederick/vim-hemisu'
 Plugin 'kien/ctrlp.vim'
+	" CtrlP {{{
+	let g:ctrlp_show_hidden=1
+	let g:ctrlp_max_height=10
+	let g:ctrlp_custom_ignore = '\v[\/](bower_components|dist|node_modules|vendor)$'
+	let g:ctrlp_extensions = ['tag', 'buffertag']
+	let g:ctrlp_mruf_relative = 1
+	nnoremap <Leader>t :CtrlPTag<cr>
+	nnoremap <Leader>y :CtrlPBuffer<cr>
+	" }}}
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'low-ghost/nerdtree-fugitive'
+	" NERDTree {{{
+	map <C-n> :NERDTreeToggle<CR>   " Set ctrl-n shortcut
+	let NERDTreeShowHidden=1
+	let NERDTreeRespectWildIgnore=1
+	" }}}
 Plugin 'scrooloose/syntastic'
+	" Syntastic {{{
+	let g:syntastic_check_on_open = 1
+	let g:syntastic_check_on_wq = 0
+	let g:syntastic_php_phpcs_args = "--standard=PSR2"
+	let g:syntastic_php_phpmd_post_args = "cleancode,codesize,design,unusedcode"
+	" For CakePHP templates only use PHP checker
+	autocmd BufRead,BufNewFile *.ctp let b:syntastic_checkers = ["php"]
+	" }}}
 Plugin 'luochen1990/rainbow'
 	let g:rainbow_active = 1
 Plugin 'xolox/vim-misc'       " needed by easytags
@@ -130,31 +152,6 @@ try
 catch
     colorscheme default
 endtry
-" }}}
-
-" NERDTree {{{
-map <C-n> :NERDTreeToggle<CR>   " Set ctrl-n shortcut
-let NERDTreeShowHidden=1
-let NERDTreeRespectWildIgnore=1
-" }}}
-
-" CtrlP {{{
-let g:ctrlp_show_hidden=1
-let g:ctrlp_max_height=10
-let g:ctrlp_custom_ignore = '\v[\/](bower_components|dist|node_modules|vendor)$'
-let g:ctrlp_extensions = ['tag', 'buffertag']
-let g:ctrlp_mruf_relative = 1
-nnoremap <Leader>t :CtrlPTag<cr>
-nnoremap <Leader>y :CtrlPBuffer<cr>
-" }}}
-
-" Syntastic {{{
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_php_phpcs_args = "--standard=PSR2"
-let g:syntastic_php_phpmd_post_args = "cleancode,codesize,design,unusedcode"
-" For CakePHP templates only use PHP checker
-autocmd BufRead,BufNewFile *.ctp let b:syntastic_checkers = ["php"]
 " }}}
 
 " File extensions {{{
