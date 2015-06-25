@@ -56,6 +56,13 @@ Plugin 'tpope/vim-obsession'
 Plugin 'elzr/vim-json'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'ervandew/supertab'
+	" SuperTab {{{
+	let g:SuperTabDefaultCompletionType = "context"
+	let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
+	let g:SuperTabContextTextOmniPrecedence = ['&omnifunc', '&completefunc']
+	let g:SuperTabContextDiscoverDiscovery = ["&omnifunc:<c-x><c-o>", "&completefunc:<c-x><c-u>"]
+	let g:SuperTabClosePreviewOnPopupClose = 1
+	" }}}
 Plugin 'plasticboy/vim-markdown'
 Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'jiangmiao/auto-pairs'
