@@ -164,6 +164,7 @@ endtry
 " File extensions {{{
 au BufNewFile,BufRead .bowerrc set filetype=json
 au BufNewFile,BufRead .jshintrc set filetype=json
+au BufNewFile,BufRead .envrc set filetype=conf
 " }}}
 
 " Templates {{{
