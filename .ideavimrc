@@ -7,3 +7,6 @@ set smartcase
 
 " Use system clipboard
 set clipboard+=unnamed
+
+" Mappings
+nmap gcc :action CommentByLineComment<CR>
