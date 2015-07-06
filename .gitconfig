@@ -28,7 +28,7 @@
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
 [mergetool]
-	keepBackup = true
+	keepBackup = false
 [diff]
 	tool = vimdiff
 [difftool]
