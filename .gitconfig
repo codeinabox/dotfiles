@@ -15,6 +15,7 @@
 	ca = commit -a
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	pr = !git pull && git submodule update --init --recursive
+	pmerge = mergetool -t pstorm
 	rb = rebase
 	rc = rebase --continue
 	rs = rebase --skip
