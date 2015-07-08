@@ -79,6 +79,7 @@ Plugin 'voronkovich/ctrlp-symfony2.vim'
 Plugin 'BufOnly.vim'
 Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-projectionist'
+Plugin 'wincent/terminus'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
