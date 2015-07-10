@@ -10,3 +10,4 @@ set clipboard+=unnamed
 
 " Mappings
 nmap gcc :action CommentByLineComment<CR>
+nnoremap <Leader>a :action FindInPath<CR>
