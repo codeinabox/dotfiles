@@ -12,6 +12,7 @@
 	ignorecase = false
 	pager = less
 [alias]
+	amend-date = commit --amend --reset-author
 	ca = commit -a
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	pr = !git pull && git submodule update --init --recursive
