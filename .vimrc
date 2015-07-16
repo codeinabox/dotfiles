@@ -165,6 +165,12 @@ catch
 endtry
 " }}}
 
+" GUI options {{{
+if has("gui_running")
+	set guifont=Fira\ Mono:h12
+endif
+" }}}
+
 " File extensions {{{
 au BufNewFile,BufRead .bowerrc set filetype=json
 au BufNewFile,BufRead .jshintrc set filetype=json
