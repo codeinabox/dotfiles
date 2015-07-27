@@ -177,6 +177,7 @@ endif
 au BufNewFile,BufRead .bowerrc set filetype=json
 au BufNewFile,BufRead .jshintrc set filetype=json
 au BufNewFile,BufRead .envrc set filetype=conf
+au BufNewFile,BufRead composer.lock set filetype=json
 " }}}
 
 " Templates {{{
