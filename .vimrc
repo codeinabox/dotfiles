@@ -82,6 +82,7 @@ Plugin 'tpope/vim-projectionist'
 Plugin 'wincent/terminus'
 Plugin 'pangloss/vim-javascript'
 Plugin 'darfink/vim-plist'
+Plugin 'justmao945/vim-clang'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
