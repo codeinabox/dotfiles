@@ -18,7 +18,6 @@ Plugin 'kien/ctrlp.vim'
 	let g:ctrlp_custom_ignore = '\v[\/](bower_components|dist|node_modules|vendor)$'
 	let g:ctrlp_extensions = ['tag', 'buffertag']
 	let g:ctrlp_mruf_relative = 1
-	nnoremap <Leader>t :CtrlPTag<cr>
 	nnoremap <Leader>y :CtrlPBuffer<cr>
 	" }}}
 Plugin 'scrooloose/nerdtree'
@@ -87,6 +86,11 @@ Plugin 'benmills/vimux'
 Plugin 'janko-m/vim-test'
 	" vim-test {{{
 	let test#strategy = "vimux"
+	nnoremap <Leader>tf :TestFile<cr>
+	nnoremap <Leader>tl :TestLast<cr>
+	nnoremap <Leader>tn :TestNearest<cr>
+	nnoremap <Leader>ts :TestSuite<cr>
+	nnoremap <Leader>tv :TestVisit<cr>
 	" }}}
 
 " All of your Plugins must be added before the following line
