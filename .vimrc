@@ -168,7 +168,12 @@ set wildignore+=*/.git,*/.hg,*/.svn.,*/.tmp,*/.DS_Store,*/.idea,*/.project,*/.ta
 
 " Theme {{{
 set t_Co=256	" Enable 256 colours
-set background=light
+" Use VIM_BACKGROUND to set if it's dark or light
+if !empty($VIM_BACKGROUND)
+	let &background=$VIM_BACKGROUND
+else
+	set background=light
+endif
 try
     colorscheme hemisu
 catch
