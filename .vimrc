@@ -92,6 +92,7 @@ Plugin 'janko-m/vim-test'
 	nnoremap <Leader>ts :TestSuite<cr>
 	nnoremap <Leader>tv :TestVisit<cr>
 	" }}}
+Plugin 'Konfekt/FastFold'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
