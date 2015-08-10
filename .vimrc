@@ -9,8 +9,7 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'        " let Vundle manage Vundle, required
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'noahfrederick/vim-hemisu'
+Plugin 'flazz/vim-colorschemes'
 Plugin 'kien/ctrlp.vim'
 	" CtrlP {{{
 	let g:ctrlp_show_hidden=1
