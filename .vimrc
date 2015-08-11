@@ -10,11 +10,12 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'        " let Vundle manage Vundle, required
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'flazz/vim-colorschemes'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 	" CtrlP {{{
 	let g:ctrlp_show_hidden=1
+	let g:ctrlp_by_filename=1
 	let g:ctrlp_max_height=10
-	let g:ctrlp_custom_ignore = '\v[\/](bower_components|dist|node_modules|vendor)$'
+	let g:ctrlp_custom_ignore = '\v[\/](dist)$'
 	let g:ctrlp_extensions = ['tag', 'buffertag']
 	let g:ctrlp_mruf_relative = 1
 	nnoremap <Leader>y :CtrlPBuffer<cr>
