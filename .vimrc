@@ -38,8 +38,6 @@ Plugin 'scrooloose/syntastic'
 	" For CakePHP templates only use PHP checker
 	autocmd BufRead,BufNewFile *.ctp let b:syntastic_checkers = ["php"]
 	" }}}
-Plugin 'luochen1990/rainbow'
-	let g:rainbow_active = 1
 Plugin 'xolox/vim-misc'       " needed by easytags
 Plugin 'xolox/vim-easytags'
 Plugin 'airblade/vim-gitgutter'
