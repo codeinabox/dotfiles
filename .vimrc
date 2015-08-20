@@ -98,7 +98,7 @@ call vundle#end()
 
 " General settings {{{
 " {{{ Spell check
-setlocal nospell spelllang=en_gb
+setlocal nospell spelllang=en_gb spellfile=~/.vim/spell/en.utf-8.add
 autocmd FileType behat,cucumber,gitcommit,markdown,text setlocal spell
 map <F5> :setlocal spell!<CR>
 " }}}
