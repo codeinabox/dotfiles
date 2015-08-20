@@ -16,10 +16,11 @@ Plugin 'ctrlpvim/ctrlp.vim'
 	let g:ctrlp_by_filename=1
 	let g:ctrlp_max_height=10
 	let g:ctrlp_custom_ignore = '\v[\/](dist)$'
-	let g:ctrlp_extensions = ['tag', 'buffertag']
+	let g:ctrlp_extensions = ['tag', 'buffertag', 'modified']
 	let g:ctrlp_mruf_relative = 1
 	nnoremap <Leader>y :CtrlPBuffer<cr>
 	" }}}
+Plugin 'jasoncodes/ctrlp-modified.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'low-ghost/nerdtree-fugitive'
