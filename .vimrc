@@ -149,6 +149,9 @@ endif
 " Use system clipboard
 set clipboard+=unnamed
 
+" Redraw only when we need to
+set lazyredraw
+
 " No backup files
 set nobackup
 " No write backup
