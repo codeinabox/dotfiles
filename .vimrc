@@ -10,6 +10,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'        " let Vundle manage Vundle, required
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'gilgigilgil/anderson.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 	" CtrlP {{{
 	let g:ctrlp_show_hidden=1
@@ -175,10 +176,10 @@ set t_Co=256	" Enable 256 colours
 if !empty($VIM_BACKGROUND)
 	let &background=$VIM_BACKGROUND
 else
-	set background=light
+	set background=dark
 endif
 try
-    colorscheme hemisu
+    colorscheme anderson
 catch
     colorscheme default
 endtry
