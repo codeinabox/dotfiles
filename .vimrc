@@ -15,7 +15,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 	" CtrlP {{{
 	let g:ctrlp_show_hidden=1
 	let g:ctrlp_by_filename=1
-	let g:ctrlp_max_height=10
+	let g:ctrlp_match_window = 'max:10;results:100'
 	let g:ctrlp_custom_ignore = '\v[\/](dist)$'
 	let g:ctrlp_extensions = ['tag', 'buffertag', 'modified']
 	let g:ctrlp_mruf_relative = 1
