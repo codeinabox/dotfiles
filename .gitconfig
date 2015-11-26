@@ -41,3 +41,5 @@
 	cmd = pstorm diff "$LOCAL" "$REMOTE"
 [mergetool.pstorm]
 	cmd = pstorm merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
+[rebase]
+	autoStash = true
