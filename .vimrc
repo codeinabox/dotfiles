@@ -93,6 +93,7 @@ Plugin 'janko-m/vim-test'
 	nnoremap <Leader>tv :TestVisit<cr>
 	" }}}
 Plugin 'Konfekt/FastFold'
+Plugin 'mtth/scratch.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
