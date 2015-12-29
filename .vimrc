@@ -175,7 +175,7 @@ nnoremap <Leader>r :source ~/.vimrc<CR>
 command! Wq wq
 
 " Ignore these directories
-set wildignore+=*/.git,*/.hg,*/.svn.,*/.tmp,*/.DS_Store,*/.idea,*/.project,*/.tags
+set wildignore+=*/.git,*/.hg,*/.svn.,*/.tmp,*/.DS_Store,*/.idea,*/.project,*/.tags,*/app/cache,composer.phar
 " }}}
 
 " Theme {{{
