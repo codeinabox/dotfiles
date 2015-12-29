@@ -94,6 +94,13 @@ Plugin 'janko-m/vim-test'
 	" }}}
 Plugin 'Konfekt/FastFold'
 Plugin 'mtth/scratch.vim'
+Plugin 'SirVer/ultisnips'
+	" UltiSnips {{{
+	let g:UltiSnipsExpandTrigger="<s-tab>"
+	let g:UltiSnipsListSnippets="<c-d>"
+	let g:UltiSnipsJumpForwardTrigger="<s-tab>"
+	" }}}
+Plugin 'honza/vim-snippets'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
