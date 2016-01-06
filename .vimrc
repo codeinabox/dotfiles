@@ -17,7 +17,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 	let g:ctrlp_by_filename=1
 	let g:ctrlp_match_window = 'max:10;results:100'
 	let g:ctrlp_custom_ignore = '\v[\/](dist)$'
-	let g:ctrlp_extensions = ['tag', 'buffertag', 'modified']
+	let g:ctrlp_extensions = ['modified']
 	let g:ctrlp_mruf_relative = 1
 	nnoremap <Leader>y :CtrlPBuffer<cr>
 	" }}}
