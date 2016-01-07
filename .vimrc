@@ -85,6 +85,7 @@ Plugin 'justmao945/vim-clang'
 Plugin 'benmills/vimux'
 Plugin 'janko-m/vim-test'
 	" vim-test {{{
+	let g:test#runner_commands = ['Behat', 'PHPUnit']
 	let test#strategy = "vimux"
 	nnoremap <Leader>tf :TestFile<cr>
 	nnoremap <Leader>tl :TestLast<cr>
