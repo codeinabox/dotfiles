@@ -7,7 +7,14 @@ export HISTSIZE=10000
 export SAVEHIST=10000
 
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
-export EDITOR="vim"
+
+# set default editor to Neovim if present
+if which nvim &> /dev/null; then
+	export EDITOR="nvim"
+else
+	export EDITOR="vim"
+fi
+
 export VISUAL=$EDITOR
 
 export PAGER="vimpager"
