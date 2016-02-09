@@ -6,7 +6,6 @@
 [branch]
 	autosetuprebase = always
 [core]
-	editor = vim
 	excludesfile = ~/.gitignore_global
 	autocrlf = input
 	ignorecase = false
