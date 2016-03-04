@@ -1,3 +1,7 @@
+# Types
+--type-add=php:ext:ctp
+--type-set=template:ext:ctp,j2,html,mustache,spv,twig
+
 # IDEs
 --ignore-dir=nbproject
 --ignore-dir=.buildpath
