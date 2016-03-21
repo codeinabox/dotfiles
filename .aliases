@@ -2,7 +2,6 @@
 alias g="git"
 alias m="make"
 alias s="ssh"
-alias reload=". $HOME/.zshrc && echo 'ZSH config reloaded from $HOME/.zshrc'"
 alias ssh-pbcopy="cat $HOME/.ssh/id_rsa.pub | pbcopy; echo 'SSH key copied to clipboard'"
 alias vi="$EDITOR"
 alias vless="vimpager"

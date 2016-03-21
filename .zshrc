@@ -4,6 +4,9 @@ for file in $HOME/.{exports,aliases,functions,shell_extra}; do
 done;
 unset file;
 
+# Zsh specific aliases
+alias reload=". $HOME/.zshrc && echo 'ZSH config reloaded from $HOME/.zshrc'"
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
