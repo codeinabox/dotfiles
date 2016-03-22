@@ -24,6 +24,9 @@ export DOKKU_PATH="$HOME/.dokku"
 export GOPATH=$HOME/workspace/go
 export PATH=$PATH:$GOPATH/bin
 
+# enable colours in ls on OSX/BSD
+export CLICOLOR=1
+
 # set Vim background based on iTerm profile
 case "$ITERM_PROFILE" in
     Light) export VIM_BACKGROUND="light" ;;
