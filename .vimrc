@@ -43,6 +43,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'xolox/vim-misc'       " needed by easytags
 Plugin 'xolox/vim-easytags'
 Plugin 'airblade/vim-gitgutter'
+	let g:gitgutter_sign_column_always = 1
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'tmux-plugins/vim-tmux'
