@@ -40,6 +40,8 @@ Plugin 'scrooloose/syntastic'
 	let g:syntastic_php_phpmd_post_args = "cleancode,codesize,controversial,design,naming,unusedcode"
 	" For CakePHP templates only use PHP checker
 	autocmd BufRead,BufNewFile *.ctp let b:syntastic_checkers = ["php"]
+	" For PHPSpec only check PHP syntax
+	autocmd BufRead,BufNewFile *Spec.php let b:syntastic_checkers = ["php"]
 	" }}}
 Plugin 'xolox/vim-misc'       " needed by easytags
 Plugin 'xolox/vim-easytags'
@@ -88,7 +90,8 @@ Plugin 'justmao945/vim-clang'
 Plugin 'benmills/vimux'
 Plugin 'janko-m/vim-test'
 	" vim-test {{{
-	let g:test#runner_commands = ['Behat', 'PHPUnit']
+	let g:test#runner_commands = ['Behat', 'PHPSpec', 'PHPUnit']
+	let test#php#phpspec#options = '--no-code-generation'
 	let test#strategy = "vimux"
 	nnoremap <Leader>tf :TestFile<cr>
 	nnoremap <Leader>tl :TestLast<cr>
