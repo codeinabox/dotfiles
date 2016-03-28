@@ -9,6 +9,7 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'        " let Vundle manage Vundle, required
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'junegunn/vim-emoji'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'gilgigilgil/anderson.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -235,4 +236,31 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType c set omnifunc=ccomplete#Complete
+" }}}
+
+" Emoji {{{
+silent! if emoji#available()
+	" Syntastic
+	let g:syntastic_error_symbol = emoji#for('boom')
+	let g:syntastic_style_error_symbol = emoji#for('frowning')
+	let g:syntastic_warning_symbol = emoji#for('scream_cat')
+	let g:syntastic_style_warning_symbol = emoji#for('poop')
+	" Git gutter
+	let g:gitgutter_sign_added = emoji#for('hatching_chick')
+	let g:gitgutter_sign_modified = emoji#for('mushroom')
+	let g:gitgutter_sign_removed = emoji#for('skull')
+	let g:gitgutter_sign_modified_removed = emoji#for('cloud')
+	" NERDTree Git
+	let g:NERDTreeIndicatorMapCustom = {
+		\ "Modified"  : emoji#for('mushroom'),
+		\ "Staged"    : emoji#for('outbox_tray'),
+		\ "Untracked" : emoji#for('alien'),
+		\ "Renamed"   : emoji#for('arrow_forward'),
+		\ "Unmerged"  : emoji#for('stuck_out_tongue'),
+		\ "Deleted"   : emoji#for('skull'),
+		\ "Dirty"     : emoji#for('cloud'),
+		\ "Clean"     : emoji#for('sunny'),
+		\ "Unknown"   : emoji#for('fearful')
+		\ }
+endif
 " }}}
