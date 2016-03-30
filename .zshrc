@@ -12,6 +12,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# iTerm2 integration
+if [ -f "${HOME}/.iterm2_shell_integration.zsh" ]; then
+	source "${HOME}/.iterm2_shell_integration.zsh"
+fi
+
 # Symfony2 console completion script
 source ~/.sfconsole/console_completion.sh
 
