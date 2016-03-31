@@ -1,13 +1,16 @@
-# Types
+# Types {{{
 --type-add=php:ext:ctp
 --type-set=template:ext:ctp,j2,html,mustache,spv,twig
+# }}}
 
-# IDEs
+# Ignore {{{
 --ignore-dir=nbproject
 --ignore-dir=.buildpath
 --ignore-dir=.metadata
 --ignore-dir=.project
 --ignore-dir=.settings
 --ignore-dir=.idea
+--ignore-dir=app/cache
 
 --ignore-file=match:/^\.tags$/
+# }}}
