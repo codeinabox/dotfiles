@@ -54,6 +54,23 @@ Plugin 'Z1MM32M4N/vim-superman'
 Plugin 'rkitover/vimpager'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'majutsushi/tagbar'
+	" Tagbar {{{
+	nmap <F8> :TagbarToggle<CR>
+	let g:tagbar_type_make = {
+		\ 'kinds':[
+			\ 'm:macros',
+			\ 't:targets'
+		\ ]
+	\}
+	let g:tagbar_type_markdown = {
+		\ 'ctagstype' : 'markdown',
+		\ 'kinds' : [
+			\ 'h:Heading_L1',
+			\ 'i:Heading_L2',
+			\ 'k:Heading_L3'
+		\ ]
+	\ }
+	" }}}
 Plugin 'vim-php/tagbar-phpctags.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'chase/vim-ansible-yaml'
