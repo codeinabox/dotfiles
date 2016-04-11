@@ -1,0 +1,17 @@
+# Enable vi like bindings
+set editing-mode vi
+
+# Keymaps in command mode
+set keymap vi-command
+
+# Perform filename completion in a case-insensitive fashion
+set completion-ignore-case on
+
+# Display all possible matches for an ambiguous pattern at the first <Tab> press instead of at the second
+set show-all-if-ambiguous on
+
+# Treat hyphens and underscores as equivalent during filename matching completion
+set completion-map-case on
+
+# Tab key to cycle completions one at a time
+TAB: menu-complete
