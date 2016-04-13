@@ -20,6 +20,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 	let g:ctrlp_custom_ignore = '\v[\/](dist)$'
 	let g:ctrlp_extensions = ['modified']
 	let g:ctrlp_mruf_relative = 1
+	let g:ctrlp_mruf_exclude = '.git/.*'
 	nnoremap <Leader>y :CtrlPBuffer<cr>
 	" }}}
 Plugin 'jasoncodes/ctrlp-modified.vim'
