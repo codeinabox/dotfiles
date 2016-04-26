@@ -8,6 +8,7 @@ alias vless="vimpager"
 alias dokku="ssh dokku@$DOKKU_LOCAL_HOST"
 alias dokku-vagrant="cd $DOKKU_PATH; vagrant"
 alias get-composer="curl -sS https://getcomposer.org/installer | php"
+alias simple-http="python -m SimpleHTTPServer"
 
 # Hub aliased as git
 eval "$(hub alias -s)"
