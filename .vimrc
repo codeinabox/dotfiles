@@ -126,6 +126,7 @@ Plugin 'SirVer/ultisnips'
 	let g:UltiSnipsListSnippets="<c-d>"
 	let g:UltiSnipsJumpForwardTrigger="<s-tab>"
 	autocmd BufRead,BufNewFile,BufEnter *Test.php UltiSnipsAddFiletypes php-phpunit
+	autocmd BufRead,BufNewFile,BufEnter *Spec.php UltiSnipsAddFiletypes php-phpspec
 	" }}}
 Plugin 'honza/vim-snippets'
 
