@@ -3,8 +3,8 @@ set nocompatible              " be iMproved, required
 " Plugins {{{
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=$HOME/.vim/bundle/Vundle.vim
+" set the runtime path to include Vundle, custom snippets and initialise
+set rtp+=$HOME/.vim/bundle/Vundle.vim,$HOME/.vim/snippets/
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'        " let Vundle manage Vundle, required

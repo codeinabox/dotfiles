@@ -1,0 +1,12 @@
+snippet ctm "Cuts the mustard - if ('querySelector' in document ...) { ... }"
+if ('querySelector' in document && 'addEventListener' in window && 'localStorage' in window) {
+	// Browser cuts the mustard and hence is modern
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet domcontentloaded "document.addEventListener('DOMContentLoaded', function() { ... }"
+document.addEventListener('DOMContentLoaded', function(event) {
+	${0:${VISUAL}}
+});
+endsnippet
