@@ -23,6 +23,7 @@
 	rs = rebase --skip
 	ri = rebase --interactive
 	s = status -s
+	sync-fork = !git fetch upstream && git checkout master && git merge upstream/master
 	unstage = reset HEAD --
 	undo = reset --soft HEAD~1
 [credential]
