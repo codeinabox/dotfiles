@@ -122,9 +122,7 @@ Plugin 'mtth/scratch.vim'
 Plugin 'SirVer/ultisnips'
 	" UltiSnips {{{
 	let g:snips_author=$AUTHOR
-	let g:UltiSnipsExpandTrigger="<s-tab>"
 	let g:UltiSnipsListSnippets="<c-d>"
-	let g:UltiSnipsJumpForwardTrigger="<s-tab>"
 	autocmd BufRead,BufNewFile,BufEnter *Test.php UltiSnipsAddFiletypes php-phpunit
 	autocmd BufRead,BufNewFile,BufEnter *Spec.php UltiSnipsAddFiletypes php-phpspec
 	" }}}
