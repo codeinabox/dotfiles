@@ -263,7 +263,7 @@ autocmd FileType c set omnifunc=ccomplete#Complete
 " }}}
 
 " Emoji {{{
-silent! if emoji#available()
+if has('mac')
 	" Syntastic
 	let g:syntastic_error_symbol = emoji#for('boom')
 	let g:syntastic_style_error_symbol = emoji#for('frowning')
