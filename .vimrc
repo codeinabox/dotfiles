@@ -139,6 +139,8 @@ call vundle#end()
 setlocal nospell spelllang=en_gb spellfile=~/.vim/spell/en.utf-8.add
 autocmd FileType behat,cucumber,gitcommit,markdown,text setlocal spell
 map <F5> :setlocal spell!<CR>
+" Auto-complete with dictionary words when spell check is on
+set complete+=kspell
 " }}}
 
 " Turn on line numbers
