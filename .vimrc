@@ -85,6 +85,11 @@ Plugin 'ervandew/supertab'
 	let g:SuperTabContextTextOmniPrecedence = ['&omnifunc', '&completefunc']
 	let g:SuperTabContextDiscoverDiscovery = ["&omnifunc:<c-x><c-o>", "&completefunc:<c-x><c-u>"]
 	let g:SuperTabClosePreviewOnPopupClose = 1
+	" Fall back to keyword completion if omnifunc not set
+	autocmd FileType * 
+		\if &omnifunc == '' |
+		\let b:SuperTabContextDefaultCompletionType = "<c-n>"|
+		\endif
 	" }}}
 Plugin 'plasticboy/vim-markdown'
 Plugin 'shawncplus/phpcomplete.vim'
