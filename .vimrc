@@ -57,6 +57,13 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'majutsushi/tagbar'
 	" Tagbar {{{
 	nmap <F8> :TagbarToggle<CR>
+	let g:tagbar_type_ansible = {
+		\ 'ctagstype' : 'ansible',
+		\ 'kinds' : [
+			\ 't:tasks'
+		\ ],
+		\ 'sort' : 0
+	\ }
 	let g:tagbar_type_make = {
 		\ 'kinds':[
 			\ 'm:macros',
