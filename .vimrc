@@ -210,8 +210,11 @@ nnoremap <Leader>r :source ~/.vimrc<CR>
 " Alias Wq to wq for all those times I accidentally type it
 command! Wq wq
 
-" Ignore these directories
-set wildignore+=*/.git,*/.hg,*/.svn.,*/.tmp,*/.DS_Store,*/.idea,*/.project,*/.tags,*/app/cache,composer.phar
+" Ignore these files and directories
+set wildignore+=*/.git,*/.hg,*/.svn,*/.tmp,*/.DS_Store,*/.tags
+set wildignore+=*.phar,*.o,*.obj,*.exe,*.dll,*.manifest " compiled and binary files
+set wildignore+=*/.idea,*/.project,*/nbproject " other IDEs
+set wildignore+=*/app/cache,*/.sass-cache " project caches
 " }}}
 
 " Theme {{{
