@@ -245,12 +245,6 @@ if has("gui_running")
 endif
 " }}}
 
-" Neovim options {{{
-if has("nvim")
-	let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
-endif
-" }}}
-
 " File extensions {{{
 au BufNewFile,BufRead .bowerrc set filetype=json
 au BufNewFile,BufRead .jshintrc set filetype=json
