@@ -19,9 +19,10 @@
 	pr = !git pull && git submodule update --init --recursive
 	pmerge = mergetool -t pstorm
 	rb = rebase
-	rc = rebase --continue
-	rs = rebase --skip
-	ri = rebase --interactive
+	rba = rebase --abort
+	rbc = rebase --continue
+	rbs = rebase --skip
+	rbi = rebase --interactive
 	s = status -s
 	sync-fork = !git fetch upstream && git checkout master && git merge upstream/master
 	unstage = reset HEAD --
