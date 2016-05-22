@@ -51,8 +51,6 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'tmux-plugins/vim-tmux'
-Plugin 'Z1MM32M4N/vim-superman'
-Plugin 'rkitover/vimpager'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'majutsushi/tagbar'
 	" Tagbar {{{
@@ -192,10 +190,8 @@ set foldlevelstart=1
 " Autoread
 set autoread
 
-" Enable mouse support, except in vimpager
-if !exists("vimpager")
+" Enable mouse support
 set mouse=a
-endif
 
 " Use system clipboard
 set clipboard+=unnamed

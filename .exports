@@ -17,7 +17,8 @@ fi
 
 export VISUAL=$EDITOR
 
-export PAGER="vimpager"
+# use Vim to read man pages
+export MANPAGER="col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -"
 
 export DOKKU_PATH="$HOME/.dokku"
 
