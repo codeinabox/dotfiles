@@ -241,10 +241,10 @@ endif
 " }}}
 
 " File extensions {{{
-au BufNewFile,BufRead .bowerrc set filetype=json
-au BufNewFile,BufRead .jshintrc set filetype=json
-au BufNewFile,BufRead .envrc set filetype=conf
-au BufNewFile,BufRead composer.lock set filetype=json
+au BufNewFile,BufRead .bowerrc setlocal filetype=json
+au BufNewFile,BufRead .jshintrc setlocal filetype=json
+au BufNewFile,BufRead .envrc setlocal filetype=conf
+au BufNewFile,BufRead composer.lock setlocal filetype=json
 " }}}
 
 " Templates {{{
@@ -258,12 +258,12 @@ let g:easytags_async = 1
 " }}}
 
 " Omni completion {{{
-autocmd FileType python set omnifunc=pythoncomplete#Complete
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
-autocmd FileType c set omnifunc=ccomplete#Complete
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+autocmd FileType c setlocal omnifunc=ccomplete#Complete
 " }}}
 
 " Emoji {{{
