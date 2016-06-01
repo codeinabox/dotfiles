@@ -27,8 +27,10 @@ Plugin 'jasoncodes/ctrlp-modified.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'low-ghost/nerdtree-fugitive'
+Plugin 'svenwin/vim-splitted-nerdtree'
 	" NERDTree {{{
-	map <C-n> :NERDTreeToggle<CR>   " Set ctrl-n shortcut
+	" Open tree in current buffer / split
+	nmap - :call splittednerdtree#revealFile()<CR>
 	let NERDTreeShowHidden=1
 	let NERDTreeRespectWildIgnore=1
 	" }}}
