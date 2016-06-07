@@ -241,6 +241,7 @@ endif
 " }}}
 
 " File extensions {{{
+au BufNewFile,BufRead *.ctp setlocal filetype=html.php
 au BufNewFile,BufRead .bowerrc setlocal filetype=json
 au BufNewFile,BufRead .jshintrc setlocal filetype=json
 au BufNewFile,BufRead .envrc setlocal filetype=conf
