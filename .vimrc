@@ -136,6 +136,7 @@ Plugin 'SirVer/ultisnips'
 	autocmd BufRead,BufNewFile,BufEnter *Spec.php UltiSnipsAddFiletypes php-phpspec
 	" }}}
 Plugin 'honza/vim-snippets'
+Plugin 'kylef/apiblueprint.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
