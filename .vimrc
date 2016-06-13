@@ -210,6 +210,10 @@ set noswapfile
 " Shortcut to reload .vimrc
 nnoremap <Leader>r :source ~/.vimrc<CR>
 
+" Splits based on Tmux keys
+nnoremap <Leader>" :split<CR>
+nnoremap <Leader>% :vsplit<CR>
+
 " Alias Wq to wq for all those times I accidentally type it
 command! Wq wq
 
