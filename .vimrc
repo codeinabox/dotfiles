@@ -55,7 +55,8 @@ Plugin 'tmux-plugins/vim-tmux'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'majutsushi/tagbar'
 	" Tagbar {{{
-	nmap <F8> :TagbarToggle<CR>
+	nmap <Leader>tbt :TagbarToggle<CR>
+	nmap <Leader>tbp :TagbarTogglePause<CR>
 	let g:tagbar_type_ansible = {
 		\ 'ctagstype' : 'ansible',
 		\ 'kinds' : [
