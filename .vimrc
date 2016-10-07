@@ -121,6 +121,7 @@ Plugin 'janko-m/vim-test'
 	" vim-test {{{
 	let g:test#runner_commands = ['Behat', 'PHPSpec', 'PHPUnit']
 	let test#php#phpspec#options = '--no-code-generation'
+	let test#php#phpunit#options = '--no-coverage'
 	let test#strategy = "vimux"
 	nnoremap <Leader>tf :TestFile<cr>
 	nnoremap <Leader>tl :TestLast<cr>
