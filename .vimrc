@@ -139,6 +139,7 @@ Plugin 'SirVer/ultisnips'
 	" }}}
 Plugin 'honza/vim-snippets'
 Plugin 'kylef/apiblueprint.vim'
+Plugin 'mustache/vim-mustache-handlebars'
 if exists('*PluginExtra')
 	call PluginExtra()
 endif
@@ -252,6 +253,7 @@ endif
 
 " File extensions {{{
 au BufNewFile,BufRead *.ctp setlocal filetype=html.php
+au BufNewFile,BufRead *.hbt setlocal filetype=html.handlebars
 au BufNewFile,BufRead .bowerrc setlocal filetype=json
 au BufNewFile,BufRead .jshintrc setlocal filetype=json
 au BufNewFile,BufRead .envrc setlocal filetype=conf
