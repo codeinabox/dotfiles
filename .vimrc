@@ -108,7 +108,6 @@ Plugin 'mileszs/ack.vim'
 	let g:ackhighlight = 1
 	let g:ack_autofold_results = 1
 	" }}}
-Plugin 'gregsexton/gitv'
 Plugin 'voronkovich/ctrlp-symfony2.vim'
 Plugin 'BufOnly.vim'
 Plugin 'fatih/vim-go'
