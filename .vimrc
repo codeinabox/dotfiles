@@ -45,6 +45,7 @@ Plugin 'scrooloose/syntastic'
 	" For PHPSpec only check PHP syntax
 	autocmd BufRead,BufNewFile *Spec.php let b:syntastic_checkers = ["php"]
 	" }}}
+Plugin 'mtscout6/syntastic-local-eslint.vim'
 Plugin 'xolox/vim-misc'       " needed by easytags
 Plugin 'xolox/vim-easytags'
 Plugin 'airblade/vim-gitgutter'
@@ -114,6 +115,7 @@ Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-projectionist'
 Plugin 'wincent/terminus'
 Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 Plugin 'justmao945/vim-clang'
 Plugin 'benmills/vimux'
 Plugin 'janko-m/vim-test'
