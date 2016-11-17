@@ -219,6 +219,8 @@ nnoremap <Leader>r :source ~/.vimrc<CR>
 nnoremap <Leader>" :split<CR>
 nnoremap <Leader>% :vsplit<CR>
 
+nnoremap <Leader>w :update<CR>
+
 " Alias Wq to wq for all those times I accidentally type it
 command! Wq wq
 
