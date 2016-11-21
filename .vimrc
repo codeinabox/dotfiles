@@ -86,6 +86,7 @@ Plugin 'chase/vim-ansible-yaml'
 Plugin 'tpope/vim-obsession'
 Plugin 'elzr/vim-json'
 Plugin 'sheerun/vim-polyglot'
+	let g:jsx_ext_required = 1
 Plugin 'ervandew/supertab'
 	" SuperTab {{{
 	let g:SuperTabDefaultCompletionType = "context"
@@ -115,7 +116,6 @@ Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-projectionist'
 Plugin 'wincent/terminus'
 Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
 Plugin 'justmao945/vim-clang'
 Plugin 'benmills/vimux'
 Plugin 'janko-m/vim-test'
