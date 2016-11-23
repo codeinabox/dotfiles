@@ -4,6 +4,7 @@
 npm-debug.log
 .envrc
 .tags
+.tern-port
 
 # IDEs
 nbproject
