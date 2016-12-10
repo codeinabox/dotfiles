@@ -191,9 +191,9 @@ set ignorecase
 set smartcase
 
 " Folding
-setlocal foldmethod=syntax
+set foldmethod=syntax
 autocmd FileType ansible,conf,sh,tmux,zsh,vim setlocal foldmethod=marker
-set foldlevelstart=1
+set foldlevelstart=7
 
 " Autoread
 set autoread
