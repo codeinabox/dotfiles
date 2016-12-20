@@ -87,6 +87,7 @@ Plugin 'tpope/vim-obsession'
 Plugin 'elzr/vim-json'
 Plugin 'sheerun/vim-polyglot'
 	let g:jsx_ext_required = 1
+Plugin 'ap/vim-css-color'
 Plugin 'ervandew/supertab'
 	" SuperTab {{{
 	let g:SuperTabDefaultCompletionType = "context"
