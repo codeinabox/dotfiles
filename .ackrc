@@ -1,5 +1,7 @@
 # Types {{{
 --type-add=php:ext:ctp
+--type-add=js:ext:jsx
+--type-set=jsx:ext:jsx
 --type-set=template:ext:ctp,j2,html,mustache,spv,twig
 # }}}
 
