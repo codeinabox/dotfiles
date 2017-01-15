@@ -33,4 +33,6 @@ PS1='\[\e[32m\]\w\[\e[31m\]$(__git_ps1)\[\e[39m\]\$ '
 alias reload=". $HOME/.bashrc && echo 'Bash config reloaded from $HOME/.bashrc'"
 
 # Lastly the direnv hook
-eval "$(direnv hook bash)"
+if type direnv > /dev/null; then
+	eval "$(direnv hook bash)"
+fi
