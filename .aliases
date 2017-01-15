@@ -9,6 +9,6 @@ alias get-composer="curl -sS https://getcomposer.org/installer | php"
 alias simple-http="python -m SimpleHTTPServer"
 
 # Hub aliased as git
-if type hub > /dev/null; then
+if type hub &> /dev/null; then
 	eval "$(hub alias -s)"
 fi

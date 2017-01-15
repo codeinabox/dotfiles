@@ -21,4 +21,6 @@ fi
 source ~/.sfconsole/console_completion.sh
 
 # Lastly the direnv hook
-eval "$(direnv hook zsh)"
+if type direnv &> /dev/null; then
+	eval "$(direnv hook bash)"
+fi
