@@ -115,6 +115,33 @@ Plugin 'voronkovich/ctrlp-symfony2.vim'
 Plugin 'BufOnly.vim'
 Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-projectionist'
+	" vim-projectionist {{{
+	let g:projectionist_heuristics = {
+		\   "README.md": {
+		\     "README.md": {"type": "doc"},
+		\   },
+		\   "composer.json": {
+		\     "composer.json": {"type": "pkg"},
+		\     "src/*.php": {"type": "src"},
+		\     "spec/*Spec.php": {"type": "spec", "alternate": "src/{}.php"},
+		\     "tests/*Test.php": {"type": "test", "alternate": "src/{}.php"}
+		\   },
+		\   "package.json": {
+		\     "package.json": {"type": "pkg"},
+		\     "src/*.js": {"type": "src", "alternate": "tests/{}-test.js"},
+		\     "tests/*-test.js": {"type": "test", "alternate": "src/{}.js"}
+		\   },
+		\   "*.go": {
+		\     "*.go": {"type": "src", "alternate": "{}_test.go"},
+		\     "*_test.go": {"type": "test", "alternate": "{}.go"}
+		\   },
+		\   "ansible/": {
+		\     "ansible/playbook.yml": {"type": "playbook"},
+		\     "ansible/roles/*/defaults/main.yml": {"type": "defaults", "alternate": "ansible/roles/{}/tasks/main.yml"},
+		\     "ansible/roles/*/tasks/main.yml": {"type": "task", "alternate": "ansible/roles/{}/defaults/main.yml"}
+		\   }
+		\ }
+	" }}}
 Plugin 'wincent/terminus'
 Plugin 'pangloss/vim-javascript'
 Plugin 'justmao945/vim-clang'
