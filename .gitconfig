@@ -12,6 +12,8 @@
 	pager = less
 [alias]
 	amend-date = commit --amend --reset-author
+	bip = branch -a --no-merged
+	bm = branch -m
 	ca = commit -a
 	co = checkout
 	cob = checkout -b
