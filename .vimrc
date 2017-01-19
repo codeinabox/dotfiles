@@ -313,7 +313,7 @@ autocmd FileType c setlocal omnifunc=ccomplete#Complete
 " }}}
 
 " Emoji {{{
-if has('mac')
+if has('mac') && !has('nvim')
 	" Syntastic
 	let g:syntastic_error_symbol = emoji#for('boom')
 	let g:syntastic_style_error_symbol = emoji#for('frowning')
