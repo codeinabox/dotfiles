@@ -129,7 +129,9 @@ Plugin 'tpope/vim-projectionist'
 		\   "package.json": {
 		\     "package.json": {"type": "pkg"},
 		\     "src/*.js": {"type": "src", "alternate": "tests/{}-test.js"},
-		\     "tests/*-test.js": {"type": "test", "alternate": "src/{}.js"}
+		\     "tests/*-test.js": {"type": "test", "alternate": "src/{}.js"},
+		\     "src/*.jsx": {"type": "src", "alternate": "tests/{}-test.jsx"},
+		\     "tests/*-test.jsx": {"type": "test", "alternate": "src/{}.jsx"}
 		\   },
 		\   "*.go": {
 		\     "*.go": {"type": "src", "alternate": "{}_test.go"},
