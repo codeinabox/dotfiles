@@ -146,6 +146,7 @@ Plugin 'tpope/vim-projectionist'
 	" }}}
 Plugin 'wincent/terminus'
 Plugin 'pangloss/vim-javascript'
+	let g:javascript_plugin_jsdoc = 1
 Plugin 'justmao945/vim-clang'
 Plugin 'benmills/vimux'
 Plugin 'janko-m/vim-test'
