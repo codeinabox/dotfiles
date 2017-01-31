@@ -6,12 +6,17 @@ snippet ctm "Cuts the mustard - if ('querySelector' in document ...) { ... }"
 snippet domloaded "document.addEventListener('DOMContentLoaded', function() { ... }"
 	document.addEventListener('DOMContentLoaded', function(event) {
 		${0:${VISUAL}}
-	});
+	})
 snippet tbind "this.func = this.func.bind(this)"
-	this.${1:func} = this.$1.bind(this);
+	this.${1:func} = this.$1.bind(this)
 snippet pra "Promise.all([p1, p2]).then((values) => { .. })"
 	Promise.all([${1}]).then((${2:values}) => {
 		${0:${VISUAL}}
-	});
+	})
 snippet env "process.env.XYZ"
 	process.env.${1:XYZ}
+snippet clog "console.log(xyz)"
+	console.log(${1:XYZ})
+snippet dyest "new Date() for yesterday"
+	const ${1:yesterday} = new Date();
+	$1.setDate($1.getDate() - 1)
