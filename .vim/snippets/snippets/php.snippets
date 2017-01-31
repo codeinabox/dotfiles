@@ -2,3 +2,28 @@ snippet ddump "\Doctrine\Common\Util\Debug::dump($obj)"
 	\Doctrine\Common\Util\Debug::dump($${1:obj});
 snippet env "getenv('XYZ')"
 	getenv('${1:XYZ}')
+snippet varpri ""
+	/** @var ${1:type} */
+	private $${2:$1};
+snippet varprp ""
+	/** @var ${1:type} */
+	protected $${2:$1};
+snippet const "const CONSTANT = 'constant value'"
+	const ${1:CONSTANT} = ${2:'constant value'};
+snippet mmock "$mock = \Mockery::mock(SomeClass::class);"
+	$${1:mock} = \Mockery::mock(${2:SomeClass}::class);
+snippet mspy "$spy = \Mockery::spy(SomeClass::class);"
+	$${1:spy} = \Mockery::spy(${2:SomeClass}::class);
+snippet mon "\Mockery::on(function ($data) { ... });"
+	\Mockery::on(function ($${1:data}) {
+		${0}
+		return true;
+	});
+snippet dim "new \DateInterval('PT60M')"
+	new \DateInterval('PT${1:15}M')
+snippet ddsds "new \DateTime('+15 minutes')"
+	new \DateTime('+${1:15} minutes')
+snippet xml "<<<XML ... XML"
+	<<<XML
+	${0:${VISUAL}}
+	XML;
