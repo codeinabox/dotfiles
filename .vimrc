@@ -147,6 +147,11 @@ Plugin 'tpope/vim-projectionist'
 Plugin 'wincent/terminus'
 Plugin 'pangloss/vim-javascript'
 	let g:javascript_plugin_jsdoc = 1
+Plugin 'heavenshell/vim-jsdoc'
+	" vim-jsdoc {{{
+	let g:jsdoc_allow_input_prompt = 1
+	let g:jsdoc_enable_es6 = 1
+	" }}}
 Plugin 'justmao945/vim-clang'
 Plugin 'benmills/vimux'
 Plugin 'janko-m/vim-test'
