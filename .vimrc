@@ -173,9 +173,13 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'kylef/apiblueprint.vim'
 Plugin 'mustache/vim-mustache-handlebars'
-if exists('*PluginExtra')
-	call PluginExtra()
+" Neovim specific plugins {{{
+if has('nvim')
+	Plugin 'Shougo/deoplete.nvim'
+		let g:deoplete#enable_at_startup = 1
+	Plugin 'carlitux/deoplete-ternjs'
 endif
+" }}}
 
 " All of your Plugins must be added before the following line
 call vundle#end()

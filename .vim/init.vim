@@ -1,9 +1,3 @@
-function PluginExtra()
-	Plugin 'Shougo/deoplete.nvim'
-		let g:deoplete#enable_at_startup = 1
-	Plugin 'carlitux/deoplete-ternjs'
-endfunction
-
 " Neovim configuration to extend .vimrc
 source ~/.vimrc
 
