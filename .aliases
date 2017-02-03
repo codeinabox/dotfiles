@@ -7,7 +7,7 @@ alias dokku="ssh dokku@$DOKKU_LOCAL_HOST"
 alias dokku-vagrant="cd $DOKKU_PATH; vagrant"
 alias get-composer="curl -sS https://getcomposer.org/installer | php"
 alias simple-http="python -m SimpleHTTPServer"
-alias tm="tmux attach || tmux"
+alias tm="tmux attach || tmux new -c ~/workspace -s workspace"
 
 # Hub aliased as git
 if type hub &> /dev/null; then
