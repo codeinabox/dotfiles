@@ -33,19 +33,15 @@ Plugin 'svenwin/vim-splitted-nerdtree'
 	let NERDTreeShowHidden=1
 	let NERDTreeRespectWildIgnore=1
 	" }}}
-Plugin 'scrooloose/syntastic'
-	" Syntastic {{{
-	let g:syntastic_check_on_open = 1
-	let g:syntastic_check_on_wq = 0
-	let g:syntastic_c_include_dirs = ["/usr/local/Cellar/pebble-sdk/3.1/Pebble/basalt/include"]
-	let g:syntastic_php_phpcs_args = "--standard=PSR2"
-	let g:syntastic_php_phpmd_post_args = "cleancode,codesize,controversial,design,naming,unusedcode"
-	" For CakePHP templates only use PHP checker
-	autocmd BufRead,BufNewFile *.ctp let b:syntastic_checkers = ["php"]
-	" For PHPSpec only check PHP syntax
-	autocmd BufRead,BufNewFile *Spec.php let b:syntastic_checkers = ["php"]
+Plugin 'neomake/neomake'
+	" Neomake {{{
+	let g:neomake_css_enabled_makers = []
+	let g:neomake_javascript_enabled_makers = ["eslint"]
+	let g:neomake_jsx_enabled_makers = ["eslint"]
+	" Run Neomake whenever we enter or write a buffer
+	autocmd BufWritePost,BufWinEnter * silent Neomake
 	" }}}
-Plugin 'mtscout6/syntastic-local-eslint.vim'
+Plugin 'benjie/neomake-local-eslint.vim'
 Plugin 'xolox/vim-misc'       " needed by easytags
 Plugin 'xolox/vim-easytags'
 Plugin 'airblade/vim-gitgutter'
@@ -320,11 +316,6 @@ autocmd FileType c setlocal omnifunc=ccomplete#Complete
 
 " Emoji {{{
 if has('mac') && !has('nvim')
-	" Syntastic
-	let g:syntastic_error_symbol = emoji#for('boom')
-	let g:syntastic_style_error_symbol = emoji#for('frowning')
-	let g:syntastic_warning_symbol = emoji#for('scream_cat')
-	let g:syntastic_style_warning_symbol = emoji#for('poop')
 	" Git gutter
 	let g:gitgutter_sign_added = emoji#for('hatching_chick')
 	let g:gitgutter_sign_modified = emoji#for('mushroom')
