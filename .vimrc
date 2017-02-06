@@ -265,7 +265,7 @@ command! Wq wq
 " Ignore these files and directories
 set wildignore+=*/.git,*/.hg,*/.svn,*/.tmp,*/.DS_Store,*/.tags
 set wildignore+=*.phar,*.o,*.obj,*.exe,*.dll,*.manifest " compiled and binary files
-set wildignore+=*/.idea,*/.project,*/nbproject " other IDEs
+set wildignore+=*/.idea,*/.project,*/nbproject,*/.tern-port " other IDEs
 set wildignore+=*/app/cache,*/.sass-cache " project caches
 " }}}
 
