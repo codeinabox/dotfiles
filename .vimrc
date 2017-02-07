@@ -42,13 +42,10 @@ Plugin 'neomake/neomake'
 	autocmd BufWritePost,BufWinEnter * silent Neomake
 	" }}}
 Plugin 'benjie/neomake-local-eslint.vim'
-Plugin 'xolox/vim-misc'       " needed by easytags
-Plugin 'xolox/vim-easytags'
 Plugin 'airblade/vim-gitgutter'
 	let g:gitgutter_sign_column_always = 1
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
-Plugin 'tmux-plugins/vim-tmux'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'majutsushi/tagbar'
 	" Tagbar {{{
@@ -79,9 +76,9 @@ Plugin 'majutsushi/tagbar'
 Plugin 'vim-php/tagbar-phpctags.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'chase/vim-ansible-yaml'
-Plugin 'elzr/vim-json'
 Plugin 'sheerun/vim-polyglot'
 	let g:jsx_ext_required = 1
+	let g:javascript_plugin_jsdoc = 1
 Plugin 'ap/vim-css-color'
 Plugin 'ervandew/supertab'
 	" SuperTab {{{
@@ -96,7 +93,6 @@ Plugin 'ervandew/supertab'
 		\let b:SuperTabContextDefaultCompletionType = "<c-n>"|
 		\endif
 	" }}}
-Plugin 'plasticboy/vim-markdown'
 Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'christoomey/vim-tmux-navigator'
@@ -139,15 +135,11 @@ Plugin 'tpope/vim-projectionist'
 		\   }
 		\ }
 	" }}}
-Plugin 'wincent/terminus'
-Plugin 'pangloss/vim-javascript'
-	let g:javascript_plugin_jsdoc = 1
 Plugin 'heavenshell/vim-jsdoc'
 	" vim-jsdoc {{{
 	let g:jsdoc_allow_input_prompt = 1
 	let g:jsdoc_enable_es6 = 1
 	" }}}
-Plugin 'justmao945/vim-clang'
 Plugin 'benmills/vimux'
 Plugin 'janko-m/vim-test'
 	" vim-test {{{
@@ -161,7 +153,6 @@ Plugin 'janko-m/vim-test'
 	nnoremap <Leader>ts :TestSuite<cr>
 	nnoremap <Leader>tv :TestVisit<cr>
 	" }}}
-Plugin 'Konfekt/FastFold'
 Plugin 'mtth/scratch.vim'
 Plugin 'SirVer/ultisnips'
 	" UltiSnips {{{
@@ -171,7 +162,6 @@ Plugin 'SirVer/ultisnips'
 	" }}}
 Plugin 'honza/vim-snippets'
 Plugin 'kylef/apiblueprint.vim'
-Plugin 'mustache/vim-mustache-handlebars'
 " Neovim specific plugins {{{
 if has('nvim')
 	Plugin 'Shougo/deoplete.nvim'
@@ -304,8 +294,6 @@ autocmd BufNewFile .editorconfig 0r $HOME/.vim/templates/editorconfig
 
 " Tags {{{
 set tags=./.tags;,~/.vimtags
-let g:easytags_dynamic_files = 2
-let g:easytags_async = 1
 " }}}
 
 " Omni completion {{{
