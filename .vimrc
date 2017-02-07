@@ -79,7 +79,6 @@ Plugin 'majutsushi/tagbar'
 Plugin 'vim-php/tagbar-phpctags.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'chase/vim-ansible-yaml'
-Plugin 'tpope/vim-obsession'
 Plugin 'elzr/vim-json'
 Plugin 'sheerun/vim-polyglot'
 	let g:jsx_ext_required = 1
