@@ -1,0 +1,15 @@
+snippet ctm "Cuts the mustard - if ('querySelector' in document ...) { ... }"
+	if ('querySelector' in document && 'addEventListener' in window && 'localStorage' in window) {
+		// Browser cuts the mustard and hence is modern
+		${0:${VISUAL}}
+	}
+snippet domloaded "document.addEventListener('DOMContentLoaded', function() { ... }"
+	document.addEventListener('DOMContentLoaded', function(event) {
+		${0:${VISUAL}}
+	});
+snippet tbind "this.func = this.func.bind(this)"
+	this.${1:func} = this.$1.bind(this);
+snippet pra "Promise.all([p1, p2]).then((values) => { .. })"
+	Promise.all([${1}]).then((${2:values}) => {
+		${0:${VISUAL}}
+	});

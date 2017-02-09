@@ -1,0 +1,12 @@
+snippet imrb "import { ... } from 'react-bootstrap'"
+	import { ${0} } from 'react-bootstrap';
+snippet rp "prop: React.PropTypes.string"
+	${1:name}: React.PropTypes.${2:string}${3:.isRequired},
+snippet rpi "prop: React.PropTypes.instanceOf(Class)"
+	${1:name}: React.PropTypes.instanceOf(${2:Class})${3:.isRequired},
+snippet ifi "{ condition && ... }"
+	{ ${1:condition} &&
+		${0:${VISUAL}}
+	}
+snippet ssp "this.setState(prevState => ({ key: prevState.key.doSomething() }))"
+	this.setState(prevState => ({ ${1:key}: prevState.$1.${0} }));

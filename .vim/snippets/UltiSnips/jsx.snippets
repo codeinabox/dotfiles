@@ -1,0 +1,67 @@
+snippet rcf "function Name(props) { ... }"
+import React from 'react';
+
+function ${1:`!p snip.rv=snip.basename.title().replace('-', '')`}(props) {
+	return (
+		${0:${VISUAL}}
+	);
+}
+
+$1.propTypes = {
+};
+
+$1.defaultProps = {
+};
+
+export default $1;
+endsnippet
+
+snippet rcc "class Name extends Component { ... }"
+import React, { Component } from 'react';
+
+class ${1:`!p snip.rv=snip.basename.title().replace('-', '')`} extends Component {
+	constructor(props) {
+		super(props);
+		this.state = { };
+	}
+
+	render() {
+		return (
+			${0:${VISUAL}}
+		);
+	}
+}
+
+$1.propTypes = {
+};
+
+$1.defaultProps = {
+};
+
+export default $1;
+endsnippet
+
+snippet rcp "class Name extends PureComponent { ... }"
+import React, { PureComponent } from 'react';
+
+class ${1:`!p snip.rv=snip.basename.title().replace('-', '')`} extends PureComponent {
+	constructor(props) {
+		super(props);
+		this.state = { };
+	}
+
+	render() {
+		return (
+			${0:${VISUAL}}
+		);
+	}
+}
+
+$1.propTypes = {
+};
+
+$1.defaultProps = {
+};
+
+export default $1;
+endsnippet
