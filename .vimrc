@@ -176,8 +176,10 @@ call vundle#end()
 
 " General settings {{{
 " {{{ Spell check
-setlocal nospell spelllang=en_gb spellfile=~/.vim/spell/en.utf-8.add
-autocmd FileType behat,cucumber,gitcommit,markdown,text setlocal spell
+set spell spelllang=en_gb spellfile=~/.vim/spell/en.utf-8.add
+" Turn off spelling for certain syntaxes or if no syntax
+autocmd BufEnter,BufNewFile * if &syntax == "" | setlocal nospell | endif
+autocmd FileType apache,conf,dosini,gitconfig,gitrebase,json,yaml setlocal nospell
 map <F5> :setlocal spell!<CR>
 " Auto-complete with dictionary words when spell check is on
 set complete+=kspell
