@@ -167,6 +167,8 @@ if has('nvim')
 	Plugin 'Shougo/deoplete.nvim'
 		let g:deoplete#enable_at_startup = 1
 	Plugin 'carlitux/deoplete-ternjs'
+	Plugin 'kassio/neoterm'
+		let g:neoterm_size = 10
 endif
 " }}}
 

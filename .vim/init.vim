@@ -10,4 +10,4 @@ nnoremap <Leader>r :source ~/.vim/init.vim<CR>
 :silent! tnoremap <Esc> <C-\><C-n>
 
 " vim-test strategy to use Neovim terminal
-let test#strategy = "neovim"
+let test#strategy = "neoterm"
