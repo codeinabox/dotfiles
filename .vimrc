@@ -218,6 +218,8 @@ set hlsearch
 " Ignore case in search
 set ignorecase
 set smartcase
+" Show where search pattern typed so far matches
+set incsearch
 
 " Folding
 set foldmethod=syntax
