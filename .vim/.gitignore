@@ -1,5 +1,6 @@
 .netrwhist
 bundle
-spell/en.utf-8.spl
+spell/*.spl
+spell/*.sug
 shada
 .init.vim-rplugin~
