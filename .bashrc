@@ -6,12 +6,7 @@ unset file
 
 # Completions {{{
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
-	source $(brew --prefix)/etc/bash_completion
-fi
-
-if [ -f $(brew --prefix)/git/contrib/completion/git-completion.bash ]; then
-	. $(brew --prefix)/git/contrib/completion/git-completion.bash
-	# Completion for the `g` alias
+	. $(brew --prefix)/etc/bash_completion
 	__git_complete g __git_main
 fi
 
