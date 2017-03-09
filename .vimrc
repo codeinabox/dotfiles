@@ -111,6 +111,9 @@ Plugin 'tpope/vim-projectionist'
 		\   "README.md": {
 		\     "README.md": {"type": "doc"},
 		\   },
+		\   ".editorconfig": {
+		\     ".editorconfig": {"type": "ec"},
+		\   },
 		\   "composer.json": {
 		\     "composer.json": {"type": "pkg"},
 		\     "src/*.php": {"type": "src"},
