@@ -13,4 +13,27 @@ set clipboard+=unnamed
 
 " Mappings
 nmap gcc :action CommentByLineComment<CR>
+nnoremap <Leader>y :action Switcher<CR>
 nnoremap <Leader>a :action FindInPath<CR>
+nnoremap <Leader>r :source ~/.ideavimrc<CR>
+nnoremap <Leader>" :split<CR>
+nnoremap <Leader>% :vsplit<CR>
+nnoremap <Leader>w :w<CR>
+
+" Running tests
+nnoremap <Leader>tf :action RunClass<CR>
+nnoremap <Leader>tl :action Run<CR>
+nnoremap <Leader>tn :action RunClass<CR>
+nnoremap <Leader>ts :action RunConfiguration<CR>
+
+" Jumping between hunks
+nnoremap ]c :action JumpToNextChange<CR>
+nnoremap [c :action JumpToLastChange<CR>
+
+" PHPStorm specific
+nnoremap <Leader>f :action HideAllWindows<CR>
+nnoremap <Leader>g :action Generate<CR>
+nnoremap <Leader>rr :action RenameElement<CR>
+
+" Extensions
+set surround
