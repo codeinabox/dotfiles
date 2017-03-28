@@ -33,6 +33,9 @@ export HOMEBREW_NO_ANALYTICS=1
 
 export AUTHOR="Mathew Attlee <hello@codeinabox.com>"
 
+# rotate Git duet authors are each commit
+export GIT_DUET_ROTATE_AUTHOR=1
+
 # set Vim background based on iTerm profile
 case "$ITERM_PROFILE" in
     Light) export VIM_BACKGROUND="light" ;;
