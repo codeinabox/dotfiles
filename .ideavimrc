@@ -31,6 +31,7 @@ nnoremap ]c :action JumpToNextChange<CR>
 nnoremap [c :action JumpToLastChange<CR>
 
 " PHPStorm specific
+nnoremap <Leader><Leader> :action GotoAction<CR>
 nnoremap <Leader>f :action HideAllWindows<CR>
 nnoremap <Leader>g :action Generate<CR>
 nnoremap <Leader>rr :action RenameElement<CR>
