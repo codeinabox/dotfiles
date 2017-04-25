@@ -12,6 +12,7 @@
 --ignore-dir=.project
 --ignore-dir=.settings
 --ignore-dir=.idea
+--ignore-dir=.phpcd
 --ignore-dir=app/cache
 
 --ignore-file=match:/^\.tags$/

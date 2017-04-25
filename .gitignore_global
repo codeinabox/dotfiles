@@ -5,6 +5,7 @@ npm-debug.log
 .envrc
 .tags
 .tern-port
+.phpcd
 
 # IDEs
 nbproject
