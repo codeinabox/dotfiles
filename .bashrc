@@ -19,6 +19,8 @@ if [ -f ~/.sfconsole/console_completion.sh ]; then
 fi
 # }}}
 
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
 # Show Git branch in prompt
 export PROMPT_DIRTRIM=2
 GIT_PS1_SHOWDIRTYSTATE=true

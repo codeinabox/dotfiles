@@ -26,6 +26,8 @@ fi
 source ~/.sfconsole/console_completion.sh
 # }}}
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # Prompt {{{
 if [ -f $(brew --prefix)/git/contrib/completion/git-prompt.sh ]; then
 	. $(brew --prefix)/git/contrib/completion/git-prompt.sh

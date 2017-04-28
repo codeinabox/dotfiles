@@ -17,6 +17,10 @@ fi
 
 export VISUAL=$EDITOR
 
+# fzf options
+export FZF_DEFAULT_COMMAND='ack -g ""'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
 # use Vim to read man pages
 export MANPAGER="col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -"
 
