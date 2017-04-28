@@ -12,17 +12,6 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'junegunn/vim-emoji'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'gilgigilgil/anderson.vim'
-Plugin 'ctrlpvim/ctrlp.vim'
-	" CtrlP {{{
-	let g:ctrlp_show_hidden=1
-	let g:ctrlp_match_window = 'max:10;results:100'
-	let g:ctrlp_custom_ignore = '\v[\/](dist)$'
-	let g:ctrlp_extensions = ['modified']
-	let g:ctrlp_mruf_relative = 1
-	let g:ctrlp_mruf_exclude = '.git/.*'
-	nnoremap <Leader>y :CtrlPBuffer<cr>
-	" }}}
-Plugin 'jasoncodes/ctrlp-modified.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'low-ghost/nerdtree-fugitive'
@@ -102,7 +91,13 @@ Plugin 'mileszs/ack.vim'
 	let g:ackhighlight = 1
 	let g:ack_autofold_results = 1
 	" }}}
-Plugin 'voronkovich/ctrlp-symfony2.vim'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
+	" fzf {{{
+	let g:fzf_layout = { 'down': '~20%' }
+	nnoremap <c-p> :Files<cr>
+	nnoremap <Leader>y :Buffers<cr>
+	" }}}
 Plugin 'BufOnly.vim'
 Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-projectionist'
