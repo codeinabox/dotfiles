@@ -160,6 +160,7 @@ Plugin 'SirVer/ultisnips'
 	" }}}
 Plugin 'honza/vim-snippets'
 Plugin 'kylef/apiblueprint.vim'
+Plugin 'matze/vim-move'
 " Neovim specific plugins {{{
 if has('nvim')
 	Plugin 'Shougo/deoplete.nvim'
