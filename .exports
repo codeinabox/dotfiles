@@ -1,5 +1,8 @@
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 
+# add project dependency bin directories to end of path
+export PATH=$PATH:./node_modules/.bin:./vendor/bin:./bin
+
 export HISTFILE=~/.histfile
 # number of lines kept in history
 export HISTSIZE=10000
