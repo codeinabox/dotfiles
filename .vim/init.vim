@@ -2,7 +2,6 @@
 source ~/.vimrc
 
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
-set termguicolors
 
 " Shortcut to reload ~/.vim/init.vim
 nnoremap <Leader>r :source ~/.vim/init.vim<CR>
