@@ -162,6 +162,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'kylef/apiblueprint.vim'
 Plugin 'matze/vim-move'
 	let g:move_key_modifier = 'C'
+Plugin 'junegunn/vader.vim'
 " Neovim specific plugins {{{
 if has('nvim')
 	Plugin 'Shougo/deoplete.nvim'
