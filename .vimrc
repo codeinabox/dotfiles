@@ -36,6 +36,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'tomtom/tcomment_vim'
+Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'majutsushi/tagbar'
 	" Tagbar {{{
 	nmap <Leader>tbt :TagbarToggle<CR>
