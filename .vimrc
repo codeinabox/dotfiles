@@ -83,7 +83,7 @@ Plugin 'ervandew/supertab'
 		\let b:SuperTabContextDefaultCompletionType = "<c-n>"|
 		\endif
 	" }}}
-Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'lvht/phpcd.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'mileszs/ack.vim'
