@@ -172,6 +172,7 @@ if has('nvim')
 	Plugin 'Shougo/neco-vim'
 	Plugin 'kassio/neoterm'
 		let g:neoterm_size = 10
+		let g:neoterm_autoscroll = 1
 endif
 " }}}
 
