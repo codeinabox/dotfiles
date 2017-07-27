@@ -230,8 +230,9 @@ set foldmethod=syntax
 autocmd FileType ansible,conf,sh,tmux,zsh,vim setlocal foldmethod=marker
 set foldlevelstart=7
 
-" Autoread
+" Auto read and write
 set autoread
+set autowrite
 
 " Enable mouse support
 set mouse=a
