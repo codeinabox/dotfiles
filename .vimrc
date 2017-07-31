@@ -101,6 +101,7 @@ Plugin 'junegunn/fzf.vim'
 	" }}}
 Plugin 'BufOnly.vim'
 Plugin 'fatih/vim-go'
+	let g:go_fmt_command = "goimports"
 Plugin 'tpope/vim-projectionist'
 	" vim-projectionist {{{
 	let g:projectionist_heuristics = {
