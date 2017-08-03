@@ -32,7 +32,6 @@ Plugin 'neomake/neomake'
 	" }}}
 Plugin 'benjie/neomake-local-eslint.vim'
 Plugin 'airblade/vim-gitgutter'
-	let g:gitgutter_sign_column_always = 1
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'tomtom/tcomment_vim'
@@ -197,6 +196,9 @@ set number
 
 " Status bar
 set laststatus=2     " always show
+
+" Always draw the sign column
+set signcolumn=yes
 
 " Bufferline
 let g:bufferline_echo = 0    " don't echo to command bar
