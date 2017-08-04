@@ -10,8 +10,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'        " let Vundle manage Vundle, required
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'junegunn/vim-emoji'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'gilgigilgil/anderson.vim'
+Plugin 'trevordmiller/nova-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'low-ghost/nerdtree-fugitive'
@@ -281,7 +280,7 @@ else
 	set background=dark
 endif
 try
-    colorscheme anderson
+    colorscheme nova
 catch
     colorscheme default
 endtry
