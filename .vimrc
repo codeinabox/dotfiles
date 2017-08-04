@@ -23,7 +23,6 @@ Plugin 'svenwin/vim-splitted-nerdtree'
 	" }}}
 Plugin 'neomake/neomake'
 	" Neomake {{{
-	let g:neomake_css_enabled_makers = []
 	let g:neomake_javascript_enabled_makers = ["eslint"]
 	let g:neomake_jsx_enabled_makers = ["eslint"]
 	" Run Neomake whenever we enter or write a buffer
