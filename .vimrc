@@ -316,7 +316,10 @@ autocmd BufNewFile .editorconfig 0r $HOME/.vim/templates/editorconfig
 set tags=./.tags;,~/.vimtags
 " }}}
 
-" Omni completion {{{
+" Completion {{{
+" Turn off complete option preview
+set completeopt-=preview
+
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html setlocal omnifunc=htmlcomplete#CompleteTags
