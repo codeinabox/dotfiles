@@ -34,6 +34,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'ludovicchabant/vim-gutentags'
+	let g:gutentags_ctags_tagfile = '.tags'
 Plugin 'majutsushi/tagbar'
 	" Tagbar {{{
 	nmap <Leader>tbt :TagbarToggle<CR>

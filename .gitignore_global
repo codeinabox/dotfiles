@@ -4,6 +4,8 @@
 npm-debug.log
 .envrc
 .tags
+.tags.lock
+.tags.temp
 .tern-port
 .phpcd
 
