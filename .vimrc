@@ -1,41 +1,43 @@
 set nocompatible              " be iMproved, required
 
 " Plugins {{{
-filetype off                  " required
+" automatically install vim-plug
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
-" set the runtime path to include Vundle, custom snippets and initialise
-set rtp+=$HOME/.vim/bundle/Vundle.vim,$HOME/.vim/snippets/
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-Plugin 'gmarik/Vundle.vim'        " let Vundle manage Vundle, required
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'junegunn/vim-emoji'
-Plugin 'trevordmiller/nova-vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'low-ghost/nerdtree-fugitive'
-Plugin 'svenwin/vim-splitted-nerdtree'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'junegunn/vim-emoji'
+Plug 'trevordmiller/nova-vim'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'low-ghost/nerdtree-fugitive'
+Plug 'svenwin/vim-splitted-nerdtree'
 	" NERDTree {{{
 	" Open tree in current buffer / split
 	nmap - :call splittednerdtree#revealFile()<CR>
 	let NERDTreeShowHidden=1
 	let NERDTreeRespectWildIgnore=1
 	" }}}
-Plugin 'neomake/neomake'
+Plug 'neomake/neomake'
 	" Neomake {{{
 	let g:neomake_javascript_enabled_makers = ["eslint"]
 	let g:neomake_jsx_enabled_makers = ["eslint"]
 	" Run Neomake whenever we enter or write a buffer
 	autocmd BufWritePost,BufWinEnter * silent Neomake
 	" }}}
-Plugin 'benjie/neomake-local-eslint.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-fugitive'
-Plugin 'bling/vim-airline'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'ludovicchabant/vim-gutentags'
+Plug 'benjie/neomake-local-eslint.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'bling/vim-airline'
+Plug 'tomtom/tcomment_vim'
+Plug 'ludovicchabant/vim-gutentags'
 	let g:gutentags_ctags_tagfile = '.tags'
-Plugin 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar'
 	" Tagbar {{{
 	nmap <Leader>tbt :TagbarToggle<CR>
 	nmap <Leader>tbp :TagbarTogglePause<CR>
@@ -61,14 +63,14 @@ Plugin 'majutsushi/tagbar'
 		\ ]
 	\ }
 	" }}}
-Plugin 'vim-php/tagbar-phpctags.vim'
-Plugin 'tpope/vim-surround'
-Plugin 'chase/vim-ansible-yaml'
-Plugin 'sheerun/vim-polyglot'
+Plug 'vim-php/tagbar-phpctags.vim', { 'do': 'brew install phpctags' }
+Plug 'tpope/vim-surround'
+Plug 'chase/vim-ansible-yaml'
+Plug 'sheerun/vim-polyglot'
 	let g:jsx_ext_required = 1
 	let g:javascript_plugin_jsdoc = 1
-Plugin 'ap/vim-css-color'
-Plugin 'ervandew/supertab'
+Plug 'ap/vim-css-color'
+Plug 'ervandew/supertab'
 	" SuperTab {{{
 	let g:SuperTabDefaultCompletionType = "context"
 	let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
@@ -81,26 +83,26 @@ Plugin 'ervandew/supertab'
 		\let b:SuperTabContextDefaultCompletionType = "<c-n>"|
 		\endif
 	" }}}
-Plugin 'lvht/phpcd.vim'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'mileszs/ack.vim'
+Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
+Plug 'jiangmiao/auto-pairs'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'mileszs/ack.vim'
 	" Ack {{{
 	nnoremap <Leader>a :Ack! 
 	let g:ackhighlight = 1
 	let g:ack_autofold_results = 1
 	" }}}
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 	" fzf {{{
 	let g:fzf_layout = { 'down': '~20%' }
 	nnoremap <c-p> :Files<cr>
 	nnoremap <Leader>y :Buffers<cr>
 	" }}}
-Plugin 'BufOnly.vim'
-Plugin 'fatih/vim-go'
+Plug 'vim-scripts/BufOnly.vim'
+Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoInstallBinaries' }
 	let g:go_fmt_command = "goimports"
-Plugin 'tpope/vim-projectionist'
+Plug 'tpope/vim-projectionist'
 	" vim-projectionist {{{
 	let g:projectionist_heuristics = {
 		\   "README.md": {
@@ -133,13 +135,13 @@ Plugin 'tpope/vim-projectionist'
 		\   }
 		\ }
 	" }}}
-Plugin 'heavenshell/vim-jsdoc'
+Plug 'heavenshell/vim-jsdoc'
 	" vim-jsdoc {{{
 	let g:jsdoc_allow_input_prompt = 1
 	let g:jsdoc_enable_es6 = 1
 	" }}}
-Plugin 'benmills/vimux'
-Plugin 'janko-m/vim-test'
+Plug 'benmills/vimux'
+Plug 'janko-m/vim-test'
 	" vim-test {{{
 	let g:test#runner_commands = ['Behat', 'PHPSpec', 'PHPUnit']
 	let test#php#phpspec#options = '--no-code-generation'
@@ -151,35 +153,38 @@ Plugin 'janko-m/vim-test'
 	nnoremap <Leader>ts :TestSuite<cr>
 	nnoremap <Leader>tv :TestVisit<cr>
 	" }}}
-Plugin 'mtth/scratch.vim'
-Plugin 'SirVer/ultisnips'
+Plug 'mtth/scratch.vim'
+Plug 'SirVer/ultisnips'
 	" UltiSnips {{{
 	let g:snips_author=$AUTHOR
 	let g:UltiSnipsListSnippets="<c-d>"
 	autocmd BufRead,BufNewFile,BufEnter *Spec.php UltiSnipsAddFiletypes php-phpspec
 	" }}}
-Plugin 'honza/vim-snippets'
-Plugin 'kylef/apiblueprint.vim'
-Plugin 'matze/vim-move'
+Plug 'honza/vim-snippets'
+Plug 'kylef/apiblueprint.vim'
+Plug 'matze/vim-move'
 	let g:move_key_modifier = 'C'
-Plugin 'junegunn/vader.vim'
+Plug 'junegunn/vader.vim'
 " Neovim specific plugins {{{
 if has('nvim')
-	Plugin 'Shougo/deoplete.nvim'
+	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 		let g:deoplete#enable_at_startup = 1
-	Plugin 'carlitux/deoplete-ternjs'
-	Plugin 'Shougo/neco-vim'
-	Plugin 'kassio/neoterm'
+	Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+	Plug 'Shougo/neco-vim'
+	Plug 'kassio/neoterm'
 		let g:neoterm_size = 10
 		let g:neoterm_autoscroll = 1
 endif
 " }}}
 
 " All of your Plugins must be added before the following line
-call vundle#end()
+call plug#end()
 " }}}
 
 " General settings {{{
+" set the runtime path to custom snippets
+set rtp+=$HOME/.vim/snippets/
+
 " {{{ Spell check
 set spell spelllang=en_gb spellfile=~/.vim/spell/en.utf-8.add
 " Turn off spelling for certain syntaxes or if no syntax

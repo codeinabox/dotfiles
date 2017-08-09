@@ -1,6 +1,8 @@
 .netrwhist
 bundle
+plugged
 spell/*.spl
 spell/*.sug
 shada
 .init.vim-rplugin~
+autoload/plug.vim
