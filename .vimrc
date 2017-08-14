@@ -102,6 +102,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'vim-scripts/BufOnly.vim'
 Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoInstallBinaries' }
 	let g:go_fmt_command = "goimports"
+	let g:go_highlight_types = 1
 Plug 'tpope/vim-projectionist'
 	" vim-projectionist {{{
 	let g:projectionist_heuristics = {
@@ -174,6 +175,7 @@ if has('nvim')
 	Plug 'kassio/neoterm'
 		let g:neoterm_size = 10
 		let g:neoterm_autoscroll = 1
+	Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'}
 endif
 " }}}
 
