@@ -209,6 +209,9 @@ set signcolumn=yes
 " Bufferline
 let g:bufferline_echo = 0    " don't echo to command bar
 
+" Don't show mode
+set noshowmode
+
 " Ensure Vim doesn't beep at you every time you make a mistype
 set visualbell
 
