@@ -166,6 +166,8 @@ Plug 'kylef/apiblueprint.vim'
 Plug 'matze/vim-move'
 	let g:move_key_modifier = 'C'
 Plug 'junegunn/vader.vim'
+Plug 'Shougo/echodoc.vim'
+	let g:echodoc_enable_at_startup = 1
 " Neovim specific plugins {{{
 if has('nvim')
 	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
