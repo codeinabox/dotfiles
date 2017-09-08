@@ -1,5 +1,7 @@
 set nocompatible              " be iMproved, required
 
+set exrc                      " allow project .vimrc
+
 " Plugins {{{
 " automatically install vim-plug
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -357,3 +359,6 @@ if has('mac') && !has('nvim')
 		\ }
 endif
 " }}}
+
+" prevent :autocmd, shell and write commands from inside project-specific .vimrc
+set secure
