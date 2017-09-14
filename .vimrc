@@ -197,6 +197,7 @@ set spell spelllang=en_gb spellfile=~/.vim/spell/en.utf-8.add
 " Turn off spelling for certain syntaxes or if no syntax
 autocmd BufEnter,BufNewFile * if &syntax == "" | setlocal nospell | endif
 autocmd FileType apache,conf,dosini,gitconfig,gitrebase,json,nerdtree,yaml setlocal nospell
+autocmd TermOpen * setlocal nospell
 map <F5> :setlocal spell!<CR>
 " Auto-complete with dictionary words when spell check is on
 set complete+=kspell
