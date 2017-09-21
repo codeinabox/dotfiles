@@ -14,7 +14,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/vim-emoji'
-Plug 'trevordmiller/nova-vim'
+Plug 'gilgigilgil/anderson.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'low-ghost/nerdtree-fugitive'
@@ -288,14 +288,9 @@ set wildignore+=*/app/cache,*/.sass-cache " project caches
 
 " Theme {{{
 set t_Co=256	" Enable 256 colours
-" Use VIM_BACKGROUND to set if it's dark or light
-if !empty($VIM_BACKGROUND)
-	let &background=$VIM_BACKGROUND
-else
-	set background=dark
-endif
+set background=dark
 try
-    colorscheme nova
+    colorscheme anderson
 catch
     colorscheme default
 endtry
