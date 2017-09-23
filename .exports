@@ -1,5 +1,8 @@
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 
+# add composer global bin directory to path
+export PATH=~/.composer/vendor/bin:$PATH
+
 # add project dependency bin directories to end of path
 export PATH=$PATH:./node_modules/.bin:./vendor/bin:./bin
 
