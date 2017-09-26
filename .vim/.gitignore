@@ -6,3 +6,4 @@ spell/*.sug
 shada
 .init.vim-rplugin~
 autoload/plug.vim
+autoload/plug.vim.old
