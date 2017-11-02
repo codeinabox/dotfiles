@@ -7,7 +7,6 @@ unset file
 # Completions {{{
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 	. $(brew --prefix)/etc/bash_completion
-	__git_complete g __git_main
 fi
 
 if [ -f `brew --prefix`/etc/bash_completion.d/vagrant ]; then

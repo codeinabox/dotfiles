@@ -1,5 +1,4 @@
 # Aliases
-alias g="git"
 alias ssh-pbcopy="cat $HOME/.ssh/id_rsa.pub | pbcopy; echo 'SSH key copied to clipboard'"
 alias vi="$EDITOR"
 alias vless="vimpager"
