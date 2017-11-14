@@ -27,7 +27,7 @@ Plug 'svenwin/vim-splitted-nerdtree'
 	" }}}
 Plug 'neomake/neomake'
 	" Neomake {{{
-	let g:neomake_javascript_enabled_makers = ["eslint"]
+	let g:neomake_javascript_enabled_makers = ["eslint", "jshint"]
 	let g:neomake_jsx_enabled_makers = ["eslint"]
 	" Run Neomake whenever we enter or write a buffer
 	autocmd BufWritePost,BufWinEnter * silent Neomake
