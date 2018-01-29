@@ -17,11 +17,6 @@ if [ -d /usr/local/share/zsh-completions ]; then
 	fpath=(/usr/local/share/zsh-completions $fpath)
 fi
 
-# iTerm2 integration
-if [ -f "${HOME}/.iterm2_shell_integration.zsh" ]; then
-	source "${HOME}/.iterm2_shell_integration.zsh"
-fi
-
 # Symfony2 console completion script
 source ~/.sfconsole/console_completion.sh
 # }}}
