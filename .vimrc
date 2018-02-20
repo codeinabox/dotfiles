@@ -267,6 +267,9 @@ set nowritebackup
 " No swap file
 set noswapfile
 
+" Split behaviour
+set splitbelow
+
 " Shortcut to reload .vimrc
 nnoremap <Leader>r :source ~/.vimrc<CR>
 
