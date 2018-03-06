@@ -86,7 +86,7 @@ Plug 'ervandew/supertab'
 		\endif
 	" }}}
 Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
-Plug 'beanworks/vim-phpfmt', { 'for': 'php' }
+Plug 'sbdchd/neoformat'
 Plug 'jiangmiao/auto-pairs'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'mileszs/ack.vim'
