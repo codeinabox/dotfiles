@@ -13,3 +13,5 @@ snippet pra "Promise.all([p1, p2]).then((values) => { .. })"
 	Promise.all([${1}]).then((${2:values}) => {
 		${0:${VISUAL}}
 	});
+snippet env "process.env.XYZ"
+	process.env.${1:XYZ}
