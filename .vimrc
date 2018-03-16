@@ -238,8 +238,7 @@ set rtp+=$HOMEBREW_PREFIX/opt/fzf
 
 " {{{ Spell check
 set spell spelllang=en_gb spellfile=~/.vim/spell/en.utf-8.add
-" Turn off spelling for certain syntaxes or if no syntax
-autocmd BufEnter,BufNewFile * if &syntax == "" | setlocal nospell | endif
+" Turn off spelling for certain syntaxes
 autocmd FileType apache,conf,dosini,fzf,gitconfig,gitrebase,json,neoterm,nerdtree,yaml setlocal nospell
 map <F5> :setlocal spell!<CR>
 " Auto-complete with dictionary words when spell check is on
