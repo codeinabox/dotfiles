@@ -337,7 +337,7 @@ autocmd FileType c setlocal omnifunc=ccomplete#Complete
 " }}}
 
 " Emoji {{{
-if has('mac') && !has('nvim')
+if has('mac')
 	" Git gutter
 	let g:gitgutter_sign_added = emoji#for('hatching_chick')
 	let g:gitgutter_sign_modified = emoji#for('mushroom')
