@@ -4,6 +4,9 @@ for file in $HOME/.{exports,aliases,functions,shell_extra}; do
 done
 unset file
 
+# Disable the per-terminal-session command history
+export SHELL_SESSION_HISTORY=0
+
 # Completions {{{
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 	. $(brew --prefix)/etc/bash_completion
