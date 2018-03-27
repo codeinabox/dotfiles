@@ -178,8 +178,11 @@ if has('nvim')
 	Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 	Plug 'Shougo/neco-vim'
 	Plug 'kassio/neoterm'
+		" Neoterm {{{
 		let g:neoterm_size = 10
 		let g:neoterm_autoscroll = 1
+		let g:neoterm_default_mod = 'belowright'
+		" }}}
 	Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'}
 endif
 " }}}
