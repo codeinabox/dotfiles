@@ -150,7 +150,7 @@ Plug 'janko-m/vim-test'
 	let g:test#runner_commands = ['Behat', 'PHPSpec', 'PHPUnit']
 	let test#php#phpspec#options = '--no-code-generation'
 	let test#php#phpunit#options = '--no-coverage'
-	let test#strategy = "vimux"
+	let test#strategy = "neoterm"
 	nnoremap <Leader>tf :TestFile<cr>
 	nnoremap <Leader>tl :TestLast<cr>
 	nnoremap <Leader>tn :TestNearest<cr>
@@ -171,18 +171,18 @@ Plug 'matze/vim-move'
 Plug 'junegunn/vader.vim'
 Plug 'Shougo/echodoc.vim'
 	let g:echodoc_enable_at_startup = 1
+Plug 'kassio/neoterm'
+	" Neoterm {{{
+	let g:neoterm_size = 16
+	let g:neoterm_autoscroll = 1
+	let g:neoterm_default_mod = 'belowright'
+	" }}}
 " Neovim specific plugins {{{
 if has('nvim')
 	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 		let g:deoplete#enable_at_startup = 1
 	Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 	Plug 'Shougo/neco-vim'
-	Plug 'kassio/neoterm'
-		" Neoterm {{{
-		let g:neoterm_size = 10
-		let g:neoterm_autoscroll = 1
-		let g:neoterm_default_mod = 'belowright'
-		" }}}
 	Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'}
 endif
 " }}}
@@ -199,7 +199,7 @@ set rtp+=$HOME/.vim/snippets/
 set spell spelllang=en_gb spellfile=~/.vim/spell/en.utf-8.add
 " Turn off spelling for certain syntaxes or if no syntax
 autocmd BufEnter,BufNewFile * if &syntax == "" | setlocal nospell | endif
-autocmd FileType apache,conf,dosini,fzf,gitconfig,gitrebase,json,nerdtree,yaml setlocal nospell
+autocmd FileType apache,conf,dosini,fzf,gitconfig,gitrebase,json,neoterm,nerdtree,yaml setlocal nospell
 map <F5> :setlocal spell!<CR>
 " Auto-complete with dictionary words when spell check is on
 set complete+=kspell
@@ -281,6 +281,9 @@ nnoremap <Leader>" :split<CR>
 nnoremap <Leader>% :vsplit<CR>
 
 nnoremap <Leader>w :update<CR>
+
+" Shortcut for quick terminal exit
+:silent! tnoremap <Esc> <C-\><C-n>
 
 " Alias Wq to wq for all those times I accidentally type it
 command! Wq wq
