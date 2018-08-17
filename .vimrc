@@ -95,7 +95,7 @@ Plug 'mileszs/ack.vim'
 	let g:ackhighlight = 1
 	let g:ack_autofold_results = 1
 	" }}}
-Plug 'junegunn/fzf'
+Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 	" fzf {{{
 	let g:fzf_layout = { 'down': '~20%' }
