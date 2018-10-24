@@ -181,7 +181,14 @@ Plug 'kassio/neoterm'
 if has('nvim')
 	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 		let g:deoplete#enable_at_startup = 1
-	Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+	Plug 'autozimu/LanguageClient-neovim', {
+		\ 'branch': 'next',
+		\ 'do': 'bash install.sh',
+		\ }
+	let g:LanguageClient_serverCommands = {
+		\ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
+		\ 'typescript': ['/usr/local/bin/javascript-typescript-stdio']
+		\ }
 	Plug 'Shougo/neco-vim'
 	Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'}
 endif
