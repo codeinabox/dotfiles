@@ -27,8 +27,8 @@ export VISUAL=$EDITOR
 export FZF_DEFAULT_COMMAND='ag --hidden -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
-# use Vim to read man pages
-export MANPAGER="col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -"
+# use Vim as the pager
+export PAGER=vimpager
 
 export GOPATH=$HOME/workspace/go
 export PATH=$PATH:$GOPATH/bin
