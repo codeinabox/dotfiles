@@ -17,6 +17,7 @@
 	ca = commit -a
 	co = checkout
 	cob = checkout -b
+	cof = ! git co $(git branch | fzf)
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	rb = rebase
 	rba = rebase --abort
