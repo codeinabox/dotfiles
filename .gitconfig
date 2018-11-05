@@ -12,15 +12,11 @@
 	pager = less
 [alias]
 	amend-date = commit --amend --reset-author
-	bip = branch -a --no-merged
 	bm = branch -m
 	ca = commit -a
 	co = checkout
 	cob = checkout -b
-	dci = duet-commit
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-	pr = !git pull && git submodule update --init --recursive
-	pmerge = mergetool -t pstorm
 	rb = rebase
 	rba = rebase --abort
 	rbc = rebase --continue
@@ -43,9 +39,5 @@
 	prompt = false
 [merge]
 	tool = vimdiff
-[difftool.pstorm]
-	cmd = pstorm diff "$LOCAL" "$REMOTE"
-[mergetool.pstorm]
-	cmd = pstorm merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
 [rebase]
 	autoStash = true
