@@ -190,6 +190,7 @@ if has('nvim')
 		\ 'typescript': ['/usr/local/bin/javascript-typescript-stdio']
 		\ }
 	Plug 'Shougo/neco-vim'
+	Plug 'deathlyfrantic/deoplete-spell'
 	Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'}
 endif
 " }}}
