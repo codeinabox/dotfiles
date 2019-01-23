@@ -72,19 +72,6 @@ Plug 'sheerun/vim-polyglot'
 	let g:jsx_ext_required = 1
 	let g:javascript_plugin_jsdoc = 1
 Plug 'ap/vim-css-color'
-Plug 'ervandew/supertab'
-	" SuperTab {{{
-	let g:SuperTabDefaultCompletionType = "context"
-	let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
-	let g:SuperTabContextTextOmniPrecedence = ['&omnifunc', '&completefunc']
-	let g:SuperTabContextDiscoverDiscovery = ["&omnifunc:<c-x><c-o>", "&completefunc:<c-x><c-u>"]
-	let g:SuperTabClosePreviewOnPopupClose = 1
-	" Fall back to keyword completion if omnifunc not set
-	autocmd FileType * 
-		\if &omnifunc == '' |
-		\let b:SuperTabContextDefaultCompletionType = "<c-n>"|
-		\endif
-	" }}}
 Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
 Plug 'sbdchd/neoformat'
 Plug 'jiangmiao/auto-pairs'
