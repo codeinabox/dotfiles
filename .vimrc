@@ -35,7 +35,32 @@ Plug 'neomake/neomake'
 Plug 'benjie/neomake-local-eslint.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
-Plug 'bling/vim-airline'
+Plug 'itchyny/lightline.vim'
+	" Lightline {{{
+	let g:lightline = {
+	\ 'active': {
+	\   'left': [ [ 'mode', 'paste' ],
+	\             [ 'gitbranch', 'readonly', 'relativepath', 'modified' ] ],
+	\   'right': [ [ 'lineinfo' ],
+	\              [ 'percent' ],
+	\              [ 'filetype' ],
+	\              [ 'neomake' ] ],
+	\ },
+	\ 'component_function': {
+	\   'gitbranch': 'fugitive#head'
+	\ },
+	\ 'component_expand': {
+	\   'neomake': 'LightlineNeomake'
+	\ },
+	\ 'component_type': {
+	\   'neomake': 'error'
+	\ }
+	\}
+
+	function LightlineNeomake()
+		return '%{neomake#statusline#LoclistStatus()}'
+	endfunction
+	" }}}
 Plug 'tomtom/tcomment_vim'
 Plug 'ludovicchabant/vim-gutentags'
 	let g:gutentags_ctags_tagfile = '.tags'
