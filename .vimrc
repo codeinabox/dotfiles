@@ -99,6 +99,8 @@ Plug 'sheerun/vim-polyglot'
 Plug 'ap/vim-css-color'
 Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
 Plug 'sbdchd/neoformat'
+	let g:neoformat_run_all_formatters = 1
+	nnoremap <Leader>nf :Neoformat<cr>
 Plug 'jiangmiao/auto-pairs'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'mileszs/ack.vim'
