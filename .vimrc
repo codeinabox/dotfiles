@@ -200,8 +200,12 @@ if has('nvim')
 		\ 'do': 'bash install.sh',
 		\ }
 	let g:LanguageClient_serverCommands = {
-		\ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
-		\ 'typescript': ['/usr/local/bin/javascript-typescript-stdio']
+		\ 'css': ['css-languageserver', '--stdio'],
+		\ 'Dockerfile': ['docker-langserver', '--stdio'],
+		\ 'javascript': ['javascript-typescript-stdio'],
+		\ 'scss': ['css-languageserver', '--stdio'],
+		\ 'sh': ['bash-language-server', 'start'],
+		\ 'typescript': ['javascript-typescript-stdio']
 		\ }
 	Plug 'Shougo/neco-vim'
 	Plug 'deathlyfrantic/deoplete-spell'
