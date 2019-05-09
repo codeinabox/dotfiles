@@ -140,7 +140,9 @@ Plug 'tpope/vim-projectionist'
 		\     "src/*.js": {"type": "src", "alternate": "tests/{}-test.js"},
 		\     "tests/*-test.js": {"type": "test", "alternate": "src/{}.js"},
 		\     "src/*.jsx": {"type": "src", "alternate": "tests/{}-test.jsx"},
-		\     "tests/*-test.jsx": {"type": "test", "alternate": "src/{}.jsx"}
+		\     "tests/*-test.jsx": {"type": "test", "alternate": "src/{}.jsx"},
+		\     "src/*.test.js": {"type": "test", "alternate": "src/{}.js"},
+		\     "src/*.test.ts": {"type": "test", "alternate": "src/{}.ts"}
 		\   },
 		\   "*.go": {
 		\     "*.go": {"type": "src", "alternate": "{}_test.go"},
