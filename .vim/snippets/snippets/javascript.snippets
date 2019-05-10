@@ -20,3 +20,11 @@ snippet clog "console.log(xyz)"
 snippet dyest "new Date() for yesterday"
 	const ${1:yesterday} = new Date();
 	$1.setDate($1.getDate() - 1)
+snippet reactfc "React functional component"
+	import * as React from "react"
+
+	export const ${1:Name} = (props) => {
+		return ${0:${VISUAL}};
+	}
+snippet reacths "React hook state"
+	const [${1:count}, set$1] = React.useState(${3:0});

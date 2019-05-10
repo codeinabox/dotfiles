@@ -1,9 +1,79 @@
-snippet rsfc "React.SFC"
-	import * as React from "react""
+snippet reactfc "React functional component"
+	import * as React from "react"
 
-	interface $1Props {
+	interface IProps {
 	}
 
-	const ${1:Name}: React.SFC<$1Props> = (props) => {
+	export const ${1:Name} = (props: IProps) => {
 		return ${0:${VISUAL}};
 	}
+snippet reactcc "React class component"
+	import * as React from "react"
+
+	interface IProps {};
+
+	interface IState {};
+
+	export class ${1:App} extends React.Component<IProps, IState> {
+		constructor(props: IProps) {
+			super(props);
+			this.state = {};
+		}
+
+		render() {
+			return (
+				${0:${VISUAL}}
+			);
+		}
+	}
+snippet reduxr "Redux reducer"
+	const initialState: ${2:any} = {
+	}
+
+	export function ${1:myReducer}(
+		state: $2 = initialState,
+		action: any
+	): $2 {
+		switch (action.type) {
+			case ${3:'ACTION_NAME'}:
+				return ${0};
+			default:
+				return state;
+		}
+	};
+snippet reduxa "Redux action"
+	export const ${1:SEND_MESSAGE} = '$1'
+
+	interface ${2:SendMessageAction} {
+	    type: typeof $1
+	}
+
+	export type ${2:ChatActionTypes} = $2
+snippet promisefy "promisefy"
+	new Promise<${1:string}>((resolve, reject) => {
+		jsonexport(
+			transformed,
+			csvOptions,
+			(err: Error, csv: $1) => {
+				if (err) {
+					reject(err);
+				}
+				resolve(csv);
+			}
+		);
+	})
+snippet stories ""
+	import React from "react";
+	import { storiesOf } from "@storybook/react";
+
+	storiesOf("${1:Component name}", module)
+		.add("${2:Description}", () => (
+			${0:${VISUAL}}
+		));
+snippet reacths "React hook state"
+	const [${1:count}, set$1] = React.useState<${2:any}>(${3:0});
+snippet reactue "React.useEffect(() => { ... }"
+	React.useEffect(() => {
+		${0:${VISUAL}}
+	}, [${1:propName}]);
+
