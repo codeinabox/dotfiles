@@ -57,11 +57,22 @@ Plug 'itchyny/lightline.vim'
 	\ },
 	\ 'component_type': {
 	\   'neomake': 'error'
-	\ }
+	\ },
+	\ 'tab': {
+	\   'active': [ 'tabnum', 'cwd' ],
+	\   'inactive': [ 'tabnum', 'cwd' ]
+	\  },
+	\ 'tab_component_function': {
+	\   'cwd': 'LightlineTabname'
+	\  }
 	\}
 
 	function LightlineNeomake()
 		return '%{neomake#statusline#LoclistStatus()}'
+	endfunction
+
+	function! LightlineTabname(n) abort
+		return fnamemodify(getcwd(tabpagewinnr(a:n), a:n), ':t')
 	endfunction
 	" }}}
 Plug 'tomtom/tcomment_vim'
