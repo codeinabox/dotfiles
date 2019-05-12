@@ -106,7 +106,7 @@ Plug 'majutsushi/tagbar'
 	" }}}
 Plug 'vim-php/tagbar-phpctags.vim', { 'do': 'brew install phpctags' }
 Plug 'tpope/vim-surround'
-Plug 'chase/vim-ansible-yaml'
+Plug 'pearofducks/ansible-vim'
 Plug 'sheerun/vim-polyglot'
 	let g:jsx_ext_required = 1
 	let g:javascript_plugin_jsdoc = 1
@@ -130,7 +130,6 @@ Plug 'junegunn/fzf.vim'
 	nnoremap <c-p> :Files<cr>
 	nnoremap <Leader>y :Buffers<cr>
 	" }}}
-Plug 'vim-scripts/BufOnly.vim'
 Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoInstallBinaries' }
 	let g:go_fmt_command = "goimports"
 	let g:go_highlight_types = 1
@@ -174,7 +173,6 @@ Plug 'heavenshell/vim-jsdoc'
 	let g:jsdoc_allow_input_prompt = 1
 	let g:jsdoc_enable_es6 = 1
 	" }}}
-Plug 'benmills/vimux'
 Plug 'janko-m/vim-test'
 	" vim-test {{{
 	let g:test#runner_commands = ['Behat', 'PHPSpec', 'PHPUnit']
