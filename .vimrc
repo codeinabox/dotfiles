@@ -34,9 +34,6 @@ Plug 'neomake/neomake'
 	" }}}
 Plug 'benjie/neomake-local-eslint.vim'
 Plug 'airblade/vim-gitgutter'
-	let g:gitgutter_highlight_lines = 1
-	" Update the signs when you save
-	autocmd BufWritePost * GitGutter
 Plug 'tpope/vim-fugitive'
 Plug 'itchyny/lightline.vim'
 	" Lightline {{{
@@ -302,6 +299,9 @@ set clipboard+=unnamed
 
 " Redraw only when we need to
 set lazyredraw
+
+" Reduce time signs take to appear
+set updatetime=600
 
 " No backup files
 set nobackup
