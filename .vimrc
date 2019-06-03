@@ -26,12 +26,6 @@ Plug 'svenwin/vim-splitted-nerdtree'
 	let NERDTreeRespectWildIgnore=1
 	" }}}
 Plug 'neomake/neomake'
-	" Neomake {{{
-	let g:neomake_javascript_enabled_makers = ["eslint", "jshint"]
-	let g:neomake_jsx_enabled_makers = ["eslint"]
-	" Run Neomake whenever we enter or write a buffer
-	autocmd BufWritePost,BufWinEnter * silent Neomake
-	" }}}
 Plug 'benjie/neomake-local-eslint.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
@@ -312,6 +306,9 @@ set noswapfile
 
 " Split behaviour
 set splitbelow
+
+" Automatically run Neomake
+call neomake#configure#automake('nrwi', 500)
 
 " Shortcut to reload .vimrc
 nnoremap <Leader>r :source ~/.vimrc<CR>
