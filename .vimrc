@@ -127,6 +127,7 @@ Plug 'junegunn/fzf.vim'
 	let g:fzf_layout = { 'down': '~20%' }
 	nnoremap <c-p> :Files<cr>
 	nnoremap <Leader>y :Buffers<cr>
+	nnoremap <Leader>m :GFiles?<cr>
 	" }}}
 Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoInstallBinaries' }
 	let g:go_fmt_command = "goimports"
