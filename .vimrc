@@ -341,6 +341,7 @@ highlight Comment cterm=italic gui=italic
 au BufNewFile,BufRead *.ctp setlocal filetype=html.php
 au BufNewFile,BufRead *.hbt setlocal filetype=html.handlebars
 au BufNewFile,BufRead .babelrc setlocal filetype=json
+au BufNewFile,BufRead *.jsx setlocal filetype=javascript.jsx
 au BufNewFile,BufRead .bowerrc setlocal filetype=json
 au BufNewFile,BufRead .jshintrc setlocal filetype=json
 au BufNewFile,BufRead .eslintrc setlocal filetype=json
