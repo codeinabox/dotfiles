@@ -124,20 +124,23 @@ Plug 'tpope/vim-projectionist'
 		\     "spec/*Spec.php": {"type": "spec", "alternate": "src/{}.php"},
 		\     "tests/*Test.php": {"type": "test", "alternate": "src/{}.php"}
 		\   },
-		\   "package.json": {
+		\   "package.json&tests/": {
 		\     "package.json": {"type": "pkg"},
 		\     "src/*.js": {"type": "src", "alternate": "tests/{}-test.js"},
 		\     "tests/*-test.js": {"type": "test", "alternate": "src/{}.js"},
 		\     "src/*.jsx": {"type": "src", "alternate": "tests/{}-test.jsx"},
 		\     "tests/*-test.jsx": {"type": "test", "alternate": "src/{}.jsx"},
+		\   },
+		\   "package.json": {
+		\     "package.json": {"type": "pkg"},
+		\     "src/*.js": {"type": "src", "alternate": "src/{}.test.js"},
 		\     "src/*.test.js": {"type": "test", "alternate": "src/{}.js"},
-		\     "src/*.test.ts": {"type": "test", "alternate": "src/{}.ts"},
+		\     "src/*.jsx": {"type": "src", "alternate": "src/{}.test.jsx"},
 		\     "src/*.test.jsx": {"type": "test", "alternate": "src/{}.jsx"},
+		\     "src/*.ts": {"type": "src", "alternate": "src/{}.test.ts"},
+		\     "src/*.test.ts": {"type": "test", "alternate": "src/{}.ts"},
+		\     "src/*.tsx": {"type": "src", "alternate": "src/{}.test.tsx"},
 		\     "src/*.test.tsx": {"type": "test", "alternate": "src/{}.tsx"},
-		\     "src/*.spec.js": {"type": "spec", "alternate": "src/{}.js"},
-		\     "src/*.spec.ts": {"type": "spec", "alternate": "src/{}.ts"},
-		\     "src/*.spec.jsx": {"type": "spec", "alternate": "src/{}.jsx"},
-		\     "src/*.spec.tsx": {"type": "spec", "alternate": "src/{}.tsx"}
 		\   },
 		\   "*.go": {
 		\     "*.go": {"type": "src", "alternate": "{}_test.go"},
