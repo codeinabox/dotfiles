@@ -124,13 +124,6 @@ Plug 'tpope/vim-projectionist'
 		\     "spec/*Spec.php": {"type": "spec", "alternate": "src/{}.php"},
 		\     "tests/*Test.php": {"type": "test", "alternate": "src/{}.php"}
 		\   },
-		\   "package.json&tests/": {
-		\     "package.json": {"type": "pkg"},
-		\     "src/*.js": {"type": "src", "alternate": "tests/{}-test.js"},
-		\     "tests/*-test.js": {"type": "test", "alternate": "src/{}.js"},
-		\     "src/*.jsx": {"type": "src", "alternate": "tests/{}-test.jsx"},
-		\     "tests/*-test.jsx": {"type": "test", "alternate": "src/{}.jsx"},
-		\   },
 		\   "package.json": {
 		\     "package.json": {"type": "pkg"},
 		\     "src/*.js": {"type": "src", "alternate": "src/{}.test.js"},
