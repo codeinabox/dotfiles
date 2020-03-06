@@ -167,6 +167,7 @@ Plug 'tpope/vim-projectionist'
 		\   }
 		\ }
 	" }}}
+Plug 'git@github.com:c-brenn/fuzzy-projectionist.vim.git'
 Plug 'heavenshell/vim-jsdoc'
 	" vim-jsdoc {{{
 	let g:jsdoc_allow_input_prompt = 1
