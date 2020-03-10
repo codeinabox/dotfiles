@@ -356,6 +356,8 @@ au BufNewFile,BufRead *.tsx setlocal filetype=typescript.jsx
 
 " Templates {{{
 autocmd BufNewFile .editorconfig 0r $HOME/.vim/templates/editorconfig
+autocmd BufNewFile *\(\.test\)\@<!.jsx 0r ~/.vim/templates/component.jsx
+autocmd BufNewFile *.test.jsx 0r ~/.vim/templates/test.jsx
 " }}}
 
 " Completion {{{
