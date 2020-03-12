@@ -194,6 +194,7 @@ Plug 'kassio/neoterm'
 	let g:neoterm_default_mod = 'belowright'
 	" }}}
 Plug 'gotchane/vim-git-commit-prefix'
+Plug 'tpope/vim-unimpaired'
 " Neovim specific plugins {{{
 if has('nvim')
 	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
