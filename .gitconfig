@@ -41,3 +41,4 @@
 	tool = vimdiff
 [rebase]
 	autoStash = true
+	instructionFormat = <%ae> %s
