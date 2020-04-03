@@ -195,6 +195,7 @@ Plug 'kassio/neoterm'
 	" }}}
 Plug 'gotchane/vim-git-commit-prefix'
 Plug 'tpope/vim-unimpaired'
+Plug 'srydell/vim-skeleton'
 " Neovim specific plugins {{{
 if has('nvim')
 	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
