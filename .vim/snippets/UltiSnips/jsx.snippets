@@ -1,3 +1,18 @@
+snippet _skel "Skeleton" b
+import React from 'react';
+import PropTypes from 'prop-types';
+
+export const ${1:Component} = props => {
+    return ${0};
+};
+
+$1.propTypes = {};
+
+$1.defaultProps = {};
+
+export default $1;
+endsnippet
+
 snippet rcf "function Name(props) { ... }"
 import React from 'react';
 
