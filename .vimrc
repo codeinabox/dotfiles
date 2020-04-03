@@ -366,7 +366,7 @@ au BufNewFile,BufRead .env.* setlocal filetype=sh
 
 " Templates {{{
 autocmd BufNewFile .editorconfig 0r $HOME/.vim/templates/editorconfig
-autocmd BufNewFile *\(\.test\)\@<!.jsx 0r ~/.vim/templates/component.jsx
+" autocmd BufNewFile *\(\.test\)\@<!.jsx 0r ~/.vim/templates/component.jsx
 autocmd BufNewFile *.test.jsx 0r ~/.vim/templates/test.jsx
 " }}}
 
