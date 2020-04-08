@@ -353,12 +353,6 @@ catch
 endtry
 " }}}
 
-" GUI options {{{
-if has("gui_running")
-	set guifont=Fira\ Mono:h12
-endif
-" }}}
-
 " File extensions {{{
 au BufNewFile,BufRead *.ctp setlocal filetype=html.php
 au BufNewFile,BufRead *.hbt setlocal filetype=html.handlebars
