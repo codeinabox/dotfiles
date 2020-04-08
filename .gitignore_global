@@ -10,6 +10,7 @@ npm-debug.log
 .phpcd
 
 # IDEs
+.exrc
 nbproject
 .buildpath
 .metadata

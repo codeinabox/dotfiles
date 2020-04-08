@@ -1,6 +1,7 @@
 set nocompatible              " be iMproved, required
 
 set exrc                      " allow project .vimrc
+set secure " disallow autocmd, shell and write commands in project .exrc
 
 " Plugins {{{
 " automatically install vim-plug
