@@ -186,6 +186,7 @@ Plug 'kassio/neoterm'
 	" }}}
 Plug 'tpope/vim-unimpaired'
 Plug 'srydell/vim-skeleton'
+Plug 'tpope/vim-obsession'
 " Neovim specific plugins {{{
 if has('nvim')
 	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
