@@ -23,6 +23,10 @@ fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+if [ -x "$(command -v kitty)" ]; then
+    source <(kitty + complete setup bash)
+fi
+
 # Show Git branch in prompt
 export PROMPT_DIRTRIM=2
 GIT_PS1_SHOWDIRTYSTATE=true
