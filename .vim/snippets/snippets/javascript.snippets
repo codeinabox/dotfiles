@@ -15,8 +15,8 @@ snippet pra "Promise.all([p1, p2]).then((values) => { .. })"
 	})
 snippet env "process.env.XYZ"
 	process.env.${1:XYZ}
-snippet clog "console.log(xyz', xyz)"
-	console.log('$1', ${1:XYZ})
+snippet clog "console.log(xyz)"
+	console.log(${1:XYZ})
 snippet dyest "new Date() for yesterday"
 	const ${1:yesterday} = new Date()
 	$1.setDate($1.getDate() - 1)
