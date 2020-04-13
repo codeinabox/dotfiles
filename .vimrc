@@ -15,7 +15,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/vim-emoji'
-Plug 'gilgigilgil/anderson.vim'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'low-ghost/nerdtree-fugitive'
@@ -33,6 +33,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'itchyny/lightline.vim'
 	" Lightline {{{
 	let g:lightline = {
+	\ 'colorscheme': 'PaperColor',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'gitbranch', 'readonly', 'relativepath', 'modified' ] ],
@@ -345,9 +346,9 @@ set wildignore+=*/app/cache,*/.sass-cache " project caches
 
 " Theme {{{
 set t_Co=256	" Enable 256 colours
-set background=dark
+set background=light
 try
-    colorscheme anderson
+    colorscheme PaperColor
 catch
     colorscheme default
 endtry
