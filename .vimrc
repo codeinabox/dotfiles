@@ -69,35 +69,6 @@ Plug 'itchyny/lightline.vim'
 	endfunction
 	" }}}
 Plug 'tomtom/tcomment_vim'
-Plug 'ludovicchabant/vim-gutentags'
-	let g:gutentags_ctags_tagfile = '.tags'
-Plug 'majutsushi/tagbar'
-	" Tagbar {{{
-	nmap <Leader>tbt :TagbarToggle<CR>
-	nmap <Leader>tbp :TagbarTogglePause<CR>
-	let g:tagbar_type_ansible = {
-		\ 'ctagstype' : 'ansible',
-		\ 'kinds' : [
-			\ 't:tasks'
-		\ ],
-		\ 'sort' : 0
-	\ }
-	let g:tagbar_type_make = {
-		\ 'kinds':[
-			\ 'm:macros',
-			\ 't:targets'
-		\ ]
-	\}
-	let g:tagbar_type_markdown = {
-		\ 'ctagstype' : 'markdown',
-		\ 'kinds' : [
-			\ 'h:Heading_L1',
-			\ 'i:Heading_L2',
-			\ 'k:Heading_L3'
-		\ ]
-	\ }
-	" }}}
-Plug 'vim-php/tagbar-phpctags.vim', { 'do': 'brew install phpctags' }
 Plug 'tpope/vim-surround'
 Plug 'pearofducks/ansible-vim'
 Plug 'sheerun/vim-polyglot'
@@ -338,7 +309,7 @@ nnoremap <Leader>w :update<CR>
 command! Wq wq
 
 " Ignore these files and directories
-set wildignore+=*/.git,*/.hg,*/.svn,*/.tmp,*/.DS_Store,*/.tags
+set wildignore+=*/.git,*/.hg,*/.svn,*/.tmp,*/.DS_Store
 set wildignore+=*.phar,*.o,*.obj,*.exe,*.dll,*.manifest " compiled and binary files
 set wildignore+=*/.idea,*/.project,*/nbproject,*/.tern-port " other IDEs
 set wildignore+=*/app/cache,*/.sass-cache " project caches
@@ -369,10 +340,6 @@ au BufNewFile,BufRead .git-authors setlocal filetype=yaml
 
 " Templates {{{
 autocmd BufNewFile .editorconfig 0r $HOME/.vim/templates/editorconfig
-" }}}
-
-" Tags {{{
-set tags=./.tags;,~/.vimtags
 " }}}
 
 " Completion {{{

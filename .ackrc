@@ -14,8 +14,4 @@
 --ignore-dir=.idea
 --ignore-dir=.phpcd
 --ignore-dir=app/cache
-
---ignore-file=match:/^\.tags$/
---ignore-file=match:/^\.tags\.lock$/
---ignore-file=match:/^\.tags\.temp$/
 # }}}
