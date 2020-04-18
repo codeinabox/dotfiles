@@ -6,7 +6,7 @@
 [branch]
 	autosetuprebase = always
 [core]
-	excludesfile = ~/.gitignore_global
+	excludesfile = ~/.ignore
 	autocrlf = input
 	ignorecase = false
 	pager = less
