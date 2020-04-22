@@ -27,8 +27,12 @@ export VISUAL=$EDITOR
 export FZF_DEFAULT_COMMAND='ag --hidden -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
-# use Vim as the pager
-export PAGER=vimpager
+# use Vim as the pager except inside Vim terminal
+if [ -z "${VIMRUNTIME}" ]; then
+    export PAGER=vimpager
+else
+    export PAGER=less
+fi
 
 export GOPATH=$HOME/workspace/go
 export PATH=$PATH:$GOPATH/bin
