@@ -376,6 +376,12 @@ if has('mac')
 		\ "Clean"     : emoji#for('sunny'),
 		\ "Unknown"   : emoji#for('fearful')
 		\ }
+	" Neomake
+	let g:neomake_error_sign = {'text': emoji#for('rage'), 'texthl': 'NeomakeErrorSign'}
+	let g:neomake_warning_sign = {  'text': emoji#for('worried'), 'texthl': 'NeomakeWarningSign' }
+	let g:neomake_message = {  'text': emoji#for('weary'), 'texthl': 'NeomakeWarningSign' }
+	let g:neomake_message_sign = { 'text': emoji#for('arrow_forward'), 'texthl': 'NeomakeMessageSign' }
+	let g:neomake_info_sign = {'text': emoji#for('stuck_out_tongue'), 'texthl': 'NeomakeInfoSign'}
 endif
 " }}}
 
