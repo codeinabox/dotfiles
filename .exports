@@ -24,7 +24,7 @@ fi
 export VISUAL=$EDITOR
 
 # fzf options
-export FZF_DEFAULT_COMMAND='ag --hidden -g ""'
+export FZF_DEFAULT_COMMAND='ag --hidden -p ~/.ignore -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # use Vim as the pager except inside Vim terminal

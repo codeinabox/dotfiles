@@ -93,6 +93,9 @@ Plug 'mileszs/ack.vim'
 	nnoremap <Leader>a :Ack! 
 	let g:ackhighlight = 1
 	let g:ack_autofold_results = 1
+	if executable('ag')
+		let g:ackprg = 'ag --hidden -p ~/.ignore --vimgrep'
+	endif
 	" }}}
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
