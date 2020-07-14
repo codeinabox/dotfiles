@@ -196,7 +196,8 @@ if has('nvim')
 		\ 'javascript': ['javascript-typescript-stdio'],
 		\ 'scss': ['css-languageserver', '--stdio'],
 		\ 'sh': ['bash-language-server', 'start'],
-		\ 'typescript': ['javascript-typescript-stdio']
+		\ 'terraform': ['terraform-ls', 'serve'],
+		\ 'typescript': ['javascript-typescript-stdio'],
 		\ }
 	Plug 'Shougo/neco-vim'
 	Plug 'deathlyfrantic/deoplete-spell'
