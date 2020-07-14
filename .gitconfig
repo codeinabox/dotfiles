@@ -44,3 +44,5 @@
 [rebase]
 	autoStash = true
 	instructionFormat = <%ae> %s
+[url "git@github.com:"]
+	insteadOf = https://github.com/
