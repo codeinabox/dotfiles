@@ -8,6 +8,10 @@ export PATH=~/.composer/vendor/bin:$PATH
 # node 12
 export PATH=/usr/local/opt/node@12/bin:$PATH
 
+# homebrew ruby
+export PATH=/usr/local/opt/ruby/bin:$PATH
+export PATH=/usr/local/lib/ruby/gems/2.6.0/bin:$PATH
+
 # add project dependency bin directories to end of path
 export PATH=$PATH:./node_modules/.bin:./vendor/bin:./bin
 
