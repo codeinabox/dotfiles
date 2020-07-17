@@ -365,6 +365,7 @@ au BufNewFile,BufRead .envrc setlocal filetype=conf
 au BufNewFile,BufRead composer.lock setlocal filetype=json
 au BufNewFile,BufRead .git-authors setlocal filetype=yaml
 au BufNewFile,BufRead *.tsx setlocal filetype=typescript.jsx
+au BufNewFile,BufRead Dockerfile setlocal filetype=dockerfile
 " }}}
 
 " Templates {{{
