@@ -153,7 +153,6 @@ Plug 'janko-m/vim-test'
 	" vim-test {{{
 	let g:test#runner_commands = ['Behat', 'PHPSpec', 'PHPUnit']
 	let test#php#phpspec#options = '--no-code-generation'
-	let test#php#phpunit#options = '--no-coverage'
 	let test#javascript#reactscripts#options = '--watchAll=false'
 	let test#strategy = "neoterm"
 	nnoremap <Leader>tf :TestFile<cr>
