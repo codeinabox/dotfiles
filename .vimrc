@@ -30,6 +30,9 @@ Plug 'svenwin/vim-splitted-nerdtree'
 	" }}}
 Plug 'neomake/neomake'
 Plug 'benjie/neomake-local-eslint.vim'
+Plug 'dense-analysis/ale'
+  let g:ale_fix_on_save = 1
+Plug 'maximbaz/lightline-ale'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'itchyny/lightline.vim'
@@ -42,17 +45,27 @@ Plug 'itchyny/lightline.vim'
 	\   'right': [ [ 'lineinfo' ],
 	\              [ 'percent' ],
 	\              [ 'filetype' ],
-	\              [ 'neomake' ] ],
+	\              [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_infos', 'linter_ok' ]],
 	\ },
 	\ 'component_function': {
 	\   'gitbranch': 'FugitiveHead'
 	\ },
 	\ 'component_expand': {
 	\   'gitgutter': 'GitGutterStatus',
+  \   'linter_checking': 'lightline#ale#checking',
+  \   'linter_infos': 'lightline#ale#infos',
+  \   'linter_warnings': 'lightline#ale#warnings',
+  \   'linter_errors': 'lightline#ale#errors',
+  \   'linter_ok': 'lightline#ale#ok',
 	\   'neomake': 'LightlineNeomake'
 	\ },
 	\ 'component_type': {
 	\   'gitgutter': 'warning',
+  \   'linter_checking': 'right',
+  \   'linter_infos': 'right',
+  \   'linter_warnings': 'warning',
+  \   'linter_errors': 'error',
+  \   'linter_ok': 'right',
 	\   'neomake': 'error'
 	\ },
 	\ 'tab': {
@@ -92,11 +105,11 @@ Plug 'sbdchd/neoformat'
 	" Neoformat {{{
 	nnoremap <Leader>nf :Neoformat<cr>
 	" Don't auto format package.json
-	au BufNewFile,BufRead package.json let b:neoformat_enabled_json = []
-	augroup fmt
-		autocmd!
-		autocmd BufWritePre * undojoin | Neoformat
-	augroup END
+	" au BufNewFile,BufRead package.json let b:neoformat_enabled_json = []
+	" augroup fmt
+	" 	autocmd!
+	" 	autocmd BufWritePre * undojoin | Neoformat
+	" augroup END
 	" }}}
 Plug 'jiangmiao/auto-pairs'
 Plug 'christoomey/vim-tmux-navigator'
@@ -239,6 +252,11 @@ set complete+=kspell
 " Turn on line numbers
 set number
 
+" Add ALE as a Deoplete source 
+if exists('*deoplete#custom#option')
+  call deoplete#custom#option('sources', {'_': ['ale']})
+endif
+
 " Status bar
 set laststatus=2     " always show
 
@@ -308,7 +326,7 @@ set noswapfile
 set splitbelow
 
 " Automatically run Neomake
-call neomake#configure#automake('nrwi', 500)
+" call neomake#configure#automake('nrwi', 500)
 
 " Shortcut to reload .vimrc
 nnoremap <Leader>r :source ~/.vimrc<CR>
@@ -408,6 +426,14 @@ if has('mac')
 	let g:neomake_message = {  'text': emoji#for('weary'), 'texthl': 'NeomakeWarningSign' }
 	let g:neomake_message_sign = { 'text': emoji#for('arrow_forward'), 'texthl': 'NeomakeMessageSign' }
 	let g:neomake_info_sign = {'text': emoji#for('stuck_out_tongue'), 'texthl': 'NeomakeInfoSign'}
+  " ALE
+  let g:ale_sign_error = emoji#for('scream')
+  let g:ale_sign_warning = emoji#for('worried')
+  let g:lightline#ale#indicator_checking = emoji#for('thinking')
+  let g:lightline#ale#indicator_infos = emoji#for('eyes')
+  let g:lightline#ale#indicator_warnings = emoji#for('worried')
+  let g:lightline#ale#indicator_errors = emoji#for('scream')
+  let g:lightline#ale#indicator_ok = emoji#for('ok_hand')
 endif
 " }}}
 
