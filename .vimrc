@@ -365,7 +365,7 @@ if has('mac')
 	let g:gitgutter_sign_removed = emoji#for('skull')
 	let g:gitgutter_sign_modified_removed = emoji#for('cloud')
 	" NERDTree Git
-	let g:NERDTreeIndicatorMapCustom = {
+	let g:NERDTreeGitStatusIndicatorMapCustom = {
 		\ "Modified"  : emoji#for('mushroom'),
 		\ "Staged"    : emoji#for('outbox_tray'),
 		\ "Untracked" : emoji#for('alien'),
