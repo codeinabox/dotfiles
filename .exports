@@ -46,6 +46,9 @@ export CLICOLOR=1
 # opt-out of Homebrew's analytics
 export HOMEBREW_NO_ANALYTICS=1
 
+# Homebrew cask options
+export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
+
 export AUTHOR="Mathew Attlee <hello@codeinabox.com>"
 
 # rotate Git duet authors are each commit
