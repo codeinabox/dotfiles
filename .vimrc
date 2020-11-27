@@ -328,6 +328,9 @@ catch
 endtry
 " }}}
 
+" Comments in italics
+highlight Comment cterm=italic
+
 " File extensions {{{
 au BufNewFile,BufRead *.ctp setlocal filetype=html.php
 au BufNewFile,BufRead *.hbt setlocal filetype=html.handlebars
