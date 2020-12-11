@@ -9,6 +9,7 @@ npm-debug.log
 
 # IDEs
 .exrc
+.vscode
 nbproject
 .buildpath
 .metadata
