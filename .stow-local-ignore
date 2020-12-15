@@ -7,3 +7,4 @@
 \.gitmodules
 ^/README.*
 ^kitty
+^vscode

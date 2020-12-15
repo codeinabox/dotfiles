@@ -1,0 +1,22 @@
+{
+  "editor.fontFamily": "'JetBrains Mono', monospace",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.renderWhitespace": "boundary",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "vim.enableNeovim": true,
+  "vim.useSystemClipboard": true,
+  "vim.vimrc.enable": true,
+  "workbench.colorTheme": "Monokai Dimmed",
+  "workbench.editor.enablePreview": false
+}
