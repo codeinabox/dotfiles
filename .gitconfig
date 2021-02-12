@@ -2,7 +2,7 @@
 	name = Mathew Attlee
 	email = hello@codeinabox.com
 [push]
-	default = current
+	default = simple
 [branch]
 	autosetuprebase = always
 [core]
