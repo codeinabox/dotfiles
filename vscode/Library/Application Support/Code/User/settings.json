@@ -14,6 +14,7 @@
       }
     ]
   },
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "vim.enableNeovim": true,
   "vim.useSystemClipboard": true,
   "vim.vimrc.enable": true,
