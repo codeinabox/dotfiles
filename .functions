@@ -1,0 +1,21 @@
+detect-dark-mode() {
+  interfaceStyle=`defaults read -g AppleInterfaceStyle 2>/dev/null`
+  if [ "$interfaceStyle" = "Dark" ]; then
+    export BACKGROUND=dark
+  else
+    export BACKGROUND=light
+  fi
+
+  if [ -z "${KITTY_WINDOW_ID}" ]; then
+    return
+  fi
+
+  case $BACKGROUND in
+    "light")
+      kitty @ set-colors -a -c "$HOME/.config/kitty/base16/colors/base16-tomorrow-256.conf"
+      ;;
+    "dark")
+      kitty @ set-colors -a -c "$HOME/.config/kitty/base16/colors/base16-tomorrow-night-eighties-256.conf"
+      ;;
+  esac
+}

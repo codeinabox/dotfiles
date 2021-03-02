@@ -15,7 +15,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/vim-emoji'
-Plug 'NLKNguyen/papercolor-theme'
+Plug 'chriskempson/base16-vim'
+Plug 'daviesjamie/vim-base16-lightline'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'low-ghost/nerdtree-fugitive'
@@ -33,7 +34,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'itchyny/lightline.vim'
 	" Lightline {{{
 	let g:lightline = {
-	\ 'colorscheme': 'PaperColor',
+	\ 'colorscheme': 'base16',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'gitbranch', 'readonly', 'relativepath', 'modified' ] ],
@@ -319,14 +320,20 @@ set wildignore+=*/app/cache,*/.sass-cache " project caches
 " }}}
 
 " Theme {{{
+set termguicolors
 set t_Co=256	" Enable 256 colours
 set background=light
 try
-    colorscheme PaperColor
+    colorscheme base16-tomorrow
 catch
     colorscheme default
 endtry
 " }}}
+
+if $BACKGROUND == 'dark'
+  set background=dark
+  colorscheme base16-tomorrow-night-eighties
+endif
 
 " Comments in italics
 highlight Comment cterm=italic gui=italic

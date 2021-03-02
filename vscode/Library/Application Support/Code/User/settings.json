@@ -18,6 +18,9 @@
   "vim.enableNeovim": true,
   "vim.useSystemClipboard": true,
   "vim.vimrc.enable": true,
-  "workbench.colorTheme": "Monokai Dimmed",
-  "workbench.editor.enablePreview": false
+  "window.autoDetectColorScheme": true,
+  "workbench.colorTheme": "Tomorrow",
+  "workbench.editor.enablePreview": false,
+  "workbench.preferredLightColorTheme": "Tomorrow",
+  "workbench.preferredDarkColorTheme": "Tomorrow Night Eighties"
 }
