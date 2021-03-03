@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Aliases
 alias ssh-pbcopy="cat $HOME/.ssh/id_rsa.pub | pbcopy; echo 'SSH key copied to clipboard'"
 alias vi="$EDITOR"
