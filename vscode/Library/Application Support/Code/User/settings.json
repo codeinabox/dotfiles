@@ -14,6 +14,8 @@
       }
     ]
   },
+  "liveshare.authenticationProvider": "GitHub",
+  "liveshare.alwaysFollowHost": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vim.enableNeovim": true,
   "vim.useSystemClipboard": true,
