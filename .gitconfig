@@ -18,6 +18,7 @@
 	co = checkout
 	cob = checkout -b
 	cof = ! git co $(git branch | fzf)
+	email = config user.email
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	rb = rebase
 	rba = rebase --abort
