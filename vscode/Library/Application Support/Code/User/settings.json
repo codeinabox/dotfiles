@@ -1,8 +1,7 @@
 {
   "editor.fontFamily": "'JetBrains Mono', monospace",
   "editor.fontLigatures": true,
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": false,
   "editor.renderWhitespace": "boundary",
   "editor.tokenColorCustomizations": {
     "textMateRules": [
