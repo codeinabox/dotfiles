@@ -8,16 +8,14 @@ detect-dark-mode() {
     export BACKGROUND=light
   fi
 
-  if [ -z "${KITTY_WINDOW_ID}" ]; then
-    return
+  if [ "$TERM" = 'xterm-kitty' ]; then
+	case $BACKGROUND in
+	  "light")
+		kitty @ set-colors -a -c "$HOME/.config/kitty/base16/colors/base16-tomorrow-256.conf"
+		;;
+	  "dark")
+		kitty @ set-colors -a -c "$HOME/.config/kitty/base16/colors/base16-tomorrow-night-eighties-256.conf"
+		;;
+	esac
   fi
-
-  case $BACKGROUND in
-    "light")
-      kitty @ set-colors -a -c "$HOME/.config/kitty/base16/colors/base16-tomorrow-256.conf"
-      ;;
-    "dark")
-      kitty @ set-colors -a -c "$HOME/.config/kitty/base16/colors/base16-tomorrow-night-eighties-256.conf"
-      ;;
-  esac
 }
