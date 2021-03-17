@@ -23,6 +23,9 @@ if [ -x "$(command -v kitty)" ]; then
     source <(kitty + complete setup bash)
 fi
 
+# Load NVM completion
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
+
 # Show Git branch in prompt
 export PROMPT_DIRTRIM=2
 GIT_PS1_SHOWDIRTYSTATE=true

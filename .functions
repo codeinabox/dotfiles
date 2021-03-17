@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Load NVM
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
+
 detect-dark-mode() {
   interfaceStyle=`defaults read -g AppleInterfaceStyle 2>/dev/null`
   if [ "$interfaceStyle" = "Dark" ]; then
