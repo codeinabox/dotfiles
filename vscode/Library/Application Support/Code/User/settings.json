@@ -23,5 +23,20 @@
   "workbench.colorTheme": "Tomorrow",
   "workbench.editor.enablePreview": false,
   "workbench.preferredLightColorTheme": "Tomorrow",
-  "workbench.preferredDarkColorTheme": "Tomorrow Night Eighties"
+  "workbench.preferredDarkColorTheme": "Tomorrow Night Eighties",
+  "editor.tabSize": 8,
+  "editor.cursorStyle": "line",
+  "editor.insertSpaces": false,
+  "editor.lineNumbers": "on",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "off",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terraform-ls.experimentalFeatures": {
+    "validateOnSave": true
+  }
 }
