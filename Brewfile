@@ -54,6 +54,7 @@ cask "1password6", args: { appdir: "/Applications" }
 cask "appcleaner"
 cask "dropbox"
 cask "fantastical"
+cask "firefox"
 cask "firefox-developer-edition"
 cask "font-fira-mono"
 cask "font-jetbrains-mono"
