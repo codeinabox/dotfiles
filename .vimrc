@@ -439,3 +439,8 @@ endif
 
 " prevent :autocmd, shell and write commands from inside project-specific .vimrc
 set secure
+
+if exists("g:neovide")
+	set shell=/usr/local/bin/bash
+	let g:neoterm_shell = '/usr/local/bin/bash'
+endif
