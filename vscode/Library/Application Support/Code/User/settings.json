@@ -1,7 +1,7 @@
 {
   "editor.fontFamily": "'JetBrains Mono', monospace",
   "editor.fontLigatures": true,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.renderWhitespace": "boundary",
   "editor.tokenColorCustomizations": {
     "textMateRules": [
@@ -20,10 +20,7 @@
   "vim.useSystemClipboard": true,
   "vim.vimrc.enable": true,
   "window.autoDetectColorScheme": true,
-  "workbench.colorTheme": "Tomorrow",
   "workbench.editor.enablePreview": false,
-  "workbench.preferredLightColorTheme": "Tomorrow",
-  "workbench.preferredDarkColorTheme": "Tomorrow Night Eighties",
   "editor.tabSize": 8,
   "editor.cursorStyle": "line",
   "editor.insertSpaces": false,
@@ -31,12 +28,16 @@
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.wordWrap": "off",
   "[typescriptreact]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "terraform-ls.experimentalFeatures": {
     "validateOnSave": true
-  }
+  },
+  "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
+  "workbench.colorTheme": "Default Light+",
+  "workbench.preferredDarkColorTheme": "Tomorrow Night Eighties",
+  "svelte.enable-ts-plugin": true
 }
