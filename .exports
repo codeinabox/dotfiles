@@ -45,6 +45,10 @@ export PATH=$PATH:$GOPATH/bin
 # enable colours in ls on OSX/BSD
 export CLICOLOR=1
 
+# Homebrew bundle configuration
+export HOMEBREW_BUNDLE_FILE="~/Brewfile"
+export HOMEBREW_BUNDLE_NO_LOCK=1
+
 # opt-out of Homebrew's analytics
 export HOMEBREW_NO_ANALYTICS=1
 
