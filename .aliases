@@ -7,6 +7,7 @@ alias vless="vimpager"
 alias get-composer="curl -sS https://getcomposer.org/installer | php"
 alias simple-http="python -m SimpleHTTPServer"
 alias tm="tmux attach || tmux new -c ~ -s home"
+alias docker="podman"
 
 # Enable icons if running inside WezTerm
 if [[ "$TERM_PROGRAM" == "WezTerm" ]]; then
