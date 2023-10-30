@@ -31,13 +31,13 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "terraform-ls.experimentalFeatures": {
     "validateOnSave": true
   },
   "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
-  "workbench.colorTheme": "Default Light+",
   "workbench.preferredDarkColorTheme": "Tomorrow Night Eighties",
-  "svelte.enable-ts-plugin": true
+  "svelte.enable-ts-plugin": true,
+  "workbench.colorTheme": "Default Light+"
 }
