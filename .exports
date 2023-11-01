@@ -2,6 +2,9 @@
 
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 
+# add Homebrew to path
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # add composer global bin directory to path
 export PATH=~/.composer/vendor/bin:$PATH
 
