@@ -98,7 +98,7 @@ Plug 'mileszs/ack.vim'
 		let g:ackprg = 'ag --hidden -p ~/.ignore --vimgrep'
 	endif
 	" }}}
-Plug '/usr/local/opt/fzf'
+Plug '/opt/homebrew/opt/fzf'
 Plug 'junegunn/fzf.vim'
 	" fzf {{{
 	let g:fzf_layout = { 'down': '~20%' }
