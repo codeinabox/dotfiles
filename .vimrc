@@ -206,7 +206,6 @@ Plug 'kassio/neoterm'
 	let g:neoterm_autoscroll = 1
 	let g:neoterm_default_mod = 'belowright'
 	" }}}
-Plug 'gotchane/vim-git-commit-prefix'
 Plug 'tpope/vim-unimpaired'
 Plug 'srydell/vim-skeleton'
 " Neovim specific plugins {{{
