@@ -32,3 +32,5 @@ snippet awpra "const [..] = await Promise.all([..])"
 	const [${1:res}] = await Promise.all([
 		${0:${VISUAL}}
 	]);
+snippet cdump "console.log(JSON.stringify(xyz, null, 2))"
+	console.log(JSON.stringify(${1:xyz}, null, 2))
