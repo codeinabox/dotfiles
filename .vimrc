@@ -111,7 +111,7 @@ Plug 'mileszs/ack.vim'
 		let g:ackprg = 'ag --hidden -p ~/.ignore --vimgrep'
 	endif
 	" }}}
-Plug '/opt/homebrew/opt/fzf'
+Plug $HOMEBREW_PREFIX.'/opt/fzf'
 Plug 'junegunn/fzf.vim'
 	" fzf {{{
 	let g:fzf_layout = { 'down': '~20%' }
@@ -220,6 +220,9 @@ call plug#end()
 " General settings {{{
 " set the runtime path to custom snippets
 set rtp+=$HOME/.vim/snippets/
+
+" To use fzf in Vim, add the following line to your .vimrc:
+set rtp+=$HOMEBREW_PREFIX/opt/fzf
 
 " {{{ Spell check
 set spell spelllang=en_gb spellfile=~/.vim/spell/en.utf-8.add
