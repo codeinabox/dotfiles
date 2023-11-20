@@ -34,3 +34,9 @@ snippet awpra "const [..] = await Promise.all([..])"
 	]);
 snippet cdump "console.log(JSON.stringify(xyz, null, 2))"
 	console.log(JSON.stringify(${1:xyz}, null, 2))
+snippet swif "switch(true) if statement"
+	switch (true) {
+		case ${1:a === b}:
+			${0:${VISUAL}}
+			break;
+	}
