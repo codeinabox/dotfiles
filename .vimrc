@@ -44,7 +44,7 @@ Plug 'itchyny/lightline.vim'
 	\              [ 'neomake' ] ],
 	\ },
 	\ 'component_function': {
-	\   'gitbranch': 'fugitive#head'
+	\   'gitbranch': 'FugitiveHead'
 	\ },
 	\ 'component_expand': {
 	\   'neomake': 'LightlineNeomake'
