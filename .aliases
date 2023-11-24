@@ -8,6 +8,13 @@ alias get-composer="curl -sS https://getcomposer.org/installer | php"
 alias simple-http="python -m SimpleHTTPServer"
 alias tm="tmux attach || tmux new -c ~ -s home"
 
+# Enable icons if running inside WezTerm
+if [[ "$TERM_PROGRAM" == "WezTerm" ]]; then
+	alias ls="eza --icons=auto"
+else
+	alias ls="eza"
+fi
+
 # Hub aliased as git
 if type hub &> /dev/null; then
 	eval "$(hub alias -s)"
