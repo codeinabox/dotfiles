@@ -32,5 +32,8 @@ end
 -- Change the colour scheme:
 config.color_scheme = scheme_for_appearance(get_appearance())
 
+-- Tab bar at the bottom
+config.tab_bar_at_bottom = true
+
 -- Return the configuration to wezterm
 return config
