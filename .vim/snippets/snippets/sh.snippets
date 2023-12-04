@@ -1,0 +1,6 @@
+snippet ife if [[ cond ]]; then { ... } else { ... } fi"
+	if [[ ${1} ]]; then
+		${0:${VISUAL}}
+	else
+		${2}
+	fi
