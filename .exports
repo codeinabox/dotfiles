@@ -39,7 +39,7 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # use Vim as the pager except inside Vim terminal
 if [ -z "${VIMRUNTIME}" ]; then
-    export PAGER=vimpager
+    export PAGER='nvim +Man!'
 else
     export PAGER=less
 fi
