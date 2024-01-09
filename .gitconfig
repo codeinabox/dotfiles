@@ -10,7 +10,7 @@
 	excludesfile = ~/.ignore
 	autocrlf = input
 	ignorecase = false
-	pager = less
+	pager = page
 [alias]
 	amend-date = commit --amend --reset-author
 	bm = branch -m
