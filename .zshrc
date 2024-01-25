@@ -28,6 +28,9 @@ source ~/.sfconsole/console_completion.sh
 # zsh-autosuggestions
 [ -f $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh ] && source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# zsh-fast-syntax-highlighting
+[ -f $(brew --prefix)/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh ] && source $(brew --prefix)/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Fast Node Manager
