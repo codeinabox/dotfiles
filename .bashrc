@@ -37,6 +37,7 @@ trap detect-dark-mode DEBUG
 
 # Initialise Starship, must be called after trap
 eval "$(starship init bash)"
+starship_precmd_user_func="set_win_title"
 
 # Lastly the direnv hook
 if type direnv &> /dev/null; then
