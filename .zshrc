@@ -47,6 +47,7 @@ bindkey '^R' history-incremental-pattern-search-backward
 
 # Initialise Starship
 eval "$(starship init zsh)"
+precmd_functions+=(set_win_title)
 
 # Lastly the direnv hook
 if type direnv &> /dev/null; then
