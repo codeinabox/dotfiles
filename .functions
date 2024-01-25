@@ -39,3 +39,7 @@ load-nvmrc() {
     nvm use default
   fi
 }
+
+set_win_title(){
+    echo -ne "\033]0; $(basename "$PWD") \007"
+}
