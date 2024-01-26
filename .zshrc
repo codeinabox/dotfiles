@@ -28,6 +28,9 @@ autoload -U add-zsh-hook
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
+# Detect dark mode
+add-zsh-hook preexec detect-dark-mode
+
 # Bindings {{{
 bindkey '^R' history-incremental-pattern-search-backward
 # }}}

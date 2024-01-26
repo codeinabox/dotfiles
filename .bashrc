@@ -33,6 +33,7 @@ detect-dark-mode
 
 # Calls the function before each command
 trap load-nvmrc DEBUG
+trap detect-dark-mode DEBUG
 
 # Initialise Starship, must be called after trap
 eval "$(starship init bash)"
