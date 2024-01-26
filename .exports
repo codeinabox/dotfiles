@@ -8,11 +8,10 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # add composer global bin directory to path
 export PATH=~/.composer/vendor/bin:$PATH
 
-# node 12
-export PATH=/usr/local/opt/node@12/bin:$PATH
-
 # add project dependency bin directories to end of path
 export PATH=$PATH:./node_modules/.bin:./vendor/bin:./bin
+
+export NVM_DIR="$HOME/.nvm"
 
 export HISTFILE=~/.histfile
 # number of lines kept in history

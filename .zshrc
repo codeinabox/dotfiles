@@ -23,6 +23,11 @@ source ~/.sfconsole/console_completion.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# NVM
+autoload -U add-zsh-hook
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
+
 # Bindings {{{
 bindkey '^R' history-incremental-pattern-search-backward
 # }}}

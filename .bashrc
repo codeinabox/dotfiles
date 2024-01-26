@@ -23,10 +23,16 @@ if [ -x "$(command -v kitty)" ]; then
     source <(kitty + complete setup bash)
 fi
 
+# Load NVM completion
+[[ -r $NVM_DIR/bash_completion ]] && \. $NVM_DIR/bash_completion
+
 # Bash specific aliases
 alias reload=". $HOME/.bashrc && echo 'Bash config reloaded from $HOME/.bashrc'"
 
 detect-dark-mode
+
+# Calls the function before each command
+trap load-nvmrc DEBUG
 
 # Initialise Starship, must be called after trap
 eval "$(starship init bash)"
