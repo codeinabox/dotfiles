@@ -23,20 +23,12 @@ source ~/.sfconsole/console_completion.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Prompt {{{
-if [ -f $(brew --prefix)/git/contrib/completion/git-prompt.sh ]; then
-	. $(brew --prefix)/git/contrib/completion/git-prompt.sh
-fi
-
-setopt prompt_subst
-export GIT_PS1_SHOWDIRTYSTATE=1
-export PROMPT=$'%F{green}%~%f %F{blue}$%f '
-export RPROMPT=$'%F{red}$(__git_ps1 "%s")$f'
-# }}}
-
 # Bindings {{{
 bindkey '^R' history-incremental-pattern-search-backward
 # }}}
+
+# Initialise Starship
+eval "$(starship init zsh)"
 
 # Lastly the direnv hook
 if type direnv &> /dev/null; then

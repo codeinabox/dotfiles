@@ -65,3 +65,5 @@ export GIT_DUET_ROTATE_AUTHOR=1
 
 # display the current directory as the title
 export PROMPT_COMMAND='echo -ne "\033]0;$(basename ${PWD})\007"'
+
+export STARSHIP_CONFIG=~/.starship.toml

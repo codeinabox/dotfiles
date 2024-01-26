@@ -23,15 +23,13 @@ if [ -x "$(command -v kitty)" ]; then
     source <(kitty + complete setup bash)
 fi
 
-# Show Git branch in prompt
-export PROMPT_DIRTRIM=2
-GIT_PS1_SHOWDIRTYSTATE=true
-PS1='\[\e[32m\]\w\[\e[31m\]$(__git_ps1)\[\e[39m\]\$ '
-
 # Bash specific aliases
 alias reload=". $HOME/.bashrc && echo 'Bash config reloaded from $HOME/.bashrc'"
 
 detect-dark-mode
+
+# Initialise Starship, must be called after trap
+eval "$(starship init bash)"
 
 # Lastly the direnv hook
 if type direnv &> /dev/null; then
