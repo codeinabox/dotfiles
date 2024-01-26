@@ -29,3 +29,7 @@ detect-dark-mode() {
 set_win_title(){
     echo -ne "\033]0; $(basename "$PWD") \007"
 }
+
+source_if_exists () {
+    [[ -f "$1" ]] && source "$1"
+}
