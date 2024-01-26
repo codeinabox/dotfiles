@@ -8,14 +8,18 @@ unset file;
 alias reload=". $HOME/.zshrc && echo 'ZSH config reloaded from $HOME/.zshrc'"
 
 # Completions {{{
-autoload -U compinit
+if type brew &>/dev/null; then
+	FPATH=$(brew --prefix)/share/zsh/site-functions:${FPATH}
+
+	if [ -d $(brew --prefix)/share/zsh-completions ]; then
+		FPATH=$(brew --prefix)/share/zsh-completions:${FPATH}
+	fi
+fi
+
+autoload -Uz compinit
 compinit
 
 setopt correctall # command correction
-
-if [ -d /usr/local/share/zsh-completions ]; then
-	fpath=(/usr/local/share/zsh-completions $fpath)
-fi
 
 # Symfony2 console completion script
 source ~/.sfconsole/console_completion.sh
