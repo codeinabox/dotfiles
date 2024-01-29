@@ -36,7 +36,7 @@
   "terraform-ls.experimentalFeatures": {
     "validateOnSave": true
   },
-  "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
+  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
   "workbench.preferredDarkColorTheme": "Tomorrow Night Eighties",
   "svelte.enable-ts-plugin": true,
   "workbench.colorTheme": "Default Light+"
