@@ -21,7 +21,7 @@ require("mason-lspconfig").setup {
 		"prosemd_lsp",
 		"lua_ls",
 		"typos_lsp",
-		"vtsls" 
+		"vtsls"
 	},
 }
 
