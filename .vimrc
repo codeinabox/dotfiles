@@ -37,7 +37,7 @@ Plug 'itchyny/lightline.vim'
 	\ 'colorscheme': 'base16',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
-	\             [ 'gitbranch', 'readonly', 'relativepath', 'modified' ] ],
+	\             [ 'gitbranch', 'gitgutter', 'readonly', 'relativepath', 'modified' ] ],
 	\   'right': [ [ 'lineinfo' ],
 	\              [ 'percent' ],
 	\              [ 'filetype' ],
@@ -47,9 +47,11 @@ Plug 'itchyny/lightline.vim'
 	\   'gitbranch': 'FugitiveHead'
 	\ },
 	\ 'component_expand': {
+	\   'gitgutter': 'GitGutterStatus',
 	\   'neomake': 'LightlineNeomake'
 	\ },
 	\ 'component_type': {
+	\   'gitgutter': 'warning',
 	\   'neomake': 'error'
 	\ },
 	\ 'tab': {
@@ -68,6 +70,14 @@ Plug 'itchyny/lightline.vim'
 	function! LightlineTabname(n) abort
 		return fnamemodify(getcwd(tabpagewinnr(a:n), a:n), ':t')
 	endfunction
+
+    function! GitGutterStatus()
+        let [a,m,r] = GitGutterGetHunkSummary()
+        if has('mac')
+            return printf(emoji#for('hatching_chick') . '%d '. emoji#for('mushroom') . '%d ' . emoji#for('skull') . '%d', a, m, r)
+        endif
+        return printf('+%d ~%d -%d', a, m, r)
+    endfunction
 	" }}}
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-surround'
