@@ -9,3 +9,7 @@ vim.api.nvim_create_autocmd({"TermOpen"}, {
   pattern = {"*"},
   command = "setlocal nospell",
 })
+
+-- Toggleterm
+require("toggleterm").setup{}
+vim.o['test#strategy'] = "toggleterm"
