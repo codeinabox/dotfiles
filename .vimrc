@@ -101,7 +101,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'mileszs/ack.vim'
 	" Ack {{{
-	nnoremap <Leader>a :Ack! 
 	let g:ackhighlight = 1
 	let g:ack_autofold_results = 1
 	if executable('ag')
@@ -115,6 +114,7 @@ Plug 'junegunn/fzf.vim'
 	nnoremap <c-p> :Files<cr>
 	nnoremap <Leader>y :Buffers<cr>
 	nnoremap <Leader>m :GFiles?<cr>
+	nnoremap <Leader>a :Ag 
 	" }}}
 Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoInstallBinaries' }
 	let g:go_fmt_command = "goimports"
