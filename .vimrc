@@ -210,6 +210,7 @@ Plug 'kassio/neoterm'
 if has('nvim')
 	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 		let g:deoplete#enable_at_startup = 1
+	Plug 'Shougo/neosnippet-snippets'
 	Plug 'Shougo/neco-vim'
 	Plug 'deathlyfrantic/deoplete-spell'
 	Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'}
