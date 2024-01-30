@@ -204,6 +204,7 @@ if has('nvim')
 	Plug 'neovim/nvim-lspconfig'
 	Plug 'williamboman/mason.nvim'
 	Plug 'williamboman/mason-lspconfig.nvim'
+	Plug 'Shougo/neosnippet-snippets'
 	Plug 'Shougo/neco-vim'
 	Plug 'deathlyfrantic/deoplete-spell'
 	Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'}
