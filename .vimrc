@@ -226,6 +226,7 @@ if has('nvim')
 	Plug 'Shougo/neco-vim'
 	Plug 'deathlyfrantic/deoplete-spell'
 	Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'}
+	Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 endif
 " }}}
 
