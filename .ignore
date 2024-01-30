@@ -9,6 +9,7 @@ npm-debug.log
 
 # IDEs
 .exrc
+.nvim.lua
 .vscode
 nbproject
 .buildpath
