@@ -25,7 +25,10 @@ require("mason-lspconfig").setup {
 	},
 }
 
+-- Telescope
 vim.keymap.set('n', '<c-p>', '<cmd>Telescope find_files hidden=true no_ignore=true<CR>')
+vim.keymap.set('n', '<Leader>y', '<cmd>Telescope buffers<CR>')
+vim.keymap.set('n', '<Leader>a', '<cmd>Telescope live_grep<CR>')
 
 require("mason-lspconfig").setup_handlers {
 	-- The first entry (without a key) will be the default handler
