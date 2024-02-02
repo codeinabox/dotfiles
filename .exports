@@ -71,6 +71,3 @@ export GIT_DUET_ROTATE_AUTHOR=1
 export PROMPT_COMMAND='echo -ne "\033]0;$(basename ${PWD})\007"'
 
 export STARSHIP_CONFIG=~/.starship.toml
-
-# Podman Docker host
-export DOCKER_HOST=unix:///Users/mathew/.local/share/containers/podman/machine/qemu/podman.sock

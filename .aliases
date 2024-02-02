@@ -7,7 +7,6 @@ alias vless="vimpager"
 alias get-composer="curl -sS https://getcomposer.org/installer | php"
 alias simple-http="python -m SimpleHTTPServer"
 alias tm="tmux attach || tmux new -c ~ -s home"
-alias docker="podman"
 alias page="$PAGER"
 alias python="python3"
 
