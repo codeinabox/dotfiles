@@ -13,6 +13,7 @@ export PATH=$PATH:./node_modules/.bin:./vendor/bin:./bin
 
 # Homebrew Ruby
 export PATH=/opt/homebrew/opt/ruby/bin:$PATH
+export PATH=/opt/homebrew/lib/ruby/gems/3.3.0/bin:$PATH
 
 export HISTFILE=~/.histfile
 # number of lines kept in history
