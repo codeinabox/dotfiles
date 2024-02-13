@@ -18,6 +18,7 @@
   "vim.enableNeovim": true,
   "vim.useSystemClipboard": true,
   "vim.vimrc.enable": true,
+  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
   "window.autoDetectColorScheme": true,
   "workbench.colorTheme": "Tomorrow",
   "workbench.editor.enablePreview": false,
