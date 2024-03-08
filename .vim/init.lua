@@ -14,7 +14,7 @@ vim.api.nvim_create_autocmd({"TermOpen"}, {
 require("toggleterm").setup{}
 vim.g['test#strategy'] = "toggleterm"
 
--- mason-lspconfig.nviM
+-- mason-lspconfig
 require("mason").setup()
 require("mason-lspconfig").setup {
 	ensure_installed = {
@@ -23,21 +23,32 @@ require("mason-lspconfig").setup {
 		"typos_lsp",
 		"vtsls"
 	},
+	handlers = {
+	   -- The first entry (without a key) will be the default handler
+	   -- and will be called for each installed server that doesn't have
+	   -- a dedicated handler.
+	   function (server_name) -- default handler (optional)
+		   require("lspconfig")[server_name].setup {}
+	   end,
+	   ["lua_ls"] = function ()
+		   local lspconfig = require("lspconfig")
+		   lspconfig.lua_ls.setup {
+			  settings = {
+				Lua = {
+				  diagnostics = {
+					globals = {'vim'}
+				  }
+				}
+			  }
+		   }
+	   end,
+	}
 }
 
 -- Telescope
 vim.keymap.set('n', '<c-p>', '<cmd>Telescope find_files hidden=true<CR>')
 vim.keymap.set('n', '<Leader>y', '<cmd>Telescope buffers<CR>')
 vim.keymap.set('n', '<Leader>a', '<cmd>Telescope live_grep<CR>')
-
-require("mason-lspconfig").setup_handlers {
-	-- The first entry (without a key) will be the default handler
-	-- and will be called for each installed server that doesn't have
-	-- a dedicated handler.
-	function (server_name) -- default handler (optional)
-		require("lspconfig")[server_name].setup {}
-	end,
-}
 
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all" (the five listed parsers should always be installed)
