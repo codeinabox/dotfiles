@@ -206,6 +206,10 @@ Plug 'kassio/neoterm'
 	let g:neoterm_autoscroll = 1
 	let g:neoterm_default_mod = 'belowright'
 	" }}}
+Plug 'airblade/vim-rooter'
+	" vim-rooter {{{
+	let g:rooter_patterns = ['package.json']
+	" }}}
 " Neovim specific plugins {{{
 if has('nvim')
 	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
