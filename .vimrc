@@ -209,6 +209,7 @@ Plug 'kassio/neoterm'
 Plug 'airblade/vim-rooter'
 	" vim-rooter {{{
 	let g:rooter_patterns = ['package.json']
+	let g:rooter_cd_cmd = 'tcd'
 	" }}}
 " Neovim specific plugins {{{
 if has('nvim')
