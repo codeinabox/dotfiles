@@ -21,11 +21,13 @@ function get_appearance()
   return 'Dark'
 end
 
+config.color_scheme_dirs = { '~/.vim/plugged/tokyonight.nvim/extras/wezterm' }
+
 function scheme_for_appearance(appearance)
   if appearance:find 'Dark' then
-    return 'Tomorrow Night Eighties'
+    return 'tokyonight_night'
   else
-    return 'Tomorrow'
+    return 'tokyonight_day'
   end
 end
 

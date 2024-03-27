@@ -17,6 +17,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/vim-emoji'
 Plug 'chriskempson/base16-vim'
 Plug 'daviesjamie/vim-base16-lightline'
+Plug 'folke/tokyonight.nvim'
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -357,7 +358,7 @@ set termguicolors
 set t_Co=256	" Enable 256 colours
 set background=light
 try
-    colorscheme base16-tomorrow
+    colorscheme tokyonight-day
 catch
     colorscheme default
 endtry
@@ -365,7 +366,7 @@ endtry
 
 if $BACKGROUND == 'dark'
   set background=dark
-  colorscheme base16-tomorrow-night-eighties
+  colorscheme tokyonight-night
 endif
 
 " Comments in italics
