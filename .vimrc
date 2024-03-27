@@ -15,8 +15,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/vim-emoji'
-Plug 'chriskempson/base16-vim'
-Plug 'daviesjamie/vim-base16-lightline'
 Plug 'folke/tokyonight.nvim'
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
