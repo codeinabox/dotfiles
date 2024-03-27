@@ -39,7 +39,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'itchyny/lightline.vim'
 	" Lightline {{{
 	let g:lightline = {
-	\ 'colorscheme': 'base16',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'gitbranch', 'gitgutter', 'readonly', 'relativepath', 'modified' ] ],
