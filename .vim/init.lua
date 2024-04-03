@@ -61,6 +61,10 @@ require'nvim-treesitter.configs'.setup {
   -- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
   auto_install = true,
 
+  highlight = {
+	  enable = true
+  }
+
   -- List of parsers to ignore installing (or "all")
   -- ignore_install = { "javascript" },
 
