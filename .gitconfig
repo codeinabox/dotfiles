@@ -16,6 +16,7 @@
 	ca = commit -a
 	co = checkout
 	cob = checkout -b
+	dft = difftool -t difftastic
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	rb = rebase
 	rba = rebase --abort
@@ -37,6 +38,8 @@
 	tool = vimdiff
 [difftool]
 	prompt = false
+[difftool "difftastic"]
+	cmd = difft "$LOCAL" "$REMOTE"
 [merge]
 	tool = vimdiff
 [rebase]
