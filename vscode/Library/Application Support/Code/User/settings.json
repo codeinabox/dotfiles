@@ -35,10 +35,13 @@
   "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
   "workbench.preferredDarkColorTheme": "Tokyo Night",
   "svelte.enable-ts-plugin": true,
-  "workbench.colorTheme": "Tokyo Night Light",
   "eslint.format.enable": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "eslint.run": "onSave"
+  "eslint.run": "onSave",
+  "workbench.colorTheme": "Tokyo Night Light",
+  "workbench.preferredLightColorTheme": "Tokyo Night Light",
+  "autoDarkMode.darkTheme": "Tokyo Night",
+  "autoDarkMode.lightTheme": "Tokyo Night Light"
 }
