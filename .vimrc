@@ -202,6 +202,7 @@ Plug 'airblade/vim-rooter'
 	let g:rooter_cd_cmd = 'tcd'
 	" let g:rooter_manual_only = 1
 	" }}}
+Plug 'tpope/vim-dispatch'
 " Neovim specific plugins {{{
 if has('nvim')
 	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
