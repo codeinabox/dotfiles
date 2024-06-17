@@ -203,6 +203,7 @@ Plug 'airblade/vim-rooter'
 	" let g:rooter_manual_only = 1
 	" }}}
 Plug 'tpope/vim-dispatch'
+Plug 'TabbyML/vim-tabby'
 " Neovim specific plugins {{{
 if has('nvim')
 	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
