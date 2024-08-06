@@ -222,6 +222,7 @@ if has('nvim')
 	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 	Plug 'ThePrimeagen/refactoring.nvim'
 	Plug 'David-Kunz/gen.nvim'
+	Plug 'pmizio/typescript-tools.nvim'
 endif
 " }}}
 
