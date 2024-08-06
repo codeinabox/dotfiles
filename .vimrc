@@ -223,6 +223,7 @@ if has('nvim')
 	Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' }
 	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 	Plug 'ThePrimeagen/refactoring.nvim'
+	Plug 'pmizio/typescript-tools.nvim'
 endif
 " }}}
 
