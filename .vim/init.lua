@@ -20,8 +20,7 @@ require("mason-lspconfig").setup {
 	ensure_installed = {
 		"prosemd_lsp",
 		"lua_ls",
-		"typos_lsp",
-		"vtsls"
+		"typos_lsp"
 	},
 	handlers = {
 	   -- The first entry (without a key) will be the default handler
