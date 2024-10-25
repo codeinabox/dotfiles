@@ -3,6 +3,12 @@
 # Load NVM
 [ -s "${NVM_DIR}/nvm.sh" ] && . "${NVM_DIR}/nvm.sh"
 
+# Podman aliased as Docker if latter not installed
+if ! type docker &> /dev/null; then
+	export DOCKER_HOST="unix://$(podman machine inspect --format '{{.ConnectionInfo.PodmanSocket.Path}}')"
+	alias docker="podman"
+fi
+
 detect-dark-mode() {
   interfaceStyle=`defaults read -g AppleInterfaceStyle 2>/dev/null`
   if [ "$interfaceStyle" = "Dark" ]; then
