@@ -204,6 +204,7 @@ Plug 'airblade/vim-rooter'
 	" }}}
 Plug 'tpope/vim-dispatch'
 Plug 'TabbyML/vim-tabby'
+  let g:tabby_inline_completion_keybinding_accept	= "<c-l>"
 " Neovim specific plugins {{{
 if has('nvim')
 	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
