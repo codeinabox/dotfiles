@@ -35,5 +35,8 @@ config.color_scheme = scheme_for_appearance(get_appearance())
 -- Tab bar at the bottom
 config.tab_bar_at_bottom = true
 
+-- Allow entering of characters such as #
+config.send_composed_key_when_left_alt_is_pressed = true
+
 -- Return the configuration to wezterm
 return config
