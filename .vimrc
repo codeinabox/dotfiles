@@ -432,5 +432,7 @@ if has('mac')
 endif
 " }}}
 
+let g:python3_host_prog = '/Users/mathew/.pyenv/versions/py3nvim/bin/python'
+
 " prevent :autocmd, shell and write commands from inside project-specific .vimrc
 set secure
