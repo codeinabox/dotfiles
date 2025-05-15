@@ -207,6 +207,7 @@ Plug 'TabbyML/vim-tabby'
   let g:tabby_inline_completion_keybinding_accept	= "<c-l>"
 	" NOTE workaround as binding keeps getting reset
 	autocmd BufRead,BufNewFile,BufEnter * imap <buffer><script><silent><nowait><expr> <c-l> tabby#inline_completion#service#Accept()
+Plug 'amadeus/vim-mjml'
 " Neovim specific plugins {{{
 if has('nvim')
 	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
