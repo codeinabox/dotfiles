@@ -121,7 +121,7 @@ require'nvim-treesitter.configs'.setup {
 require('refactoring').setup()
 
 require('gen').setup({
-	model = "llama3",
+	model = "deepseek-coder",
 	display_mode = "float",
 	show_prompt = true,
 	show_model = true
