@@ -23,9 +23,9 @@ end
 
 function scheme_for_appearance(appearance)
   if appearance:find 'Dark' then
-    return 'Tomorrow Night Eighties'
+    return 'zenwritten_dark'
   else
-    return 'Tomorrow'
+    return 'zenwritten_light'
   end
 end
 
