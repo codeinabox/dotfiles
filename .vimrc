@@ -207,6 +207,7 @@ Plug 'TabbyML/vim-tabby'
   let g:tabby_inline_completion_keybinding_accept	= "<c-l>"
 	" NOTE workaround as binding keeps getting reset
 	autocmd BufRead,BufNewFile,BufEnter * imap <buffer><script><silent><nowait><expr> <c-l> tabby#inline_completion#service#Accept()
+Plug 'zenbones-theme/zenbones.nvim'
 " Neovim specific plugins {{{
 if has('nvim')
 	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -360,7 +361,7 @@ set termguicolors
 set t_Co=256	" Enable 256 colours
 set background=light
 try
-    colorscheme base16-tomorrow
+    colorscheme zenwritten
 catch
     colorscheme default
 endtry
@@ -368,7 +369,7 @@ endtry
 
 if $BACKGROUND == 'dark'
   set background=dark
-  colorscheme base16-tomorrow-night-eighties
+  colorscheme zenwritten
 endif
 
 " Comments in italics

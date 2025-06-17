@@ -10,6 +10,8 @@ vim.api.nvim_create_autocmd({"TermOpen"}, {
   command = "setlocal nospell",
 })
 
+vim.g['zenbones_compat'] = 1
+
 require("bigfile").setup {
   filesize = 2,
   features = { -- features to disable
