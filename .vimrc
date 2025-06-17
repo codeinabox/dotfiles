@@ -197,6 +197,7 @@ Plug 'kassio/neoterm'
 	let g:neoterm_default_mod = 'belowright'
 	" }}}
 Plug 'tpope/vim-dispatch'
+Plug 'zenbones-theme/zenbones.nvim'
 " Neovim specific plugins {{{
 if has('nvim')
 	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -350,7 +351,7 @@ set termguicolors
 set t_Co=256	" Enable 256 colours
 set background=light
 try
-    colorscheme base16-tomorrow
+    colorscheme zenwritten
 catch
     colorscheme default
 endtry
@@ -358,7 +359,7 @@ endtry
 
 if $BACKGROUND == 'dark'
   set background=dark
-  colorscheme base16-tomorrow-night-eighties
+  colorscheme zenwritten
 endif
 
 " Comments in italics

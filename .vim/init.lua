@@ -13,6 +13,8 @@ vim.api.nvim_create_autocmd({"TermOpen"}, {
 -- Set test strategy to toggleterm
 vim.g['test#strategy'] = "toggleterm"
 
+vim.g['zenbones_compat'] = 1
+
 require("bigfile").setup {
   filesize = 2,
   features = { -- features to disable
