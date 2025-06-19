@@ -93,7 +93,6 @@ Plug 'itchyny/lightline.vim'
         return printf('+%d ~%d -%d', a, m, r)
     endfunction
 	" }}}
-Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-surround'
 Plug 'pearofducks/ansible-vim'
 Plug 'sheerun/vim-polyglot'
@@ -334,6 +333,13 @@ set wildignore+=*/.git,*/.hg,*/.svn,*/.tmp,*/.DS_Store
 set wildignore+=*.phar,*.o,*.obj,*.exe,*.dll,*.manifest " compiled and binary files
 set wildignore+=*/.idea,*/.project,*/nbproject,*/.tern-port " other IDEs
 set wildignore+=*/app/cache,*/.sass-cache " project caches
+" }}}
+
+" Vim specific {{{
+if !has('nvim')
+  " Enable comment plugin
+  packadd comment
+endif
 " }}}
 
 " Theme {{{
