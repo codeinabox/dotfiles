@@ -98,6 +98,7 @@ Plug 'pearofducks/ansible-vim'
 Plug 'sheerun/vim-polyglot'
 	let g:jsx_ext_required = 1
 	let g:javascript_plugin_jsdoc = 1
+Plug 'amadeus/vim-mjml'
 Plug 'ap/vim-css-color'
 Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
 Plug 'jiangmiao/auto-pairs'
