@@ -365,6 +365,7 @@ highlight Comment cterm=italic gui=italic
 " File extensions {{{
 au BufNewFile,BufRead *.ctp setlocal filetype=html.php
 au BufNewFile,BufRead *.hbt setlocal filetype=html.handlebars
+au BufNewFile,BufRead *.mjml.jinja setlocal filetype=mjml.jinja
 au BufNewFile,BufRead .babelrc setlocal filetype=json
 au BufNewFile,BufRead .bowerrc setlocal filetype=json
 au BufNewFile,BufRead .jshintrc setlocal filetype=json
