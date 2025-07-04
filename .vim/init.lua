@@ -75,6 +75,7 @@ require("typescript-tools").setup {
 -- Telescope
 vim.keymap.set('n', '<c-p>', '<cmd>Telescope find_files hidden=true<CR>')
 vim.keymap.set('n', '<Leader>y', '<cmd>Telescope buffers<CR>')
+vim.keymap.set('n', '<Leader>m', '<cmd>Telescope git_status<CR>')
 vim.keymap.set('n', '<Leader>a', '<cmd>Telescope live_grep<CR>')
 
 require'nvim-treesitter.configs'.setup {
