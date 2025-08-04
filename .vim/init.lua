@@ -104,7 +104,7 @@ require'nvim-treesitter.configs'.setup {
 require('refactoring').setup()
 
 require('gen').setup({
-	model = "deepseek-coder",
+	model = "qwen3-coder:30b",
 	display_mode = "float",
 	show_prompt = true,
 	show_model = true
