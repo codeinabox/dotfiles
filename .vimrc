@@ -227,6 +227,9 @@ if has('nvim')
 	Plug 'ThePrimeagen/refactoring.nvim'
 	Plug 'David-Kunz/gen.nvim'
 	Plug 'pmizio/typescript-tools.nvim'
+	Plug 'MunifTanjim/nui.nvim'
+	Plug 'MeanderingProgrammer/render-markdown.nvim'
+	Plug 'yetone/avante.nvim', { 'branch': 'main', 'do': 'make' }
 endif
 " }}}
 
