@@ -217,7 +217,7 @@ if has('nvim')
 	Plug 'deathlyfrantic/deoplete-spell'
 	Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'}
 	Plug 'LunarVim/bigfile.nvim'
-	Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
+	Plug 'akinsho/toggleterm.nvim'
 	Plug 'deoplete-plugins/deoplete-lsp'
 	Plug 'williamboman/mason.nvim'
 	Plug 'williamboman/mason-lspconfig.nvim'
