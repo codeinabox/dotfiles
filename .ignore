@@ -17,4 +17,5 @@ nbproject
 .project
 .settings/
 .idea/
+.claude/
 Session.vim
