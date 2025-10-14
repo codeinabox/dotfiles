@@ -9,3 +9,7 @@ vim.api.nvim_create_autocmd({"TermOpen"}, {
   pattern = {"*"},
   command = "setlocal nospell",
 })
+
+require("bigfile").setup {
+  filesize = 2,
+}
