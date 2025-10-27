@@ -32,12 +32,16 @@ alias reload=". $HOME/.bashrc && echo 'Bash config reloaded from $HOME/.bashrc'"
 detect-dark-mode
 
 # Calls the function before each command
-trap load-nvmrc DEBUG
 trap detect-dark-mode DEBUG
 
 # Initialise Starship, must be called after trap
 eval "$(starship init bash)"
 starship_precmd_user_func="set_win_title"
+
+# Fast Node Manager
+if type fnm &> /dev/null; then
+	eval "$(fnm env --use-on-cd)"
+fi
 
 # Lastly the direnv hook
 if type direnv &> /dev/null; then
