@@ -208,6 +208,7 @@ Plug 'TabbyML/vim-tabby'
 	" NOTE workaround as binding keeps getting reset
 	autocmd BufRead,BufNewFile,BufEnter * imap <buffer><script><silent><nowait><expr> <c-l> tabby#inline_completion#service#Accept()
 Plug 'zenbones-theme/zenbones.nvim'
+Plug 'yasuhiroki/github-actions-yaml.vim'
 " Neovim specific plugins {{{
 if has('nvim')
 	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
