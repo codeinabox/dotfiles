@@ -198,6 +198,7 @@ Plug 'kassio/neoterm'
 	" }}}
 Plug 'tpope/vim-dispatch'
 Plug 'zenbones-theme/zenbones.nvim'
+Plug 'yasuhiroki/github-actions-yaml.vim'
 " Neovim specific plugins {{{
 if has('nvim')
 	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
