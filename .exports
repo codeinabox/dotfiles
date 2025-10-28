@@ -11,6 +11,10 @@ export PATH=~/.composer/vendor/bin:$PATH
 # add project dependency bin directories to end of path
 export PATH=$PATH:./node_modules/.bin:./vendor/bin:./bin
 
+
+# Pipx
+export PATH="$PATH:/Users/mathew/.local/bin"
+
 export HISTFILE=~/.histfile
 # number of lines kept in history
 export HISTSIZE=10000
