@@ -27,10 +27,10 @@ source ~/.sfconsole/console_completion.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# NVM
-autoload -U add-zsh-hook
-add-zsh-hook chpwd load-nvmrc
-load-nvmrc
+# Fast Node Manager
+if type fnm &> /dev/null; then
+	eval "$(fnm env --use-on-cd --shell zsh)"
+fi
 
 # Detect dark mode
 add-zsh-hook preexec detect-dark-mode
