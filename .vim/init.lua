@@ -124,20 +124,14 @@ require'nvim-treesitter.configs'.setup {
 require('refactoring').setup()
 
 require('avante').setup({
-	  --  provider = "ollama",
-	  --  providers = {
-	  --    -- claude = {
-	  --    --   endpoint = "https://api.anthropic.com",
-	  --    --   model = "claude-sonnet-4-20250514",
-	  --    --   timeout = 30000, -- Timeout in milliseconds
-	  --    --     extra_request_body = {
-	  --    --       temperature = 0.75,
-	  --    --       max_tokens = 20480,
-	  --    --     },
-	  --    -- },
-	  -- ollama = {
-	  --   endpoint = "http://localhost:11434",
-	  --   model = "qwen2.5-coder:0.5b",
-	  -- },
-	  --  }
+	provider = "claude",
+	providers = {
+      claude = {
+        model = "claude-haiku-4-5-20251001",
+      },
+	  ollama = {
+		model = "qwen3:8b",
+		is_env_set = require("avante.providers.ollama").check_endpoint_alive,
+	  },
+	}
 })
