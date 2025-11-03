@@ -217,6 +217,7 @@ if has('nvim')
 	Plug 'deathlyfrantic/deoplete-spell'
 	Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'}
 	Plug 'LunarVim/bigfile.nvim'
+	Plug 'wtfox/claude-chat.nvim'
 endif
 " }}}
 

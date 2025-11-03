@@ -13,3 +13,8 @@ vim.api.nvim_create_autocmd({"TermOpen"}, {
 require("bigfile").setup {
   filesize = 2,
 }
+
+require('claude-chat').setup({
+  split = "vsplit",
+  position = "right"
+})
