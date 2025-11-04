@@ -12,6 +12,22 @@ vim.api.nvim_create_autocmd({"TermOpen"}, {
 
 require("bigfile").setup {
   filesize = 2,
+  features = { -- features to disable
+    "indent_blankline",
+    "illuminate",
+    "lsp",
+    "treesitter",
+    "syntax",
+    "matchparen",
+    "vimopts",
+    "filetype",
+	{
+	  name = "gitgutter",
+	  disable = function()
+		vim.cmd "GitGutterBufferDisable"
+	  end,
+	}
+  },
 }
 
 require('claude-chat').setup({
