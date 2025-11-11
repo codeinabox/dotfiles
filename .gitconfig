@@ -24,9 +24,12 @@
 	rbs = rebase --skip
 	rbi = rebase --interactive
 	s = status -s
+	skip = update-index --skip-worktree
+	skipped = !git ls-files -v | grep ^S
 	sync-fork = !git fetch upstream && git checkout master && git merge upstream/master
 	unstage = reset HEAD --
 	undo = reset --soft HEAD~1
+	unskip = update-index --no-skip-worktree
 [credential]
 	helper = osxkeychain
 [filter "media"]
