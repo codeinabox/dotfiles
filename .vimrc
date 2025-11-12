@@ -200,19 +200,10 @@ Plug 'kassio/neoterm'
 if has('nvim')
 	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 		let g:deoplete#enable_at_startup = 1
-	Plug 'autozimu/LanguageClient-neovim', {
-		\ 'branch': 'next',
-		\ 'do': 'bash install.sh',
-		\ }
-	let g:LanguageClient_serverCommands = {
-		\ 'css': ['css-languageserver', '--stdio'],
-		\ 'Dockerfile': ['docker-langserver', '--stdio'],
-		\ 'javascript': ['javascript-typescript-stdio'],
-		\ 'scss': ['css-languageserver', '--stdio'],
-		\ 'sh': ['bash-language-server', 'start'],
-		\ 'terraform': ['terraform-ls', 'serve'],
-		\ 'typescript': ['javascript-typescript-stdio'],
-		\ }
+	Plug 'deoplete-plugins/deoplete-lsp'
+	Plug 'neovim/nvim-lspconfig'
+	Plug 'williamboman/mason.nvim'
+	Plug 'williamboman/mason-lspconfig.nvim'
 	Plug 'Shougo/neco-vim'
 	Plug 'deathlyfrantic/deoplete-spell'
 	Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'}

@@ -34,3 +34,11 @@ require('claude-chat').setup({
   split = "vsplit",
   position = "right"
 })
+
+require("mason").setup()
+require("mason-lspconfig").setup {
+	ensure_installed = {
+		"lua_ls",
+		"vimls"
+	}
+}
