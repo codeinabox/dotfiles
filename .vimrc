@@ -209,6 +209,7 @@ if has('nvim')
 	Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'}
 	Plug 'LunarVim/bigfile.nvim'
 	Plug 'wtfox/claude-chat.nvim'
+  Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 endif
 " }}}
 

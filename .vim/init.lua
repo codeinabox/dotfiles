@@ -42,3 +42,5 @@ require("mason-lspconfig").setup {
 		"vimls"
 	}
 }
+
+require("toggleterm").setup{}
