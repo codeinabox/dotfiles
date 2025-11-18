@@ -10,6 +10,9 @@ vim.api.nvim_create_autocmd({"TermOpen"}, {
   command = "setlocal nospell",
 })
 
+-- Set test strategy to toggleterm
+vim.g['test#strategy'] = "toggleterm"
+
 require("bigfile").setup {
   filesize = 2,
   features = { -- features to disable
