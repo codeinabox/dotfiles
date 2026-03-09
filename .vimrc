@@ -379,6 +379,7 @@ au BufNewFile,BufRead .envrc setlocal filetype=conf
 au BufNewFile,BufRead composer.lock setlocal filetype=json
 au BufNewFile,BufRead .git-authors setlocal filetype=yaml
 au BufNewFile,BufRead .env.* setlocal filetype=sh
+au BufNewFile,BufRead *.njk setlocal filetype=jinja
 " }}}
 
 " Templates {{{
