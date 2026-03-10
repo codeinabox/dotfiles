@@ -28,6 +28,8 @@ if type fnm &> /dev/null; then
 	eval "$(fnm env --use-on-cd --shell bash)"
 fi
 
+eval "$(rbenv init - --no-rehash bash)"
+
 # Bash specific aliases
 alias reload=". $HOME/.bashrc && echo 'Bash config reloaded from $HOME/.bashrc'"
 
