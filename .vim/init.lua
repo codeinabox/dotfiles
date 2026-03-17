@@ -102,26 +102,26 @@ vim.keymap.set('n', '<Leader>y', '<cmd>Telescope buffers<CR>')
 vim.keymap.set('n', '<Leader>m', '<cmd>Telescope git_status<CR>')
 vim.keymap.set('n', '<Leader>a', '<cmd>Telescope live_grep<CR>')
 
-require'nvim-treesitter.configs'.setup {
-  -- A list of parser names, or "all" (the five listed parsers should always be installed)
-  -- ensure_installed = { "lua", "typescript" },
-
-  -- Install parsers synchronously (only applied to `ensure_installed`)
-  -- sync_install = false,
-
-  -- Automatically install missing parsers when entering buffer
-  -- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
-  auto_install = true,
-
-  highlight = {
-	  enable = true
-  }
-
-  -- List of parsers to ignore installing (or "all")
-  -- ignore_install = { "javascript" },
-
-  ---- If you need to change the installation directory of the parsers (see -> Advanced Setup)
-  -- parser_install_dir = "/some/path/to/store/parsers", -- Remember to run vim.opt.runtimepath:append("/some/path/to/store/parsers")!
-}
+-- require'nvim-treesitter.configs'.setup {
+--   -- A list of parser names, or "all" (the five listed parsers should always be installed)
+--   -- ensure_installed = { "lua", "typescript" },
+--
+--   -- Install parsers synchronously (only applied to `ensure_installed`)
+--   -- sync_install = false,
+--
+--   -- Automatically install missing parsers when entering buffer
+--   -- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
+--   auto_install = true,
+--
+--   highlight = {
+-- 	  enable = true
+--   }
+--
+--   -- List of parsers to ignore installing (or "all")
+--   -- ignore_install = { "javascript" },
+--
+--   ---- If you need to change the installation directory of the parsers (see -> Advanced Setup)
+--   -- parser_install_dir = "/some/path/to/store/parsers", -- Remember to run vim.opt.runtimepath:append("/some/path/to/store/parsers")!
+-- }
 
 require('refactoring').setup()
