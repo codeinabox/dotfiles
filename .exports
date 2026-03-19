@@ -61,4 +61,4 @@ export PROMPT_COMMAND='echo -ne "\033]0;$(basename ${PWD})\007"'
 
 export STARSHIP_CONFIG=~/.starship.toml
 
-export ANTHROPIC_MODEL="claude-haiku-4-5-20251001"
+export ANTHROPIC_MODEL='opusplan'
