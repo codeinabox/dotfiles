@@ -13,7 +13,6 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/vim-emoji'
 Plug 'chriskempson/base16-vim'
 Plug 'daviesjamie/vim-base16-lightline'
@@ -333,6 +332,8 @@ set wildignore+=*/app/cache,*/.sass-cache " project caches
 if !has('nvim')
   " Enable comment plugin
   packadd comment
+  " Enable EditorConfig plugin
+  packadd editorconfig
 endif
 " }}}
 
