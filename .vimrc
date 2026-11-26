@@ -209,6 +209,8 @@ if has('nvim')
 	Plug 'LunarVim/bigfile.nvim'
 	Plug 'wtfox/claude-chat.nvim'
 	Plug 'akinsho/toggleterm.nvim'
+	Plug 'nvim-lua/plenary.nvim'
+	Plug 'nvim-telescope/telescope.nvim'
 endif
 " }}}
 
