@@ -8,6 +8,4 @@
 \.gitignore
 \.gitmodules
 \.DS_Store
-^/README.*
-^/openspec
-^/agents
+^/README.md
