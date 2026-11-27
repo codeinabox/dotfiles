@@ -1,8 +1,6 @@
 # ~/dotfiles/.stow-local-ignore: Files to be ignored by gnu 'stow'
 #
 # Comments and blank lines are allowed.
-# The repo mirrors $HOME (including .config/), so everything stowed by
-# `stow . -t ~` is real config. Only repository-only content is ignored.
 
 \.git
 \.gitignore
