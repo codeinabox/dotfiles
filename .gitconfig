@@ -1,6 +1,7 @@
 [user]
 	name = Mathew Attlee
 	email = hello@codeinabox.com
+	signingkey = 5933921C
 [push]
 	default = simple
 [branch]
@@ -50,3 +51,5 @@
 	instructionFormat = <%ae> %s
 [init]
 	defaultBranch = main
+[commit]
+	gpgsign = true
