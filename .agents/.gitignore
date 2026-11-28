@@ -1,0 +1,3 @@
+# Ignore third-party skills
+.skill-lock.json
+skills/*
