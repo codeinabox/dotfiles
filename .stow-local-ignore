@@ -6,4 +6,6 @@
 \.gitignore
 \.gitmodules
 \.DS_Store
+^/openspec
+^/vscode
 ^/README.md
