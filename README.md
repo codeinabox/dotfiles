@@ -1,5 +1,7 @@
 # dotfiles
-My own set of dotfiles, which I install using my [fresh OS X install] (https://github.com/codeinabox/fresh-osx-install) scripts.
+My own set of dotfiles, which I install using my [fresh OS X install](https://codefloe.com/codeinabox/fresh-osx-install) scripts.
+
+Alternatively, use `stow . -t ~` from this repository root to link them.
 
 ## Notes
  * Store extra and potentially private shell aliases, exports and functions in ~/.shell_extra
