@@ -1,8 +1,8 @@
 -- Neovim configuration to extend .vimrc
 vim.cmd("source ~/.vimrc")
 
--- Shortcut to reload ~/.vim/init.lua
-vim.keymap.set('n', '<Leader>r', '<cmd>luafile ~/.vim/init.lua<CR>')
+-- Shortcut to reload ~/.config/nvim/init.lua
+vim.keymap.set('n', '<Leader>r', '<cmd>luafile ~/.config/nvim/init.lua<CR>')
 
 -- Turn off spell check in terminal
 vim.api.nvim_create_autocmd({"TermOpen"}, {
